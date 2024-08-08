@@ -1,0 +1,33 @@
+author: Matthias Schnetzer
+
+instructor:
+  name: Dr. Matthias Schnetzer
+  name-wo-title: Matthias Schnetzer
+  employer: "Vienna Chamber of Labour & WU Vienna"
+  email: <mschnetz@wu.ac.at>
+  url: "https://mschnetzer.github.io"
+  twitter: matschnetzer
+  github: mschnetzer
+  contact_policy: | 
+    Please contact me via [e-mail](mailto:mschnetz@wu.ac.at) and I will usually respond within a few days. Note that we use the learning platform [learn.wu.ac.at](https://learn.wu.ac.at) for all assignments in this course.
+
+course:
+  title: Economic Policy
+  subtitle: Economic Policy Visualization
+  icon: fa-chart-pie
+  icon-bg: fa-comment
+  number: "PI 0750"
+  semester: "Winter term 2024"
+  days: "Mondays"
+  time: "10:00–12:00"
+  location: "WU Campus"
+  dates: "Oct 7, 2024 – Jan 13, 2025"
+  students: 30
+  url: "https://mschnetzer.github.io/econpol24"
+  copyright_year: "2024"
+
+university:
+  name: Vienna University of Economics and Business
+  department: Department of Economics
+  url: "https://www.wu.ac.at"
+  
