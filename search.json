@@ -459,7 +459,7 @@
     "href": "slides/01_introduction/index.html#schedule",
     "title": "    Economic Policy Visualization",
     "section": "Schedule",
-    "text": "Schedule\n\n  \n  \n\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nContent\nAssignment\n\n\n\n\nOct 07, 2024\n10:00-12:00\nTC.4.02\nIntroduction\n\n\n\nOct 14, 2024\n10.30-12.30\nTC.4.18\nData\n\n\n\nOct 21, 2024\n10.30-12.30\nTC.4.18\nVisualization\n\n\n\nOct 28, 2024\n10:00-12:00\nTC.3.07\nIncome · Geometries\n\n\n\nNov 04, 2024\n10:00-12:00\nD2.0.392\nWealth · Scales\n\n\n\nNov 11, 2024\n10:00-12:00\nD2.0.030\nMobility · Colors\n\n\n\nNov 18, 2024\n10:00-12:00\nTC.5.12\nGrowth · Labels\n\n\n\nNov 25, 2024\n10:00-12:00\nTC.5.18\nPolicy · Maps\n\n\n\nDec 02, 2024\n10:00-12:00\nTC.4.14\nPower · Themes\n\n\n\nDec 09, 2024\n10:00-12:00\nTC.3.07\nStudent presentations\n\n\n\nDec 16, 2024\n10:00-12:00\nTC.4.14\nStudent presentations\n\n\n\nJan 13, 2025\n10:00-12:00\nTC.3.07\nRound-up"
+    "text": "Schedule\n\n  \n  \n\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nContent\nAssignment\n\n\n\n\nOct 07, 2024\n10:00-12:00\nTC.4.02\nIntroduction\n\n\n\nCircle Xmark\n\n\n\n\n\n\nOct 14, 2024\n10.30-12.30\nTC.4.18\nData\n\n\n\nPen\n\n\n\n\n\n\nOct 21, 2024\n10.30-12.30\nTC.4.18\nVisualization\n\n\n\nCircle Xmark\n\n\n\n\n\n\nOct 28, 2024\n10:00-12:00\nTC.3.07\nIncome · Geometries\n\n\n\nCircle Xmark\n\n\n\n\n\n\nNov 04, 2024\n10:00-12:00\nD2.0.392\nWealth · Scales\n\n\n\nPen\n\n\n\n\n\n\nNov 11, 2024\n10:00-12:00\nD2.0.030\nMobility · Colors\n\n\n\nCircle Xmark\n\n\n\n\n\n\nNov 18, 2024\n10:00-12:00\nTC.5.12\nGrowth · Labels\n\n\n\nPen\n\n\n\n\n\n\nNov 25, 2024\n10:00-12:00\nTC.5.18\nPolicy · Maps\n\n\n\nCircle Xmark\n\n\n\n\n\n\nDec 02, 2024\n10:00-12:00\nTC.4.14\nPower · Themes\n\n\n\nPen\n\n\n\n\n\n\nDec 09, 2024\n10:00-12:00\nTC.3.07\nStudent presentations\n\n\n\nCircle Xmark\n\n\n\n\n\n\nDec 16, 2024\n10:00-12:00\nTC.4.14\nStudent presentations\n\n\n\nCircle Xmark\n\n\n\n\n\n\nJan 13, 2025\n10:00-12:00\nTC.3.07\nRound-up\n\n\n\nCircle Xmark"
   },
   {
     "objectID": "slides/01_introduction/index.html#assignments",
@@ -473,7 +473,7 @@
     "href": "slides/01_introduction/index.html#chart-report",
     "title": "    Economic Policy Visualization",
     "section": "Chart & Report",
-    "text": "Chart & Report\n\n\nChart presentation\n\n\nResearch question Which economic policy question do you want to answer with your chart?\nData\nChart\nConclusion What can we learn from the data visualization for economic policy?\n\n\nDeadline: Date of the presentation\n\nRMarkdown (or Quarto) Report\n\n\nTitle\nAuthor\nIntroduction\nResearch question\nData\nResult\nConclusion\nCode\n\n\nDeadline: June 30, 2023"
+    "text": "Chart & Report\n\n\nChart presentation\n\n\nResearch question Which economic policy question do you want to answer with your chart?\nData\nChart\nConclusion What can we learn from the data visualization for economic policy?\n\n\nDeadline: Date of the presentation\n\nRMarkdown (or Quarto) Report\n\n\nTitle\nAuthor\nIntroduction\nResearch question\nData\nResult\nConclusion\nCode\n\n\nDeadline: January 31, 2025"
   },
   {
     "objectID": "slides/01_introduction/index.html#grading",
@@ -481,6 +481,13 @@
     "title": "    Economic Policy Visualization",
     "section": "Grading",
     "text": "Grading\n  Assignments: 30% (0-10 points for each visualization)  \n\n Chart presentation: 30% (0-20 points for the quality of the presentation, 0-10 for the preliminary chart)  \n\n\n Written report: 40% (0-40 points for the report and the final chart)\n\n\n\n\n   100-90: Excellent      89-80: Good      79-65: Satisfactory      64-50: Sufficient  All single tasks have to be passed (50% threshold each)."
+  },
+  {
+    "objectID": "slides/01_introduction/index.html#visualizations-by-students",
+    "href": "slides/01_introduction/index.html#visualizations-by-students",
+    "title": "    Economic Policy Visualization",
+    "section": "Visualizations by students",
+    "text": "Visualizations by students"
   },
   {
     "objectID": "slides/01_introduction/index.html#feedback-cooperation-and-help",
