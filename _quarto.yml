@@ -14,6 +14,13 @@ website:
   title: "PI 0750 Economic Policy"
   site-url: "https://mschnetzer.github.io/econpol24/"
   
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "<span style='font-size:0.8em;'>**Registration via LPIS opens on 3 October 2024**</span>"
+    type: primary
+    position: above-navbar
+
   navbar:
     pinned: true
     background: light

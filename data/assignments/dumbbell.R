@@ -13,7 +13,7 @@ filtered <- raw |> filter(str_length(geo) < 3, TIME_PERIOD %in% c(2015,2023))
 # Not all countries have both years available -> filter those with both values!
 filtered |> count(geo)
 plotdata <- filtered |> filter(n() > 1, .by = geo) |> 
-  mutate(geo = fct_reorder(geo, values, .desc = T))
+  mutate(geo = fct_reorder2(geo, TIME_PERIOD, values, .desc = T))
 
 plotdata |> 
   ggplot(aes(x = geo, y = values)) +

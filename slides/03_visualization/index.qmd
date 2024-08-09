@@ -9,7 +9,7 @@ title: |
     {{< var course.subtitle >}}
 author: "{{< var instructor.name >}}"  
 subtitle: Visualization
-date: March 20, 2023
+date: October 21, 2024
 date-format: long
 from: markdown+emoji
 bibliography: ../../data/lit/wipol_advanced.bib

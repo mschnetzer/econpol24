@@ -9,7 +9,7 @@ title: |
     {{< var course.subtitle >}}
 author: "{{< var instructor.name >}}"  
 subtitle: Introduction
-date: March 06, 2023
+date: October 07, 2024
 date-format: long
 from: markdown+emoji
 bibliography: ../../data/lit/wipol_advanced.bib
@@ -105,13 +105,12 @@ schedule <- read_xlsx("../../data/schedule/schedule.xlsx")
 ```{r table}
 #| echo: false
 #| results: 'asis'
+library(gtExtras)
 schedule |> arrange(Date) |> select(-c(Chart,Slides,Code,Data)) |>
-  mutate(Assignment = ifelse(!is.na(Assignment),
-        glue('<i class="fa-solid fa-pen fa-lg red"></i>'),
-        glue('<i class="fa-solid fa-pen fa-lg grey200"></i>')),
+  mutate(Assignment = ifelse(!is.na(Assignment), "pen", "circle-xmark"), 
         Date = format(Date, '%b %d, %Y')) |>
-  mutate(Assignment = map(Assignment, gt::html)) |>
-        gt() |>
+        gt() |> 
+        fmt_icon(Assignment, height = "1em", fill_color = c("pen" = "black", "circle-xmark" = "#bdbebd")) |> 
         opt_table_font(font = google_font("Roboto Slab")) |>
         tab_options(
               column_labels.font.size = "20px",
@@ -121,7 +120,7 @@ schedule |> arrange(Date) |> select(-c(Chart,Slides,Code,Data)) |>
                   style = cell_text(weight = 200)) |>
         fmt_index(columns = Content, pattern = "{x}.") |>
         cols_width(1:3 ~pct(15),
-                    4 ~ pct(30),
+                    4 ~ pct(25),
                     5 ~ pct(15)) |>
         cols_align(align = "left") |>
         cols_align(align = "center", columns = 5) |>
@@ -163,7 +162,7 @@ The raw data for the figures are available as CSV files. The charts should then 
 - Conclusion
 - Code
 :::
-[**Deadline: June 30, 2023**]{.marker-hl}
+[**Deadline: January 31, 2025**]{.marker-hl}
 :::
 :::
 
@@ -189,11 +188,29 @@ The raw data for the figures are available as CSV files. The charts should then 
 ::: aside
 ::: { style="font-size:1.5rem" }
 {{< fa regular face-grin-stars >}} &nbsp; 100-90: Excellent &emsp;
-{{< fa regular face-smile >}} &nbsp; 89-80: Good &emsp;
+{{< fa regular face-grin >}} &nbsp; 89-80: Good &emsp;
 {{< fa regular face-meh >}} &nbsp; 79-65: Satisfactory &emsp;
-{{< fa regular face-rolling-eyes >}} &nbsp; 64-50: Sufficient <br>
+{{< fa regular face-grimace >}} &nbsp; 64-50: Sufficient <br>
 [All single tasks have to be passed]{.marker-hl} (50% threshold each).
 :::
+:::
+
+## Visualizations by students {.smaller}
+
+::: {style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));grid-gap: 1em;"}
+
+![](img/gall1.png){group="my-gallery"}
+
+![](img/gall2.png){group="my-gallery"}
+
+![](img/gall3.png){group="my-gallery"}
+
+![](img/gall4.png){group="my-gallery"}
+
+![](img/gall5.png){group="my-gallery"}
+
+![](img/gall6.png){group="my-gallery"}
+
 :::
 
 ## Feedback, cooperation and help {.smaller}

@@ -9,7 +9,7 @@ title: |
     {{< var course.subtitle >}}
 author: "{{< var instructor.name >}}"  
 subtitle: Data
-date: March 13, 2023
+date: October 14, 2024
 date-format: long
 from: markdown+emoji
 bibliography: ../../data/lit/wipol_advanced.bib
@@ -144,7 +144,7 @@ Illustrations by [https://openpeeps.com](https://openpeeps.com).
 ```{r packages}
 #| echo: false
 #| warning: false
-librarian::shelf(tidyverse, knitr, kableExtra, msthemes, datasauRus)
+librarian::shelf(tidyverse, knitr, kableExtra, datasauRus)
 options(knitr.kable.NA = '')
 ```
 
@@ -388,7 +388,7 @@ scale_x_continuous(limits = c(0,20)) +
 scale_y_continuous(limits = c(0,15)) +
 labs(x = NULL, y = NULL) +
 coord_cartesian(expand = F) +
-theme_ms() +
+theme_minimal() +
 theme(strip.text = element_blank(),
 axis.text = element_blank(),
 panel.border = element_rect(linewidth = 0.1, fill = NA))
@@ -407,7 +407,7 @@ datasaurus_dozen |>
   scale_color_manual(values = c("#C32402", "#0234C3")) +
   facet_wrap(~dataset, ncol = 2) +
   labs(x=NULL, y=NULL) +
-  theme_ms() +
+  theme_minimal() +
   theme(legend.position = "none",
   strip.text = element_blank(),
   panel.border = element_rect(linewidth = 0.1, fill = NA))
@@ -437,7 +437,7 @@ datasaurus_dozen |>
   geom_text(aes(x = 50, y = -10, label = glue::glue("Cor.: {round(cor(x,y),2)}")), hjust = 0.5) +
   facet_wrap(~dataset, nrow = 2) +
   labs(x=NULL, y=NULL) +
-  theme_ms() +
+  theme_minimal() +
   theme(legend.position = "none",
   strip.text = element_blank(),
   axis.text = element_blank(),
