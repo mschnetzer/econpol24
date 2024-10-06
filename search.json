@@ -469,11 +469,18 @@
     "text": "Assignments\nAssignment 1 provides the setup of the R infrastructure that is required in this course. There are no points for this assignment.\nAssignments 2 to 4 are recreations of examplary figures. These examples are related to figures that are discussed in class. Students should then try to reproduce the plots at home and improve their individual coding skills.\nThe raw data for the figures are available as CSV files. The charts should then be uploaded to the learning platform before 9 a.m. on the day of the deadline."
   },
   {
+    "objectID": "slides/01_introduction/index.html#assignments-1",
+    "href": "slides/01_introduction/index.html#assignments-1",
+    "title": "    Economic Policy Visualization",
+    "section": "Assignments",
+    "text": "Assignments"
+  },
+  {
     "objectID": "slides/01_introduction/index.html#chart-report",
     "href": "slides/01_introduction/index.html#chart-report",
     "title": "    Economic Policy Visualization",
     "section": "Chart & Report",
-    "text": "Chart & Report\n\n\nChart presentation\n\n\nResearch question Which economic policy question do you want to answer with your chart?\nData\nChart\nConclusion What can we learn from the data visualization for economic policy?\n\n\nDeadline: Date of the presentation\n\nRMarkdown (or Quarto) Report\n\n\nTitle\nAuthor\nIntroduction\nResearch question\nData\nResult\nConclusion\nCode\n\n\nDeadline: January 31, 2025"
+    "text": "Chart & Report\n\n\nChart presentation\n\n\nResearch question Which economic policy question do you want to answer with your chart?\nData\nChart\nConclusion What can we learn from the data visualization for economic policy?\n\n\nDeadline: December 9, 2024\n\nRMarkdown (or Quarto) Report\n\n\nTitle\nAuthor\nIntroduction\nResearch question\nData\nResult\nConclusion\nCode\n\n\nDeadline: January 31, 2025"
   },
   {
     "objectID": "slides/01_introduction/index.html#grading",
