@@ -135,6 +135,18 @@ Assignments 2 to 4 are recreations of examplary figures. These examples are rela
 
 The raw data for the figures are available as CSV files. The charts should then be uploaded to the [learning platform](https://learn.wu.ac.at) [**before 9 a.m.**]{.marker-hl} on the day of the deadline.
 
+## Assignments {.medium}
+
+::: {.r-stack}
+
+![](../../data/assignments/lines.png){.fragment width="800"} 
+
+![](../../data/assignments/dumbbell.png){.fragment width="800"}
+
+![](../../data/assignments/waffle.png){.fragment width="1000"}
+
+:::
+
 
 ## Chart & Report {.smaller}
 
@@ -147,7 +159,7 @@ The raw data for the figures are available as CSV files. The charts should then 
 - Chart 
 - Conclusion [What can we learn from the data visualization for economic policy?]{style="font-size:1.3rem"}
 :::
-[**Deadline: Date of the presentation**]{.marker-hl}
+[**Deadline: December 9, 2024**]{.marker-hl}
 :::
 
 ::: {.column width="50%"}
