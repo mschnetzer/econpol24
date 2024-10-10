@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/quarto-contrib/lord-icon-bundle-3.4.2/bundle.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Dr.&nbsp;Matthias Schnetzer">
   <meta name="dcterms.date" content="2024-10-14">
@@ -483,14 +483,79 @@ Dr.&nbsp;Matthias Schnetzer
 </div>
 </section></section>
 <section>
-<section id="from-conceptual-disparities-to-data" class="title-slide slide level1 center">
-<h1>From conceptual disparities to data</h1>
+<section id="disparities-in-data-acquisition-and-definitions" class="title-slide slide level1 center">
+<h1>Disparities in data acquisition and definitions</h1>
 <center>
 <img data-src="../../data/img/avatar_laptop.png" height="350">
 </center>
 <div class="footer">
 
 </div>
+</section>
+<section id="administrative-and-survey-data" class="slide level2">
+<h2>Administrative and survey data</h2>
+<div class="tbl-classic">
+<table class="caption-top">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Administrative Data</strong></th>
+<th><strong>Survey Data</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Purpose</strong></td>
+<td>Collected also for non-statistical purposes (e.g., taxation, regulation).</td>
+<td>Collected specifically for statistical analysis.</td>
+</tr>
+<tr class="even">
+<td><strong>Coverage</strong></td>
+<td>Can cover large populations (e.g., entire tax base or workforce).</td>
+<td>Often based on samples, though some are nationally representative.</td>
+</tr>
+<tr class="odd">
+<td><strong>Frequency</strong></td>
+<td>Often collected regularly (e.g., monthly, annually).</td>
+<td>Can be periodic (quarterly, annually, sometimes even every few years).</td>
+</tr>
+<tr class="even">
+<td><strong>Accuracy</strong></td>
+<td>High for administrative processes (e.g., tax filing) but may not capture informal sectors (many estimations!).</td>
+<td>High precision for sample groups but subject to sampling error and response bias.</td>
+</tr>
+<tr class="odd">
+<td><strong>Timeliness</strong></td>
+<td>May have delays in processing or availability for statistical use.</td>
+<td>Data collection timelines can be long, but surveys are often designed for quick use.</td>
+</tr>
+<tr class="even">
+<td><strong>Cost</strong></td>
+<td>Generally lower cost, since the data is already being collected.</td>
+<td>Higher cost, as it requires specific planning, data collection, and processing.</td>
+</tr>
+<tr class="odd">
+<td><strong>Adaptability</strong></td>
+<td>Limited flexibility; cannot be easily tailored for specific statistical needs.</td>
+<td>Can be customized to gather specific data, but requires careful design and execution.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="survey-modes" class="slide level2 smaller">
+<h2>Survey modes</h2>
+<ul>
+<li><span class="secfont hl hl-dred">Survey modes:</span> Computer-assisted personal interviews (CAPI), telephone interview (CATI), web interviews (CAWI)</li>
+<li><span class="secfont hl hl-dred">Mixed-mode survey:</span> <em>Improve coverage</em> (several modes to contact hard-to-reach respondents) and <em>reduce non-response</em> (respondents may choose preferential mode)</li>
+<li><span class="secfont hl hl-dred">Caveats:</span> <em>Selection effects</em>, i.e.&nbsp;different types of respondents choose different modes, and <em>measurement effects</em>, i.e.&nbsp;respondents give different answers in different modes <span class="citation" data-cites="vannieuwenhuyze:2010">(<a href="#/bibliography" role="doc-biblioref" onclick="">Vannieuwenhuyze et al., 2010</a>)</span></li>
+</ul>
+<p>The survey mode might be important for critical questions, for instance, party preferences. <span class="citation" data-cites="aichholzer:2018">Aichholzer (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span> finds that survey responses of voting for far right FPÖ is higher in CAWI among other things due to lower effects of social desirability.</p>
 </section>
 <section id="income-according-to-canberra-group" class="slide level2 smaller">
 <h2>Income according to Canberra Group</h2>
@@ -690,7 +755,7 @@ Dr.&nbsp;Matthias Schnetzer
 <thead>
 <tr class="header">
 <th>Income Type</th>
-<th>Aggregate time series</th>
+<th>Long-term aggregate</th>
 <th>Long-term distribution</th>
 <th>Short-term distribution</th>
 </tr>
@@ -700,31 +765,31 @@ Dr.&nbsp;Matthias Schnetzer
 <td>Employee income</td>
 <td><span class="hl hl-dred">WTD</span> <span class="hl hl-dred">SSD</span></td>
 <td><span class="hl hl-dred">WTD</span> <span class="hl hl-dred">SSD</span></td>
-<td><span class="hl hl-dred">WTD</span> <span class="hl hl-dred">SSD</span> <span class="hl hl-blue">SES</span> <span class="hl hl-blue">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
+<td><span class="hl hl-dred">WTD</span> <span class="hl hl-dred">SSD</span> <span class="hl hl-blue">SES</span> <span class="hl hl-diagonal">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
 </tr>
 <tr class="even">
 <td>Self-employed</td>
 <td><span class="hl hl-dred">ITD</span> <span class="hl hl-dred">(IWITD)</span></td>
-<td></td>
-<td><span class="hl hl-dred">ITD</span> <span class="hl hl-dred">(IWITD)</span> <span class="hl hl-blue">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
+<td><span class="hl hl-dred">ITD</span> <span class="hl hl-dred">(IWITD)</span></td>
+<td><span class="hl hl-dred">ITD</span> <span class="hl hl-dred">(IWITD)</span> <span class="hl hl-diagonal">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
 </tr>
 <tr class="odd">
 <td>Property income</td>
 <td><span class="hl hl-dred">CGT</span> <span class="hl hl-dred">(ITD)</span></td>
 <td></td>
-<td><span class="hl hl-blue">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
+<td><span class="hl hl-diagonal">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
 </tr>
 <tr class="even">
 <td>Transfers</td>
 <td><span class="hl hl-dred">Various admin. sources</span></td>
 <td></td>
-<td><span class="hl hl-blue">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
+<td><span class="hl hl-diagonal">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
 </tr>
 <tr class="odd">
 <td>Disposable household income</td>
 <td><span class="hl hl-dred">SNA</span></td>
 <td></td>
-<td><span class="hl hl-blue">HBS</span> <span class="hl hl-blue">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
+<td><span class="hl hl-blue">HBS</span> <span class="hl hl-diagonal">EU-SILC</span> <span class="hl hl-blue">HFCS</span></td>
 </tr>
 </tbody>
 </table>
@@ -1088,11 +1153,14 @@ IV
 </div>
 </div>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-aichholzer:2018" class="csl-entry" role="listitem">
+Aichholzer, Julian (2018). Verschiedene Befragungsmodi, Unterschiedliche Ergebnisse? Moduseffekte Und Soziale Erw<span>ü</span>nschtheit Am Beispiel Wahl Der FP<span>Ö</span>. <em><span>Ö</span>sterreichische Zeitschrift f<span>ü</span>r Politikwissenschaft</em>, <em>47</em>(2), 21–33. DOI: <a href="https://doi.org/10.15203/OZP.2017.VOL47ISS2">10.15203/OZP.2017.VOL47ISS2</a>
+</div>
 <div id="ref-angel:2019" class="csl-entry" role="listitem">
-Angel, Stefan/Disslbacher, Franziska/Humer, Stefan/Schnetzer, Matthias (2019). What did you really earn last year?: Explaining measurement error in survey income data. <em>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em>. DOI: <a href="https://doi.org/10.1111/rssa.12463">10.1111/rssa.12463</a>
+Angel, Stefan/Disslbacher, Franziska/Humer, Stefan/Schnetzer, Matthias (2019). What Did You Really Earn Last Year?: Explaining Measurement Error in Survey Income Data. <em>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em>. DOI: <a href="https://doi.org/10.1111/rssa.12463">10.1111/rssa.12463</a>
 </div>
 <div id="ref-angrist:2017" class="csl-entry" role="listitem">
-Angrist, Joshua/Azoulay, Pierre/Ellison, Glenn/Hill, Ryan/Lu, Susan Feng (2017). Economic research evolves: Fields and styles. <em>American Economic Review</em>, <em>107</em>(5), 293–297. DOI: <a href="https://doi.org/10.1257/aer.p20171117">10.1257/aer.p20171117</a>
+Angrist, Joshua/Azoulay, Pierre/Ellison, Glenn/Hill, Ryan/Lu, Susan Feng (2017). Economic Research Evolves: Fields and Styles. <em>American Economic Review</em>, <em>107</em>(5), 293–297. DOI: <a href="https://doi.org/10.1257/aer.p20171117">10.1257/aer.p20171117</a>
 </div>
 <div id="ref-brice:2019" class="csl-entry" role="listitem">
 Brice, Brandon D./Montesinos-Yufa, Hugo M. (2019). <em>The era of empirical evidence</em>. Mimeo.
@@ -1101,10 +1169,13 @@ Brice, Brandon D./Montesinos-Yufa, Hugo M. (2019). <em>The era of empirical evid
 Disslbacher, Franziska/Ertl, Michael/List, Emanuel/Mokre, Patrick/Schnetzer, Matthias (2020). <em>On top of the top - adjusting wealth distributions using national rich lists</em> (Working Paper Series No. 20). INEQ.
 </div>
 <div id="ref-gorman:2014" class="csl-entry" role="listitem">
-Gorman, Kristen B./Williams, Tony D./Fraser, William R. (2014). Ecological sexual dimorphism and environmental variability within a community of antarctic penguins (genus pygoscelis). <em><span>PLoS</span> <span>ONE</span></em>, <em>9</em>(3), e90081. DOI: <a href="https://doi.org/10.1371/journal.pone.0090081">10.1371/journal.pone.0090081</a>
+Gorman, Kristen B./Williams, Tony D./Fraser, William R. (2014). Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis). <em><span>PLoS</span> <span>ONE</span></em>, <em>9</em>(3), e90081. DOI: <a href="https://doi.org/10.1371/journal.pone.0090081">10.1371/journal.pone.0090081</a>
 </div>
 <div id="ref-un:2011" class="csl-entry" role="listitem">
 United Nations (2011). <em>Canberra group handbook on household income statistics</em> (2nd ed.). Geneva: United Nations.
+</div>
+<div id="ref-vannieuwenhuyze:2010" class="csl-entry" role="listitem">
+Vannieuwenhuyze, J./Loosveldt, G./Molenberghs, G. (2010). A Method for Evaluating Mode Effects in Mixed-Mode Surveys. <em>Public Opinion Quarterly</em>, <em>74</em>(5), 1027–1045. DOI: <a href="https://doi.org/10.1093/poq/nfq059">10.1093/poq/nfq059</a>
 </div>
 </div>
 </section></section>
