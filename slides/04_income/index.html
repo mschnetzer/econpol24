@@ -7,13 +7,11 @@
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="’Dr.&nbsp;Matthias Schnetzer‘">
-  <meta name="dcterms.date" content="2024-10-07">
+  <meta name="author" content="Dr.&nbsp;Matthias Schnetzer">
+  <meta name="dcterms.date" content="2024-10-28">
   <title>PI 0750 Economic Policy –      Economic Policy Visualization</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +30,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -324,6 +342,10 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="../../site_libs/d3-4.5.0/d3.min.js"></script>
+  <script src="../../site_libs/sankey-1/sankey.js"></script>
+  <script src="../../site_libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
@@ -332,808 +354,260 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title"><p><span class="fa-stack course-icon"> <i class="fas fa-comment fa-stack-2x blue"></i> <i class="fas fa-chart-column fa-stack-1x fa-inverse" style="margin-top:-5pt"></i> </span><br> Economic Policy Visualization</p></h1>
-  <p class="subtitle">Introduction</p>
+  <p class="subtitle">Income · Geometries</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-’Dr.&nbsp;Matthias Schnetzer‘ 
+Dr.&nbsp;Matthias Schnetzer 
 </div>
 </div>
 </div>
 
-  <p class="date">October 7, 2024</p>
+  <p class="date">October 28, 2024</p>
 </section>
-<section id="course-info" class="slide level2 smaller">
-<h2>Course info</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="img/profile-pic.jpg" class="absolute" style="display: inline-block; width: 150px; height: 150px;border-radius:50%;top: 20%; left: 7%; "></p>
-<div class="absolute" style="display: block; font-size: 5.5rem;top: 60%; left: 5%; ">
-<p><span class="fa-stack"> <i class="fas fa-comment fa-stack-2x blue"></i> <i class="fas fa-chart-column fa-stack-1x fa-inverse" style="margin-top:-5pt"></i> </span></p>
-</div>
-</div><div class="column iconlist" style="width:70%;">
-<div class="absolute" style="top: 120px; ">
+<section id="distribution-of-income-in-economic-policy" class="slide level2 smaller">
+<h2>Distribution of income in economic policy</h2>
 <ul>
-<li><i class="fa-solid fa-user icon"></i> Matthias Schnetzer</li>
-<li><i class="fa-solid fa-building icon"></i> Vienna Chamber of Labour &amp; WU Vienna</li>
-<li><i class="fa-solid fa-envelope icon"></i> <a href="mailto:mschnetz@wu.ac.at"><span class="email">mschnetz@wu.ac.at</span></a></li>
-<li><i class="fa-solid fa-globe icon"></i> <a href="https://mschnetzer.github.io">https://mschnetzer.github.io</a></li>
-<li><i class="fa-brands fa-twitter icon"></i> <a href="https://www.twitter.com/matschnetzer">matschnetzer</a></li>
-</ul>
-<div>
-<br>
-</div>
+<li>Income (compensation for labor and investment) is
 <ul>
-<li><i class="fa-solid fa-calendar-alt icon"></i> Oct 7, 2024 – Jan 13, 2025</li>
-<li><i class="fa-solid fa-clock icon"></i> 10:00–12:00</li>
-<li><i class="fa-solid fa-location-dot icon"></i> WU Campus</li>
-<li><i class="fa-solid fa-link icon"></i> <a href="https://mschnetzer.github.io/econpol24">https://mschnetzer.github.io/econpol24</a></li>
+<li>production cost in <span class="hl hl-dred">supply-side</span> approach</li>
+<li>determinant for consumption in <span class="hl hl-blue">demand-side</span> approach</li>
+</ul></li>
+<li>In neoclassical economics, income inequality arises from differences in marginal productivity and might <span class="hl hl-dred">stimulate</span> economic growth due to differential savings rates (and thus loanable funds), investment, and incentives for effort <span class="citation" data-cites="josifidis:2018">(<a href="#/bibliography" role="doc-biblioref" onclick="">Josifidis/Supic, 2018</a>)</span>.</li>
+<li>In (Post-)Keynesian economics, income inequality is the result of institutional settings, power relations, etc. Inequality <span class="hl hl-blue">harms</span> economic growth in most of these models due to detrimental effects on aggregate demand <span class="citation" data-cites="kurz:2010">(<a href="#/bibliography" role="doc-biblioref" onclick="">Kurz/Salvadori, 2010</a>)</span>.</li>
 </ul>
-</div>
+</section>
+<section id="functional-distribution" class="slide level2 medium">
+<h2>Functional distribution</h2>
+<p>Income accounts in the System of National Accounts show primary (from production) and secondary (from redistribution) income flows. It is also the base for functional distribution:</p>
+<div class="columns secfont" style="font-size:1.5rem;">
+<div class="column" style="width:60%;">
+<p>Gross domestic product (GDP) at market prices <br> <span class="math inline">\(+\)</span> Primary incomes receivable from the rest of world <br> <span class="math inline">\(-\)</span> Primary incomes payable to the rest of world</p>
+<hr>
+<p><span class="math inline">\(=\)</span> Gross national income (GNI) at market prices <br> <span class="math inline">\(-\)</span> Consumption of fixed capital</p>
+<hr>
+<p><span class="math inline">\(=\)</span> Net national income <strong>at market prices</strong> <br> <span class="math inline">\(-\)</span> Taxes on products <br> <span class="math inline">\(+\)</span> Subsidies on products</p>
+<hr>
+<p><span class="math inline">\(=\)</span> Net national income <strong>at factor cost</strong></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:30%;">
+<p><br><br> <span class="hl hl-dred">← Rest of World</span><br><br><br> <span class="hl hl-blue">← Depreciation</span><br><br><br> <span class="hl hl-green">← Government</span><br><br> <span class="hl hl-brown">← Production factors</span></p>
 </div></div>
 </section>
-<section id="about-this-course" class="slide level2 medium">
-<h2>About this course</h2>
-<div class="secfont" style="font-size:2.3rem;text-align:center;">
-<p>“A picture is worth a thousand words”</p>
-</div>
-<p>This course approaches contemporary issues of economic policy by analyzing innovative or iconic data visualizations. We analyse selected illustrations, discuss the underlying data, the theoretical background and policy implications. We will assemble plots in class and study the basics of data visualization.</p>
-<p>You will gain:</p>
-<ul>
-<li>an overview of <span class="marker-hl">contemporary debates in economic policy</span></li>
-<li>a basic understanding of <span class="marker-hl">principles of data visualization</span></li>
-<li>knowledge how to <span class="marker-hl">enrich academic publications</span> with informative graphs</li>
-</ul>
-</section>
-<section id="who-are-you" class="slide level2">
-<h2>Who are you?</h2>
-<p><img data-src="img/group3.png" class="absolute" style="left: 0%; bottom: 0%; height: 400px; "> <img data-src="img/group2.png" class="absolute" style="left: 15%; bottom: 0%; height: 400px; "> <img data-src="img/group1.png" class="absolute" style="left: 33%; bottom: 0%; height: 400px; "> <img data-src="img/group4.png" class="absolute" style="left: 50%; bottom: 0%; height: 400px; "></p>
-<p><span class="bubble bubble-bottom-right absolute" style="max-width:400px;--bubcol: var(--bubcol-dred); font-size:1.8rem;top: 15%; right: 0%; ">What do you expect of this course? Do you already have some coding experience in R?</span></p>
-</section>
-<section id="schedule" class="slide level2">
-<h2>Schedule</h2>
-<div id="aiwvfirakq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-  <style>@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#aiwvfirakq table {
-  font-family: 'Roboto Slab', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#aiwvfirakq thead, #aiwvfirakq tbody, #aiwvfirakq tfoot, #aiwvfirakq tr, #aiwvfirakq td, #aiwvfirakq th {
-  border-style: none;
-}
-
-#aiwvfirakq p {
-  margin: 0;
-  padding: 0;
-}
-
-#aiwvfirakq .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#aiwvfirakq .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#aiwvfirakq .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#aiwvfirakq .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#aiwvfirakq .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#aiwvfirakq .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#aiwvfirakq .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#aiwvfirakq .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#aiwvfirakq .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#aiwvfirakq .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#aiwvfirakq .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#aiwvfirakq .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#aiwvfirakq .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#aiwvfirakq .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#aiwvfirakq .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#aiwvfirakq .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#aiwvfirakq .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#aiwvfirakq .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#aiwvfirakq .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#aiwvfirakq .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_left {
-  text-align: left;
-}
-
-#aiwvfirakq .gt_center {
-  text-align: center;
-}
-
-#aiwvfirakq .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#aiwvfirakq .gt_font_normal {
-  font-weight: normal;
-}
-
-#aiwvfirakq .gt_font_bold {
-  font-weight: bold;
-}
-
-#aiwvfirakq .gt_font_italic {
-  font-style: italic;
-}
-
-#aiwvfirakq .gt_super {
-  font-size: 65%;
-}
-
-#aiwvfirakq .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#aiwvfirakq .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#aiwvfirakq .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#aiwvfirakq .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#aiwvfirakq .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#aiwvfirakq .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#aiwvfirakq .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#aiwvfirakq .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#aiwvfirakq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-  
-<table class="gt_table caption-top" data-quarto-postprocess="true" style="table-layout:fixed;width:100%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 25%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header gt_col_headings">
-<th id="Date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Date</th>
-<th id="Time" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Time</th>
-<th id="Room" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Room</th>
-<th id="Content" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Content</th>
-<th id="Assignment" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Assignment</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 07, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.02</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Introduction</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 14, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10.30-12.00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.18</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Data</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 21, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10.30-12.00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.18</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Visualization</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 28, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.3.07</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Income · Geometries</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 04, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">D2.0.392</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Wealth · Scales</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 11, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">D2.0.030</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Mobility · Colors</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 18, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.5.12</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Growth · Labels</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 25, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.5.18</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Taxation · Maps</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Dec 02, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.14</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Policy · Themes</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Dec 09, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.3.07</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Student presentations</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Dec 16, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.14</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Student presentations</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Jan 13, 2025</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.3.07</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Round-up</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</section>
-<section id="assignments" class="slide level2 medium">
-<h2>Assignments</h2>
-<p>Assignment 1 provides the setup of the R infrastructure that is required in this course. There are no points for this assignment.</p>
-<p>Assignments 2 to 4 are recreations of examplary figures. These examples are related to figures that are discussed in class. Students should then try to <span class="marker-hl">reproduce the plots at home</span> and improve their individual coding skills.</p>
-<p>The raw data for the figures are available as CSV files. The charts should then be uploaded to the <a href="https://learn.wu.ac.at">learning platform</a> <span class="marker-hl"><strong>before 9 a.m.</strong></span> on the day of the deadline.</p>
-</section>
-<section id="assignments-1" class="slide level2 medium">
-<h2>Assignments</h2>
-<div class="r-stack">
-<p><img data-src="../../data/assignments/lines.png" class="fragment" width="800"></p>
-<p><img data-src="../../data/assignments/dumbbell.png" class="fragment" width="800"></p>
-<p><img data-src="../../data/assignments/waffle.png" class="fragment" width="1000"></p>
-</div>
-</section>
-<section id="chart-report" class="slide level2 smaller">
-<h2>Chart &amp; Report</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="chart-presentation">Chart presentation</h3>
-<div class="altlist">
-<ul>
-<li>Research question <span style="font-size:1.3rem">Which economic policy question do you want to answer with your chart?</span></li>
-<li>Data</li>
-<li>Chart</li>
-<li>Conclusion <span style="font-size:1.3rem">What can we learn from the data visualization for economic policy?</span></li>
-</ul>
-</div>
-<p><span class="marker-hl"><strong>Deadline: December 9, 2024</strong></span></p>
-</div><div class="column" style="width:50%;">
-<h3 id="rmarkdown-or-quarto-report">RMarkdown (or Quarto) Report</h3>
-<div class="altlist">
-<ul>
-<li>Title</li>
-<li>Author</li>
-<li>Introduction</li>
-<li>Research question</li>
-<li>Data</li>
-<li>Result</li>
-<li>Conclusion</li>
-<li>Code</li>
-</ul>
-</div>
-<p><span class="marker-hl"><strong>Deadline: January 31, 2025</strong></span></p>
-</div></div>
-</section>
-<section id="grading" class="slide level2 medium">
-<h2>Grading</h2>
-<p><br> <i class="fa-solid fa-home icon"></i> Assignments: 30% <span class="grey600" style="font-size:1.5rem;">(0-10 points for each visualization)</span> <br> <br></p>
+<section id="income-accounts-for-austria-2021" class="slide level2 medium">
+<h2>Income accounts for Austria, 2021</h2>
+<div id="htmlwidget-16513931972dbfcfaf86" style="width:1000px;height:500px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-16513931972dbfcfaf86">{"x":{"links":{"source":[0,0,0,0,1,1,2,2,2,2],"target":[1,3,4,5,2,6,7,8,9,10],"value":[319.6,99.40000000000001,54.3,0.2,234.8,84.8,138.6,27.2,29,40],"group":["linkcol","linkcol","linkcol","linkcol","linkcol","linkcol","linkcol","linkcol","linkcol","linkcol"]},"nodes":{"name":["Gross domestic product  (MP)","Net national income (FC)","Compensation of employees","Consumption of fixed capital","Taxes on products – Subsidies","Primary income with rest of world (ROW)","Net operating surplus + mixed income","Net wages and salaries","Wage tax","Social security cont. Employees","Social security cont. Employers"],"group":["nocol","NNI","CE","nocol","nocol","nocol","nocol","nocol","nocol","nocol","nocol"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal() .domain([\"NNI\", \"CE\", \"nocol\", \"linkcol\"]) \n            .range([\"#d03161\", \"#5d8198\", \"#d4d4d4\", \"#e4e4e4\"])","fontSize":14,"fontFamily":"Roboto Slab","nodeWidth":15,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":false}},"evals":[],"jsHooks":{"render":[{"code":"\n  function(el) { \n    var nodeWidth = this.sankey.nodeWidth();\n    var links = this.sankey.links();\n        \n    links.forEach((d, i) => {\n      var startX = d.source.x + nodeWidth;\n      var endX = d.target.x;\n      \n      var startY = d.source.y + d.sy + d.dy / 2;\n      var endY = d.target.y + d.ty + d.dy / 2;\n      \n      d3.select(el).select(\"svg g\")\n        .append(\"text\")\n        .attr(\"text-anchor\", \"middle\")\n        .attr(\"alignment-baseline\", \"middle\")\n        .attr(\"font-size\", \"13\")\n        .attr(\"font-family\", \"Roboto Slab\")\n        .attr(\"x\", startX + ((endX - startX) / 2))\n        .attr(\"y\", startY + ((endY - startY) / 2))\n        .text(d.value);\n    })\n  }\n","data":null}]}}</script>
 <div class="fragment">
-<p><i class="fa-solid fa-person-chalkboard icon"></i> Chart presentation: 30% <span class="grey600" style="font-size:1.5rem;">(0-20 points for the quality of the presentation, 0-10 for the preliminary chart)</span> <br> <br></p>
+<div style="font-size:1.5rem;text-align:center;font-family:'Roboto Slab">
+<p>Wage share = <span class="hl hl-blue">Compensation of Employees</span> / <span class="hl hl-dred">Net national income at factor cost</span></p>
 </div>
-<div class="fragment">
-<p><i class="fa-solid fa-file-pen icon"></i> Written report: 40% <span class="grey600" style="font-size:1.5rem;">(0-40 points for the report and the final chart)</span></p>
+</div>
+</section>
+<section id="the-wage-share-in-austria" class="slide level2 medium">
+<h2>The wage share in Austria</h2>
 
-</div>
+<img data-src="index_files/figure-revealjs/wsaut-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="functional-income-distribution-in-continental-europe" class="slide level2 medium">
+<h2>Functional income distribution in Continental Europe</h2>
+
+<img data-src="index_files/figure-revealjs/wseur-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="functional-distribution-in-anglosaxon-countries" class="slide level2 medium">
+<h2>Functional distribution in Anglosaxon countries</h2>
+
+<img data-src="index_files/figure-revealjs/wsanglo-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3200"></section>
+<section id="factors-influencing-the-wage-share" class="slide level2 medium">
+<h2>Factors influencing the wage share</h2>
+<ul>
+<li><span class="marker-hl">Labour market</span>
+<ul>
+<li>Unemployment rate</li>
+<li>Tightness of labour market <span class="grey600" style="font-size:1.3rem">(e.g.&nbsp;labour shortage)</span></li>
+</ul></li>
+<li><span class="marker-hl">Production factors</span>
+<ul>
+<li>Globalization</li>
+<li>Technological change</li>
+</ul></li>
+<li><span class="marker-hl">Institutions &amp; Policy</span>
+<ul>
+<li>Organization of workers <span class="grey600" style="font-size:1.3rem">(e.g.&nbsp;collective bargaining, workers councils)</span></li>
+<li>Influence of capital income earners</li>
+</ul></li>
+</ul>
+
 <aside><div>
-<div style="font-size:1.5rem">
-<p><i class="fa-regular fa-face-grin-stars" aria-label="face-grin-stars"></i> &nbsp; 100-90: Excellent   <i class="fa-regular fa-face-grin" aria-label="face-grin"></i> &nbsp; 89-80: Good   <i class="fa-regular fa-face-meh" aria-label="face-meh"></i> &nbsp; 79-65: Satisfactory   <i class="fa-regular fa-face-grimace" aria-label="face-grimace"></i> &nbsp; 64-50: Sufficient <br> <span class="marker-hl">All single tasks have to be passed</span> (50% threshold each).</p>
-</div>
+<p><i class="fa-solid fa-book"></i> Reading recommendation: <span class="citation" data-cites="stockhammer:2015">Stockhammer (<a href="#/bibliography" role="doc-biblioref" onclick="">2015</a>)</span></p>
 </div></aside></section>
-<section id="visualizations-by-students" class="slide level2 smaller">
-<h2>Visualizations by students</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));grid-gap: 1em;">
-<p><img data-src="img/gall1.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall2.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall3.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall4.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall5.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall6.png" data-group="my-gallery"></p>
+<section id="historical-development-of-global-personal-inequality-3-views" class="slide level2">
+<h2>Historical development of global personal inequality: 3 views</h2>
+<div>
+
+</div>
+<div class="dred quarto-layout-panel" style="font-size:1.5rem;text-align:center" data-layout="[[1,1], [1]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/kuznets.png" width="400"></p>
+<figcaption>Simon Kuznets</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/piketty.png" width="400"></p>
+<figcaption>Thomas Piketty</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/milanovic.png" width="800"></p>
+<figcaption>Branko Milanovic</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="feedback-cooperation-and-help" class="slide level2 smaller">
-<h2>Feedback, cooperation and help</h2>
-<p>Let me know your <span class="marker-hl">feedback</span> on the course anytime. If possible, I will try to incorporate your feedback immediately. At least, I will consider it for future courses.</p>
-<p>As some of you might already have advanced coding skills in R, please support each other and collaborate. This does not mean that one person does all the coding and shares with all colleagues. Students should have an intrinsic motivation to improve their coding skills but <span class="marker-hl">cooperate to learn from each other</span>.</p>
-<p>There is a forum on the learning platform for exchange among students. Please also consult support platforms like <a href="https://stackoverflow.com">Stack Overflow</a> or take a look at the cheatsheets:</p>
-<div style="text-align:center;">
-<p><a href="https://posit.co/wp-content/uploads/2022/10/tidyr.pdf"><img data-src="../../data/img/tidyr.png" width="140"></a> <a href="https://posit.co/wp-content/uploads/2022/10/data-transformation-1.pdf"><img data-src="../../data/img/dplyr.png" width="140"></a> <a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf"><img data-src="../../data/img/ggplot2.png" width="140"></a> <a href="https://posit.co/wp-content/uploads/2022/10/rmarkdown-1.pdf"><img data-src="../../data/img/rmarkdown.png" width="140"></a></p>
+<section id="global-inequality-1820-2020" class="slide level2 smaller">
+<h2>Global inequality 1820-2020</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/globalineq1820_2020.png" class="quarto-figure quarto-figure-center" height="500"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="wir:2022">Chancel et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2022</a>)</span></p>
+</div></aside></section>
+<section id="decomposition-of-global-inequality" class="slide level2 smaller">
+<h2>Decomposition of global inequality</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/theildecom.png" class="quarto-figure quarto-figure-center" height="500"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="wir:2022">Chancel et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2022</a>)</span></p>
+</div></aside></section>
+<section>
+<section id="show-me-your-geometries" class="title-slide slide level1 center">
+<h1>Show me your geometries!</h1>
+<center>
+<img data-src="../../data/img/avatar_break.png" width="250">
+</center>
+<div class="footer">
+
 </div>
 </section>
-<section id="recommended-literature" class="slide level2">
-<h2>Recommended Literature</h2>
-<div class="tbl-larger recommended-lit">
+<section id="selected-geometries-in-ggplot" class="slide level2 smaller">
+<h2>Selected geometries in {ggplot}</h2>
+<div class="tbl-classic tbl-smaller">
 <table class="caption-top">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 80%">
+<col style="width: 5%">
+<col style="width: 22%">
+<col style="width: 73%">
 </colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Geometry</th>
+<th>Explanation</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td><img data-src="../../data/img/schwabish.jpg"></td>
-<td><strong>Jonathan Schwabish</strong> <br> <em>Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks</em> <br> Columbia University Press <br> ISBN-13: 9780231193115</td>
+<td><img data-src="img/geom_ribbon.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>area, ribbon</td>
+<td>An area plot is the continuous analogue of a stacked bar chart.</td>
 </tr>
 <tr class="even">
-<td><img data-src="../../data/img/spiegelhalter.jpeg"></td>
-<td><strong>David Spiegelhalter</strong> <br> <em>The Art of Statistics: Learning from Data</em> <br> Penguin Books UK <br> ISBN-13: 9780241258767</td>
+<td><img data-src="img/geom_bar.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>bar, col</td>
+<td>Bar charts may be proportional (bar) or with absolute values (col).</td>
+</tr>
+<tr class="odd">
+<td><img data-src="img/geom_boxplot.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>boxplot</td>
+<td>The boxplot compactly displays the distribution of a continuous variable.</td>
+</tr>
+<tr class="even">
+<td><img data-src="img/geom_density.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>density, histogram</td>
+<td>Kernel density plot, which is a smoothed version of the histogram.</td>
+</tr>
+<tr class="odd">
+<td><img data-src="img/geom_abline.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>hline, vline, abline</td>
+<td>Draws a horizontal or vertical line with an intercept or a line with a slope.</td>
+</tr>
+<tr class="even">
+<td><img data-src="img/geom_line.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>line, path</td>
+<td>Line between observations in order of variable (line) or appearance (path)</td>
+</tr>
+<tr class="odd">
+<td><img data-src="img/geom_errorbar.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>linerange, errorbar</td>
+<td>Various ways of representing a vertical interval defined by x, ymin and ymax.</td>
+</tr>
+<tr class="even">
+<td><img data-src="img/geom_point.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>point, jitter</td>
+<td>The point geom is used to create scatterplots and jitter avoids overplotting.</td>
+</tr>
+<tr class="odd">
+<td><img data-src="img/geom_curve.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>segment, curve</td>
+<td>Draws a straight or curved line between points (x,y) and (xend, yend).</td>
+</tr>
+<tr class="even">
+<td><img data-src="img/geom_smooth.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>smooth</td>
+<td>Smoothed line with standard error bounds across a scatterplot.</td>
+</tr>
+<tr class="odd">
+<td><img data-src="img/geom_violin.png" style="vertical-align:middle;padding:0;margin:0;" height="35"></td>
+<td>violin</td>
+<td>A violin plot is a compact display of a continuous distribution.</td>
 </tr>
 </tbody>
 </table>
+</div>
+</section>
+<section id="additional-geometries" class="slide level2 smaller">
+<h2>Additional geometries</h2>
+<div class="columns center" style="font-size:1.3rem;">
+<div class="column" style="width:33%;">
+<p><span class="secfont">ggstream::geom_stream()</span> <img data-src="img/geom_stream.png" height="200"></p>
+</div><div class="column fragment" style="width:33%;">
+<p><span class="secfont">waffle::geom_waffle()</span> <img data-src="img/geom_waffle.png" height="200"></p>
+</div><div class="column fragment" style="width:33%;">
+<p><span class="secfont">ggchicklet::geom_chicklet()</span> <img data-src="img/geom_chicklet.png" height="200"></p>
+</div></div>
+<div class="columns center" style="font-size:1.3rem;">
+<div class="column fragment" style="width:33%;">
+<p><span class="secfont">ggridges::geom_density_ridges()</span> <img data-src="img/geom_ridges.png" height="200"></p>
+</div><div class="column fragment" style="width:33%;">
+<p><span class="secfont">ggsankey::geom_sankey()</span> <img data-src="img/geom_sankey.png" height="200"></p>
+</div><div class="column fragment" style="width:33%;">
+<p><span class="secfont">ggbump::geom_bump()</span> <img data-src="img/geom_bump.png" height="200"></p>
+</div></div>
+</section>
+<section id="bibliography" class="slide level2 bibstyle smaller scrollable">
+<h2>Bibliography</h2>
+<div class="footer">
+
 </div>
 
 <div class="quarto-auto-generated-content">
@@ -1142,7 +616,21 @@ Circle Xmark
 <p>PI 0750 Economic Policy (Applied track) | Winter term 2024</p>
 </div>
 </div>
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-wir:2022" class="csl-entry" role="listitem">
+Chancel, Lucas/Piketty, Thomas/Saez, Emmanuel/Zucman, Gabriel (2022). <em>World inequality report 2022</em>. World Inequality Lab.
+</div>
+<div id="ref-josifidis:2018" class="csl-entry" role="listitem">
+Josifidis, Kosta/Supic, Novica (2018). Institutionalist Versus Neoclassical View on Income Distribution and Economic Progress: The <span>OECD</span> Panel Evidence. <em>Panoeconomicus</em>, <em>65</em>(3), 319–337. DOI: <a href="https://doi.org/10.2298/pan1803319j">10.2298/pan1803319j</a>
+</div>
+<div id="ref-kurz:2010" class="csl-entry" role="listitem">
+Kurz, Heinz D./Salvadori, Neri (2010). The Post-Keynesian Theories of Growth and Distribution: A Survey. In Setterfield, Mark (Ed.), <em>Handbook of alternative theories of economic growth</em>. Edward Elgar Publishing. DOI: <a href="https://doi.org/10.4337/9781849805582.00010">10.4337/9781849805582.00010</a>
+</div>
+<div id="ref-stockhammer:2015" class="csl-entry" role="listitem">
+Stockhammer, Engelbert (2015). Determinants of the Wage Share: A Panel Analysis of Advanced and Developing Economies. <em>British Journal of Industrial Relations</em>, <em>55</em>(1), 3–33. DOI: <a href="https://doi.org/10.1111/bjir.12165">10.1111/bjir.12165</a>
+</div>
+</div>
+</section></section>
     </div>
   </div>
 

@@ -7,13 +7,11 @@
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="’Dr.&nbsp;Matthias Schnetzer‘">
-  <meta name="dcterms.date" content="2024-10-07">
+  <meta name="author" content="Dr.&nbsp;Matthias Schnetzer">
+  <meta name="dcterms.date" content="2024-11-11">
   <title>PI 0750 Economic Policy –      Economic Policy Visualization</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +30,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -247,7 +265,6 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
-      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -332,808 +349,343 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title"><p><span class="fa-stack course-icon"> <i class="fas fa-comment fa-stack-2x blue"></i> <i class="fas fa-chart-column fa-stack-1x fa-inverse" style="margin-top:-5pt"></i> </span><br> Economic Policy Visualization</p></h1>
-  <p class="subtitle">Introduction</p>
+  <p class="subtitle">Mobility · Colors</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-’Dr.&nbsp;Matthias Schnetzer‘ 
+Dr.&nbsp;Matthias Schnetzer 
 </div>
 </div>
 </div>
 
-  <p class="date">October 7, 2024</p>
+  <p class="date">November 11, 2024</p>
 </section>
-<section id="course-info" class="slide level2 smaller">
-<h2>Course info</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="img/profile-pic.jpg" class="absolute" style="display: inline-block; width: 150px; height: 150px;border-radius:50%;top: 20%; left: 7%; "></p>
-<div class="absolute" style="display: block; font-size: 5.5rem;top: 60%; left: 5%; ">
-<p><span class="fa-stack"> <i class="fas fa-comment fa-stack-2x blue"></i> <i class="fas fa-chart-column fa-stack-1x fa-inverse" style="margin-top:-5pt"></i> </span></p>
+<section id="discuss-with-your-neighbour" class="slide level2 smaller">
+<h2>Discuss with your neighbour</h2>
+<p><span class="bubble bubble-bottom-left absolute" style="max-width:350px;--bubcol: var(--bubcol-blue);font-size:1.5rem;top: 20%; left: 25%; ">How would you describe the state of intergenerational social mobility in your country?</span></p>
+<p><span class="bubble bubble-bottom-right absolute" style="max-width:350px;--bubcol: var(--bubcol-dred);font-size:1.5rem;top: 50%; left: 30%; ">Which channels do you know where parents exert influence on the socio-economic outcomes of children?</span></p>
+<p><img data-src="img/discuss1.png" class="absolute" style="left: 5%; bottom: 0px; height: 600px; "> <img data-src="img/discuss2.png" class="absolute" style="transform: rotateY(180deg);bottom: 0px; right: 5%; height: 600px; "></p>
+<div class="footer">
+<p>Illustrations by <a href="https://openpeeps.com">https://openpeeps.com</a>.</p>
 </div>
-</div><div class="column iconlist" style="width:70%;">
-<div class="absolute" style="top: 120px; ">
+</section>
+<section id="selected-channels-of-intergenerational-persistence" class="slide level2 medium">
+<h2>Selected channels of intergenerational persistence</h2>
+<div class="altlist">
 <ul>
-<li><i class="fa-solid fa-user icon"></i> Matthias Schnetzer</li>
-<li><i class="fa-solid fa-building icon"></i> Vienna Chamber of Labour &amp; WU Vienna</li>
-<li><i class="fa-solid fa-envelope icon"></i> <a href="mailto:mschnetz@wu.ac.at"><span class="email">mschnetz@wu.ac.at</span></a></li>
-<li><i class="fa-solid fa-globe icon"></i> <a href="https://mschnetzer.github.io">https://mschnetzer.github.io</a></li>
-<li><i class="fa-brands fa-twitter icon"></i> <a href="https://www.twitter.com/matschnetzer">matschnetzer</a></li>
+<li class="fragment">Children of well-off families <span class="marker-hl">attend better educational institutions</span>, which results in higher incomes later on.</li>
+<li class="fragment">Family background shapes <span class="marker-hl">individual labor market-related</span> characteristics (Habitus, social and cultural capital, health, etc.)</li>
+<li class="fragment">Children of poorer families face <span class="marker-hl">higher opportunity costs</span> at their job search and tend to accept the first job opportunity</li>
+<li class="fragment"><span class="marker-hl">Social networks</span> of the well-off facilitate job search substantially</li>
 </ul>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="franzini:2009">Franzini/Raitano (<a href="#/bibliography" role="doc-biblioref" onclick="">2009</a>)</span></p>
+</div></aside></section>
+<section id="glass-ceiling" class="slide level2">
+<h2>Glass ceiling</h2>
+<div class="blockquote" style="font-size:1.9rem;">
+<p>That room [at the top] rarely opens up because those mediocrities are too well-screened by parents who hire private tutors, buy cultural enrichment, teach etiquette, set expectations, stand as personal examples of success, coach interview technique, navigate any bureaucratic maze put before them, set up home in nice areas, arrange internships via friends and, just to rub in their supremacy, make direct gifts of cash and assets. To fail under these conditions is a kind of achievement in itself.</p>
+</div>
+<div style="font-size:1.2rem;text-align:right;font-family:'Roboto Slab';">
+<p>Janan Ganesh<br>Financial Times (December 9, 2016)</p>
+</div>
+</section>
+<section id="traditional-theory" class="slide level2 smaller">
+<h2>Traditional theory</h2>
+<p><span class="citation" data-cites="becker:1979">Becker/Tomes (<a href="#/bibliography" role="doc-biblioref" onclick="">1979</a>)</span>, <span class="citation" data-cites="becker:1986">Becker/Tomes (<a href="#/bibliography" role="doc-biblioref" onclick="">1986</a>)</span>:</p>
 <div>
-<br>
-</div>
 <ul>
-<li><i class="fa-solid fa-calendar-alt icon"></i> Oct 7, 2024 – Jan 13, 2025</li>
-<li><i class="fa-solid fa-clock icon"></i> 10:00–12:00</li>
-<li><i class="fa-solid fa-location-dot icon"></i> WU Campus</li>
-<li><i class="fa-solid fa-link icon"></i> <a href="https://mschnetzer.github.io/econpol24">https://mschnetzer.github.io/econpol24</a></li>
+<li class="fragment">Optimization problem for parental investments into the human capital of descendants (utility of parents is maximized)</li>
+<li class="fragment">Stochastic term for “birth lottery” (genetic abilities, talents): <em>Nature versus Nurture</em></li>
+<li class="fragment">Parental utility does not only depend on the life-cycle income of the descendant, but there is dynastic utility</li>
 </ul>
 </div>
-</div></div>
-</section>
-<section id="about-this-course" class="slide level2 medium">
-<h2>About this course</h2>
-<div class="secfont" style="font-size:2.3rem;text-align:center;">
-<p>“A picture is worth a thousand words”</p>
+<div class="fragment">
+<p>Response by <span class="citation" data-cites="daly:1982">Daly (<a href="#/bibliography" role="doc-biblioref" onclick="">1982</a>)</span>: Provision of descendants in future generations is a public good, since the future offspring may potentially descend from all other members in a society.</p>
 </div>
-<p>This course approaches contemporary issues of economic policy by analyzing innovative or iconic data visualizations. We analyse selected illustrations, discuss the underlying data, the theoretical background and policy implications. We will assemble plots in class and study the basics of data visualization.</p>
-<p>You will gain:</p>
+<div class="fragment">
+<p>Objection by <span class="citation" data-cites="mani:2013">Mani et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2013</a>)</span>: Rational parental behaviour is limited by income and wealth, since poverty impedes cognitive abilities of adults and hinders rational investment decisions in childern.</p>
+</div>
+</section>
+<section id="measurement-of-intergenerational-mobility" class="slide level2 medium">
+<h2>Measurement of intergenerational mobility</h2>
+<div style="text-align:center;">
+<p>Intergenerational earnings elasticity: <span class="math inline">\(\beta\)</span> <span class="math display">\[log~y_{ic} = \alpha + \beta~y_{ip} + \varepsilon_{ic}\]</span> Intergenerational earnings correlation: <span class="math inline">\(\rho\)</span> <span class="math display">\[\rho = \beta~\frac{\sigma_p}{\sigma_c}\]</span> with <span class="math inline">\(\sigma\)</span> being the standard deviation.</p>
+</div>
+</section>
+<section id="life-cycle-vs.-current-income" class="slide level2">
+<h2>Life cycle vs.&nbsp;current income</h2>
+<div style="font-size:1.5rem;">
+<p>(Measurable) current income corresponds to life cycle income plus random transitory deviations <span class="math display">\[ y_{ic}^* = y_{ic} + \omega_{ic} \\
+y_{ip}^* = y_{ip} + \omega_{ip} \]</span></p>
+<p>Intergenerational elasticity is calculated with current income records</p>
+<p><span class="math display">\[ plim~\widehat{\beta} = \frac{cov(y_{ip}^*, y_{ic}^*)}{var(y_{ip}^*)} = \\
+= \frac{\beta\left[var(y_{ip}) + cov(y_{ip}, \omega_{ip})\right] + cov(y_{ic}, \omega_{ic})/\beta + cov(\omega_{ic}, \omega_{ip})}{var(y_{ip}) + 2 \cdot cov(y_{ip}, \omega_{ip}) + var(\omega_{ip})} \]</span></p>
+<p>Consequently there is an attenuation bias (downward bias) <span class="math display">\[ plim~\widehat{\beta} = \beta \frac{var(y_{ip})}{var(y_{ip}) + var(\omega_{ip})} &lt; \beta \]</span></p>
+</div>
+</section>
+<section id="transition-matrices" class="slide level2 smaller">
+<h2>Transition matrices</h2>
+<p>A transition matrix captures the probabilities of switches <span class="math inline">\(p_{ij}\)</span> from status <span class="math inline">\(i\)</span> to <span class="math inline">\(j\)</span>.</p>
+<p><span class="math display">\[
+  P =
+  \left[ {\begin{array}{cccc}
+    p_{11} &amp; p_{12} &amp; \cdots &amp; p_{1n}\\
+    p_{21} &amp; p_{22} &amp; \cdots &amp; p_{2n}\\
+    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+    p_{m1} &amp; p_{m2} &amp; \cdots &amp; p_{mn}\\
+  \end{array} } \right]
+\]</span></p>
+<p><br></p>
+<p>There are various indices to compare transition matrices:</p>
 <ul>
-<li>an overview of <span class="marker-hl">contemporary debates in economic policy</span></li>
-<li>a basic understanding of <span class="marker-hl">principles of data visualization</span></li>
-<li>knowledge how to <span class="marker-hl">enrich academic publications</span> with informative graphs</li>
+<li>Prais-Index: <span class="math inline">\(M(P) = \frac{n - trace(P)}{n-1}\)</span> where <span class="math inline">\(M(P) \in [0,1]\)</span></li>
+<li>Absolute Average Jump (AAJ): <span class="math inline">\(\Omega = \frac{\sum_{i=1}^{n}|rank_{ic} - rank_{ip}|}{n}\)</span></li>
 </ul>
 </section>
-<section id="who-are-you" class="slide level2">
-<h2>Who are you?</h2>
-<p><img data-src="img/group3.png" class="absolute" style="left: 0%; bottom: 0%; height: 400px; "> <img data-src="img/group2.png" class="absolute" style="left: 15%; bottom: 0%; height: 400px; "> <img data-src="img/group1.png" class="absolute" style="left: 33%; bottom: 0%; height: 400px; "> <img data-src="img/group4.png" class="absolute" style="left: 50%; bottom: 0%; height: 400px; "></p>
-<p><span class="bubble bubble-bottom-right absolute" style="max-width:400px;--bubcol: var(--bubcol-dred); font-size:1.8rem;top: 15%; right: 0%; ">What do you expect of this course? Do you already have some coding experience in R?</span></p>
-</section>
-<section id="schedule" class="slide level2">
-<h2>Schedule</h2>
-<div id="aiwvfirakq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-  <style>@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#aiwvfirakq table {
-  font-family: 'Roboto Slab', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#aiwvfirakq thead, #aiwvfirakq tbody, #aiwvfirakq tfoot, #aiwvfirakq tr, #aiwvfirakq td, #aiwvfirakq th {
-  border-style: none;
-}
-
-#aiwvfirakq p {
-  margin: 0;
-  padding: 0;
-}
-
-#aiwvfirakq .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#aiwvfirakq .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#aiwvfirakq .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#aiwvfirakq .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#aiwvfirakq .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#aiwvfirakq .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#aiwvfirakq .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#aiwvfirakq .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#aiwvfirakq .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#aiwvfirakq .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#aiwvfirakq .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#aiwvfirakq .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#aiwvfirakq .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#aiwvfirakq .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#aiwvfirakq .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#aiwvfirakq .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#aiwvfirakq .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#aiwvfirakq .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#aiwvfirakq .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#aiwvfirakq .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#aiwvfirakq .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aiwvfirakq .gt_left {
-  text-align: left;
-}
-
-#aiwvfirakq .gt_center {
-  text-align: center;
-}
-
-#aiwvfirakq .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#aiwvfirakq .gt_font_normal {
-  font-weight: normal;
-}
-
-#aiwvfirakq .gt_font_bold {
-  font-weight: bold;
-}
-
-#aiwvfirakq .gt_font_italic {
-  font-style: italic;
-}
-
-#aiwvfirakq .gt_super {
-  font-size: 65%;
-}
-
-#aiwvfirakq .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#aiwvfirakq .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#aiwvfirakq .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#aiwvfirakq .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#aiwvfirakq .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#aiwvfirakq .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#aiwvfirakq .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#aiwvfirakq .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#aiwvfirakq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-  
-<table class="gt_table caption-top" data-quarto-postprocess="true" style="table-layout:fixed;width:100%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 25%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header gt_col_headings">
-<th id="Date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Date</th>
-<th id="Time" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Time</th>
-<th id="Room" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Room</th>
-<th id="Content" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Content</th>
-<th id="Assignment" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Assignment</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 07, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.02</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Introduction</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 14, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10.30-12.00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.18</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Data</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 21, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10.30-12.00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.18</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Visualization</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Oct 28, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.3.07</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Income · Geometries</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 04, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">D2.0.392</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Wealth · Scales</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 11, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">D2.0.030</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Mobility · Colors</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 18, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.5.12</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Growth · Labels</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Nov 25, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.5.18</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Taxation · Maps</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Dec 02, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.14</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Policy · Themes</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Pen" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;">
-<title>
-Pen
-</title>
-<path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Dec 09, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.3.07</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Student presentations</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Dec 16, 2024</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.4.14</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Student presentations</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="font-weight: 200">Jan 13, 2025</td>
-<td class="gt_row gt_left" headers="Time" style="font-weight: 200">10:00-12:00</td>
-<td class="gt_row gt_left" headers="Room" style="font-weight: 200">TC.3.07</td>
-<td class="gt_row gt_left" headers="Content" style="font-weight: 200">Round-up</td>
-<td class="gt_row gt_center" headers="Assignment" style="font-weight: 200"><span style="white-space:nowrap;">
-<svg aria-label="Circle Xmark" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#bdbebd;overflow:visible;position:relative;">
-<title>
-Circle Xmark
-</title>
-<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"></path>
-</svg>
-</span></td>
-</tr>
-</tbody>
-</table>
-
+<section id="great-gatsby-curve" class="slide level2 smaller">
+<h2>Great Gatsby curve</h2>
+<div class="cell" data-layout-align="center">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/gatsby-1.png" class="quarto-figure quarto-figure-center" width="816"></p>
+</figure>
 </div>
-</section>
-<section id="assignments" class="slide level2 medium">
-<h2>Assignments</h2>
-<p>Assignment 1 provides the setup of the R infrastructure that is required in this course. There are no points for this assignment.</p>
-<p>Assignments 2 to 4 are recreations of examplary figures. These examples are related to figures that are discussed in class. Students should then try to <span class="marker-hl">reproduce the plots at home</span> and improve their individual coding skills.</p>
-<p>The raw data for the figures are available as CSV files. The charts should then be uploaded to the <a href="https://learn.wu.ac.at">learning platform</a> <span class="marker-hl"><strong>before 9 a.m.</strong></span> on the day of the deadline.</p>
-</section>
-<section id="assignments-1" class="slide level2 medium">
-<h2>Assignments</h2>
-<div class="r-stack">
-<p><img data-src="../../data/assignments/lines.png" class="fragment" width="800"></p>
-<p><img data-src="../../data/assignments/dumbbell.png" class="fragment" width="800"></p>
-<p><img data-src="../../data/assignments/waffle.png" class="fragment" width="1000"></p>
 </div>
-</section>
-<section id="chart-report" class="slide level2 smaller">
-<h2>Chart &amp; Report</h2>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="oecd:2018">OECD (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span>, <span class="citation" data-cites="corak:2013">Corak (<a href="#/bibliography" role="doc-biblioref" onclick="">2013</a>)</span></p>
+</div></aside></section>
+<section id="educational-mobility-in-austria" class="slide level2 smaller">
+<h2>Educational mobility in Austria</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/educationmobility.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Note: Sample of 25 to 44 years of age</p>
+</div></aside></section>
+<section id="decreasing-absolute-mobility-in-the-us" class="slide level2 smaller">
+<h2>Decreasing absolute mobility in the US</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/mobilityusa.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="chetty:2017">Chetty et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2017</a>)</span></p>
+</div></aside></section>
+<section id="multigenerational-persistence" class="slide level2 smaller">
+<h2>Multigenerational persistence</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="chart-presentation">Chart presentation</h3>
-<div class="altlist">
-<ul>
-<li>Research question <span style="font-size:1.3rem">Which economic policy question do you want to answer with your chart?</span></li>
-<li>Data</li>
-<li>Chart</li>
-<li>Conclusion <span style="font-size:1.3rem">What can we learn from the data visualization for economic policy?</span></li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/grandparents1.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
 </div>
-<p><span class="marker-hl"><strong>Deadline: December 9, 2024</strong></span></p>
 </div><div class="column" style="width:50%;">
-<h3 id="rmarkdown-or-quarto-report">RMarkdown (or Quarto) Report</h3>
-<div class="altlist">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/grandparents2.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="neidhofer:2018">Neidhöfer/Stockhausen (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span></p>
+</div></aside></section>
+<section id="mobility-takes-generations" class="slide level2 smaller">
+<h2>Mobility takes generations</h2>
+<div class="cell" data-layout-align="center">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/generations-1.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="oecd:2018">OECD (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span></p>
+</div></aside></section>
+<section id="long-term-social-persistence" class="slide level2 medium">
+<h2>Long-term social persistence</h2>
+<div class="iconlist">
 <ul>
-<li>Title</li>
-<li>Author</li>
-<li>Introduction</li>
-<li>Research question</li>
-<li>Data</li>
-<li>Result</li>
-<li>Conclusion</li>
-<li>Code</li>
+<li><span class="emoji" data-emoji="uk">🇬🇧</span> <span class="citation" data-cites="clark:2015">Clark/Cummins (<a href="#/bibliography" role="doc-biblioref" onclick="">2015</a>)</span>: Richest british families around 1850 still own four times the average family wealth in 2012 <br> (= <span class="marker-hl">5 generations later</span>)</li>
+<li><span class="emoji" data-emoji="it">🇮🇹</span> <span class="citation" data-cites="barone:2020">Barone/Mocetti (<a href="#/bibliography" role="doc-biblioref" onclick="">2020</a>)</span>: Families with highest income in Florence in 1427 still are at the top of the income distribution in 2011 <br> (= <span class="marker-hl">6 centuries later</span>)</li>
+<li><span class="emoji" data-emoji="de">🇩🇪</span> <span class="citation" data-cites="braun:2017">Braun/Stuhler (<a href="#/bibliography" role="doc-biblioref" onclick="">2017</a>)</span>: Social status in Germany also depends from the great-grandparents.<br> (= <span class="marker-hl">4 generations later</span>)</li>
 </ul>
 </div>
-<p><span class="marker-hl"><strong>Deadline: January 31, 2025</strong></span></p>
-</div></div>
 </section>
-<section id="grading" class="slide level2 medium">
-<h2>Grading</h2>
-<p><br> <i class="fa-solid fa-home icon"></i> Assignments: 30% <span class="grey600" style="font-size:1.5rem;">(0-10 points for each visualization)</span> <br> <br></p>
-<div class="fragment">
-<p><i class="fa-solid fa-person-chalkboard icon"></i> Chart presentation: 30% <span class="grey600" style="font-size:1.5rem;">(0-20 points for the quality of the presentation, 0-10 for the preliminary chart)</span> <br> <br></p>
-</div>
-<div class="fragment">
-<p><i class="fa-solid fa-file-pen icon"></i> Written report: 40% <span class="grey600" style="font-size:1.5rem;">(0-40 points for the report and the final chart)</span></p>
+<section>
+<section id="all-colours-are-beautiful" class="title-slide slide level1 center">
+<h1>All colours are beautiful</h1>
+<center>
+<img data-src="../../data/img/avatar_sweatshirt.png" width="250">
+</center>
+<div class="footer">
 
 </div>
+</section>
+<section id="colors-in-r" class="slide level2 medium">
+<h2>Colors in R</h2>
+<p>You can assign colors by <span class="hl hl-dred">names</span></p>
+<ul>
+<li>“red”, “green”, “chocolate”, “cadetblue”, etc.</li>
+<li>See a complete list of the 657 colors typing <span class="secfont">colors()</span></li>
+</ul>
+<div class="fragment">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "white"         "aliceblue"     "antiquewhite"  "antiquewhite1"
+ [5] "antiquewhite2" "antiquewhite3" "antiquewhite4" "aquamarine"   
+ [9] "aquamarine1"   "aquamarine2"   "aquamarine3"   "aquamarine4"  </code></pre>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><br> Alternatively, you can use <span class="hl hl-dred">hex color codes</span></p>
+<ul>
+<li>#F8766D, #00BA38, #619CFF, etc.</li>
+<li>Use color picker to get hex code, e.g.&nbsp;<a href="https://htmlcolorcodes.com">https://htmlcolorcodes.com</a></li>
+</ul>
+</div>
+</section>
+<section id="color-palettes-of-rcolorbrewer" class="slide level2 smaller">
+<h2>Color palettes of {RColorBrewer}</h2>
+<div class="columns">
+<div class="column center" style="width:33%;">
+<p>Sequential</p>
+<p><span style="font-size:1.3rem;">Use to encode numerical information <em>with order</em></span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/seq-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column center fragment" style="width:33%;">
+<p>Diverging</p>
+<p><span style="font-size:1.3rem;">Use to encode numerical information with <em>critical midpoint</em></span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/div-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column center fragment" style="width:33%;">
+<p>Qualitative</p>
+<p><span style="font-size:1.3rem;">Use to encode <em>categorical</em> information</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/qual-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+
 <aside><div>
-<div style="font-size:1.5rem">
-<p><i class="fa-regular fa-face-grin-stars" aria-label="face-grin-stars"></i> &nbsp; 100-90: Excellent   <i class="fa-regular fa-face-grin" aria-label="face-grin"></i> &nbsp; 89-80: Good   <i class="fa-regular fa-face-meh" aria-label="face-meh"></i> &nbsp; 79-65: Satisfactory   <i class="fa-regular fa-face-grimace" aria-label="face-grimace"></i> &nbsp; 64-50: Sufficient <br> <span class="marker-hl">All single tasks have to be passed</span> (50% threshold each).</p>
-</div>
+<p>Source: <span class="citation" data-cites="scherer:2022">Scherer (<a href="#/bibliography" role="doc-biblioref" onclick="">2022</a>)</span></p>
 </div></aside></section>
-<section id="visualizations-by-students" class="slide level2 smaller">
-<h2>Visualizations by students</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));grid-gap: 1em;">
-<p><img data-src="img/gall1.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall2.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall3.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall4.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall5.png" data-group="my-gallery"></p>
-<p><img data-src="img/gall6.png" data-group="my-gallery"></p>
+<section id="color-blindness" class="slide level2 smaller">
+<h2>Color blindness</h2>
+<div class="columns">
+<div class="column">
+<p>You may check whether the color scale works for people who can distinguish fewer colours than others with <span class="secfont">{colorBlindness}</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/cblind-1.png" width="576"></p>
+</figure>
 </div>
-</section>
-<section id="feedback-cooperation-and-help" class="slide level2 smaller">
-<h2>Feedback, cooperation and help</h2>
-<p>Let me know your <span class="marker-hl">feedback</span> on the course anytime. If possible, I will try to incorporate your feedback immediately. At least, I will consider it for future courses.</p>
-<p>As some of you might already have advanced coding skills in R, please support each other and collaborate. This does not mean that one person does all the coding and shares with all colleagues. Students should have an intrinsic motivation to improve their coding skills but <span class="marker-hl">cooperate to learn from each other</span>.</p>
-<p>There is a forum on the learning platform for exchange among students. Please also consult support platforms like <a href="https://stackoverflow.com">Stack Overflow</a> or take a look at the cheatsheets:</p>
-<div style="text-align:center;">
-<p><a href="https://posit.co/wp-content/uploads/2022/10/tidyr.pdf"><img data-src="../../data/img/tidyr.png" width="140"></a> <a href="https://posit.co/wp-content/uploads/2022/10/data-transformation-1.pdf"><img data-src="../../data/img/dplyr.png" width="140"></a> <a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf"><img data-src="../../data/img/ggplot2.png" width="140"></a> <a href="https://posit.co/wp-content/uploads/2022/10/rmarkdown-1.pdf"><img data-src="../../data/img/rmarkdown.png" width="140"></a></p>
 </div>
+</div>
+</div><div class="column fragment">
+<p>The <span class="secfont">viridis</span> color scale is discriminable under the most common forms of colour blindness, and reproduces well in greyscale.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/viridis-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section>
-<section id="recommended-literature" class="slide level2">
-<h2>Recommended Literature</h2>
-<div class="tbl-larger recommended-lit">
-<table class="caption-top">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 80%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><img data-src="../../data/img/schwabish.jpg"></td>
-<td><strong>Jonathan Schwabish</strong> <br> <em>Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks</em> <br> Columbia University Press <br> ISBN-13: 9780231193115</td>
-</tr>
-<tr class="even">
-<td><img data-src="../../data/img/spiegelhalter.jpeg"></td>
-<td><strong>David Spiegelhalter</strong> <br> <em>The Art of Statistics: Learning from Data</em> <br> Penguin Books UK <br> ISBN-13: 9780241258767</td>
-</tr>
-</tbody>
-</table>
+<section id="fancy-palettes" class="slide level2 medium">
+<h2>Fancy palettes</h2>
+<div class="columns">
+<div class="column center">
+<p><a href="https://github.com/BlakeRMills/MetBrewer"><span class="secfont">{MetBrewer}</span></a></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/met-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column center">
+<p><a href="https://github.com/karthik/wesanderson"><span class="secfont">{wesanderson}</span></a></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-revealjs/wes-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="color-scales-in-ggplot" class="slide level2 smaller">
+<h2>Color scales in {ggplot}</h2>
+<div class="center secfont" style="font-size:2.5rem;">
+<p>scale_color_* <br> scale_fill_*</p>
+</div>
+<div class="columns">
+<div class="column center">
+<p>Continuous:</p>
+<ul>
+<li><span class="secfont">continuous(type)</span></li>
+<li><span class="secfont">distiller(palette)</span></li>
+<li><span class="secfont">gradient(high, low)</span></li>
+<li><span class="secfont">gradient2(high, mid, low)</span></li>
+<li><span class="secfont">gradientn(colours)</span></li>
+<li><span class="secfont">viridis_c(option)</span></li>
+</ul>
+</div><div class="column center">
+<p>Discrete:</p>
+<ul>
+<li><span class="secfont">manual(values)</span></li>
+<li><span class="secfont">brewer(palette)</span></li>
+<li><span class="secfont">grey(start, end)</span></li>
+<li><span class="secfont">viridis_d(option)</span></li>
+</ul>
+</div></div>
+</section>
+<section id="bibliography" class="slide level2 bibstyle smaller scrollable">
+<h2>Bibliography</h2>
+<div class="footer">
+
 </div>
 
 <div class="quarto-auto-generated-content">
@@ -1142,7 +694,48 @@ Circle Xmark
 <p>PI 0750 Economic Policy (Applied track) | Winter term 2024</p>
 </div>
 </div>
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-barone:2020" class="csl-entry" role="listitem">
+Barone, Guglielmo/Mocetti, Sauro (2020). Intergenerational Mobility in the Very Long Run: Florence 1427-2011. <em>The Review of Economic Studies</em>, <em>88</em>(4), 1863–1891. DOI: <a href="https://doi.org/10.1093/restud/rdaa075">10.1093/restud/rdaa075</a>
+</div>
+<div id="ref-becker:1979" class="csl-entry" role="listitem">
+Becker, Gary/Tomes, Nigel (1979). An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility. <em>The Journal of Political Economy</em>, <em>87</em>(6), 1153–1189.
+</div>
+<div id="ref-becker:1986" class="csl-entry" role="listitem">
+Becker, Gary/Tomes, Nigel (1986). Human Capital and the Rise and Fall of Families. <em>Journal of Labor Economics</em>, <em>4</em>(3), S1–S39.
+</div>
+<div id="ref-braun:2017" class="csl-entry" role="listitem">
+Braun, Sebastian Till/Stuhler, Jan (2017). The Transmission of Inequality Across Multiple Generations: Testing Recent Theories with Evidence from Germany. <em>The Economic Journal</em>, <em>128</em>(609), 576–611. DOI: <a href="https://doi.org/10.1111/ecoj.12453">10.1111/ecoj.12453</a>
+</div>
+<div id="ref-chetty:2017" class="csl-entry" role="listitem">
+Chetty, Raj/Grusky, David/Hell, Maximilian/Hendren, Nathaniel/Manduca, Robert/Narang, Jimmy (2017). The Fading American Dream: Trends in Absolute Income Mobility Since 1940. <em>Science</em>, <em>356</em>(6336), 398–406. DOI: <a href="https://doi.org/10.1126/science.aal4617">10.1126/science.aal4617</a>
+</div>
+<div id="ref-clark:2015" class="csl-entry" role="listitem">
+Clark, Gregory/Cummins, Neil (2015). Intergenerational Wealth Mobility in England, 1858–2012: Surnames and Social Mobility. <em>The Economic Journal</em>, <em>125</em>(582), 61–85. DOI: <a href="https://doi.org/10.1111/ecoj.12165">10.1111/ecoj.12165</a>
+</div>
+<div id="ref-corak:2013" class="csl-entry" role="listitem">
+Corak, Miles (2013). Income Inequality, Equality of Opportunity, and Intergenerational Mobility. <em>Journal of Economic Perspectives</em>, <em>27</em>(3), 79–102. DOI: <a href="https://doi.org/10.1257/jep.27.3.79">10.1257/jep.27.3.79</a>
+</div>
+<div id="ref-daly:1982" class="csl-entry" role="listitem">
+Daly, Herman E. (1982). Chicago School Individualism Versus Sexual Reproduction: A Critique of Becker and Tomes. <em>Journal of Economic Issues,</em> <em>16</em>(1), 307–312.
+</div>
+<div id="ref-franzini:2009" class="csl-entry" role="listitem">
+Franzini, Maurizio/Raitano, Michele (2009). Persistence of Inequality in Europe: The Role of Family Economic Conditions. <em>International Review of Applied Economics</em>, <em>23</em>(3), 345–366. DOI: <a href="https://doi.org/10.1080/02692170902811777">10.1080/02692170902811777</a>
+</div>
+<div id="ref-mani:2013" class="csl-entry" role="listitem">
+Mani, Anandi/Mullainathan, Sendhil/Shafir, Eldar/Zhao, Jiaying (2013). Poverty Impedes Cognitive Function. <em>Science</em>, <em>341</em>(6149), 976–980. DOI: <a href="https://doi.org/10.1126/science.1238041">10.1126/science.1238041</a>
+</div>
+<div id="ref-neidhofer:2018" class="csl-entry" role="listitem">
+Neidhöfer, Guido/Stockhausen, Maximilian (2018). Dynastic Inequality Compared: Multigenerational Mobility in the United States, the United Kingdom, and Germany. <em>Review of Income and Wealth</em>, <em>65</em>(2), 383–414. DOI: <a href="https://doi.org/10.1111/roiw.12364">10.1111/roiw.12364</a>
+</div>
+<div id="ref-oecd:2018" class="csl-entry" role="listitem">
+OECD (2018). <em>A broken social elevator? How to promote social mobility</em>. OECD Publishing. DOI: <a href="https://doi.org/10.1787/9789264301085-en">10.1787/9789264301085-en</a>
+</div>
+<div id="ref-scherer:2022" class="csl-entry" role="listitem">
+Scherer, Cédric (2022). Graphic Design with Ggplot2. <a href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/">https://rstudio-conf-2022.github.io/ggplot2-graphic-design/</a>
+</div>
+</div>
+</section></section>
     </div>
   </div>
 

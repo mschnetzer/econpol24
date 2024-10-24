@@ -2,38 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mschnetzer.github.io/econpol24/schedule.html</loc>
-    <lastmod>2024-08-08T07:18:34.183Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mschnetzer.github.io/econpol24/syllabus.html</loc>
-    <lastmod>2024-10-10T10:35:43.081Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mschnetzer.github.io/econpol24/slides/02_data/index.html</loc>
-    <lastmod>2024-10-13T18:57:52.163Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mschnetzer.github.io/econpol24/slides/03_visualization/index.html</loc>
-    <lastmod>2024-10-10T10:36:21.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mschnetzer.github.io/econpol24/index.html</loc>
-    <lastmod>2024-10-09T22:08:13.851Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mschnetzer.github.io/econpol24/gallery.html</loc>
-    <lastmod>2024-08-08T07:18:34.182Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mschnetzer.github.io/econpol24/slides/01_introduction/index.html</loc>
-    <lastmod>2024-10-10T10:36:08.956Z</lastmod>
+    <lastmod>2024-10-24T21:22:51.248Z</lastmod>
   </url>
   <url>
     <loc>https://mschnetzer.github.io/econpol24/visualization.html</loc>
     <lastmod>2024-10-02T18:21:05.174Z</lastmod>
   </url>
   <url>
-    <loc>https://mschnetzer.github.io/econpol24/data/code/07_income.html</loc>
-    <lastmod>2024-08-08T07:18:34.094Z</lastmod>
+    <loc>https://mschnetzer.github.io/econpol24/slides/01_introduction/index.html</loc>
+    <lastmod>2024-10-10T10:36:08.956Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/05_wealth/index.html</loc>
+    <lastmod>2024-10-21T19:31:23.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/04_income/index.html</loc>
+    <lastmod>2024-10-24T21:23:26.408Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/06_mobility/index.html</loc>
+    <lastmod>2024-10-21T20:01:21.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/gallery.html</loc>
+    <lastmod>2024-08-08T07:18:34.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/index.html</loc>
+    <lastmod>2024-10-24T21:21:34.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/08_taxation/index.html</loc>
+    <lastmod>2024-10-21T20:08:35.648Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/07_growth/index.html</loc>
+    <lastmod>2024-10-21T20:05:27.155Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/09_policy/index.html</loc>
+    <lastmod>2024-10-21T20:15:56.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/03_visualization/index.html</loc>
+    <lastmod>2024-10-21T10:37:10.146Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/slides/02_data/index.html</loc>
+    <lastmod>2024-10-13T18:57:52.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mschnetzer.github.io/econpol24/syllabus.html</loc>
+    <lastmod>2024-10-10T10:35:43.081Z</lastmod>
   </url>
 </urlset>
