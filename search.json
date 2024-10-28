@@ -102,14 +102,14 @@
     "href": "slides/05_wealth/index.html#hfcs-sampling-and-underreporting",
     "title": "    Economic Policy Visualization",
     "section": "HFCS sampling and underreporting",
-    "text": "HFCS sampling and underreporting\n\n\nTarget population in Austria: 3.9 million households\nGross sample in HFCS 2017: 6,280 households\nRealized interviews: 3,072 households\nResponse rate in HFCS 2017: approx. 50%\nResidual: refused interviews, invalid addresses, households not available, etc.\n\n\n\n\nResponse refusal correlates with wealth and is highest at the top (Vermeulen, 2016)\nWealthy households own a greater number of assets and miss some components more easily (Kennickell/Woodburn, 1999)"
+    "text": "HFCS sampling and underreporting\n\n\nTarget population in Austria 2021: 4 million households\nGross sample in HFCS 2021: 6,300 households\nRealized interviews: 2,293 households\nResponse rate in HFCS 2021: 39%\nResidual: refused interviews, invalid addresses, households not available, etc.\n\n\n\n\nResponse refusal correlates with wealth and is highest at the top (Vermeulen, 2016)\nWealthy households own a greater number of assets and miss some components more easily (Kennickell/Woodburn, 1999)"
   },
   {
     "objectID": "slides/05_wealth/index.html#upstream-strategy-against-underreporting-oversampling",
     "href": "slides/05_wealth/index.html#upstream-strategy-against-underreporting-oversampling",
     "title": "    Economic Policy Visualization",
     "section": "Upstream strategy against underreporting: Oversampling",
-    "text": "Upstream strategy against underreporting: Oversampling\n\nUndercoverage and Underreporting\nOversampling is crucial for wealth surveys\nOversampling in HFCS 2017: 🇧🇪 🇨🇾 🇩🇪 🇪🇪 🇪🇸 🇫🇮 🇫🇷 🇬🇷 🇭🇷 🇭🇺 🇮🇪 🇱🇻 🇱🇹 🇱🇺 🇵🇱 🇵🇹 🇸🇰\nNo oversampling: 🇦🇹 🇮🇹 🇲🇹 🇳🇱 🇸🇮\nHow does oversampling work?\n\nExternal personal wealth data (🇫🇷 🇪🇸)\nList of streets with high-income people (🇩🇪 🇸🇰)\nIncome tax data (🇱🇺 20% of the sample from top 10% earners)\nRegions with higher average income (🇵🇱)"
+    "text": "Upstream strategy against underreporting: Oversampling\n\nUndercoverage and Underreporting\nOversampling is crucial for wealth surveys\nOversampling in HFCS 2017: 🇧🇪 🇨🇾 🇩🇪 🇪🇪 🇪🇸 🇮🇹 🇫🇮 🇫🇷 🇬🇷 🇭🇷 🇭🇺 🇮🇪 🇱🇻 🇱🇹 🇱🇺 🇵🇹 🇸🇰\nNo oversampling: 🇦🇹 🇨🇿 🇲🇹 🇳🇱 🇸🇮\nHow does oversampling work?\n\nExternal personal wealth data (🇫🇷 🇪🇸 🇱🇹)\nList of streets with high-income people (🇩🇪)\nIncome tax data (🇱🇺 20% of the sample from top 10% earners)\nRegions with higher average income or house prices (🇧🇪 🇬🇷)\nElectricity consumption (🇨🇾)"
   },
   {
     "objectID": "slides/05_wealth/index.html#downstream-strategy-against-underreporting-pareto-estimation",
@@ -165,7 +165,7 @@
     "href": "slides/05_wealth/index.html#axes",
     "title": "    Economic Policy Visualization",
     "section": "Axes",
-    "text": "Axes\nContinuous\n\nggplot(aes(x = life_expectancy, y = poverty_rate)) +\n  geom_point() +\n  scale_x_continuous(limits = c(40, 100),\n                     breaks = seq(40, 100, 20),\n                     labels = scales::number_format(suffix = \"years\")) +\n  scale_y_continuous(labels = scales::percent)\n\nDates\n\nggplot(aes(x = year, y = poverty_rate)) +\n  geom_line() +\n  scale_x_date(limits = c(as.Date(\"2020-01-01\"), as.Date(\"2024-01-01\")),\n                breaks = date_breaks = \"2 years\",\n                labels = date_labels = \"%Y\")\n\nOthers\nscale_x_log10(), scale_x_reverse(), scale_x_sqrt(), …"
+    "text": "Axes\nContinuous\n\nggplot(aes(x = life_expectancy, y = poverty_rate)) +\n  geom_point() +\n  scale_x_continuous(limits = c(40, 100),\n                     breaks = seq(40, 100, 20),\n                     labels = scales::number_format(suffix = \"years\")) +\n  scale_y_continuous(labels = scales::percent)\n\nDates\n\nggplot(aes(x = year, y = poverty_rate)) +\n  geom_line() +\n  scale_x_date(limits = c(as.Date(\"2020-01-01\"), as.Date(\"2024-01-01\")),\n                breaks = date_breaks = \"2 years\",\n                labels = date_labels = \"%Y\")\n\nOthers\nscale_x_discrete(), scale_x_log10(), scale_x_reverse(), scale_x_sqrt(), …"
   },
   {
     "objectID": "slides/05_wealth/index.html#colors",

@@ -79,7 +79,7 @@ inc |> filter(str_starts(indic_il, "Mean"), time > 2018) |>
 # 4. Lollipop chart 
 inc |> filter(str_starts(indic_il, "Mean"), time > 2018) |> 
   ggplot(aes(x = time, y = values)) + 
-  geom_segment(aes(xend = time, yend = 0), color = "gray80", size = 2.5) + 
+  geom_segment(aes(xend = time, yend = 0), color = "gray80", linewidth = 2.5) + 
   geom_hline(yintercept = 0, color = "black", size = 0.3) + 
   geom_point(aes(color = geo), size = 2.5) +
   facet_wrap(~geo, nrow = 1) +
