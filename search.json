@@ -109,7 +109,7 @@
     "href": "slides/05_wealth/index.html#upstream-strategy-against-underreporting-oversampling",
     "title": "    Economic Policy Visualization",
     "section": "Upstream strategy against underreporting: Oversampling",
-    "text": "Upstream strategy against underreporting: Oversampling\n\nUndercoverage and Underreporting\nOversampling is crucial for wealth surveys\nOversampling in HFCS 2017: 🇧🇪 🇨🇾 🇩🇪 🇪🇪 🇪🇸 🇮🇹 🇫🇮 🇫🇷 🇬🇷 🇭🇷 🇭🇺 🇮🇪 🇱🇻 🇱🇹 🇱🇺 🇵🇹 🇸🇰\nNo oversampling: 🇦🇹 🇨🇿 🇲🇹 🇳🇱 🇸🇮\nHow does oversampling work?\n\nExternal personal wealth data (🇫🇷 🇪🇸 🇱🇹)\nList of streets with high-income people (🇩🇪)\nIncome tax data (🇱🇺 20% of the sample from top 10% earners)\nRegions with higher average income or house prices (🇧🇪 🇬🇷)\nElectricity consumption (🇨🇾)"
+    "text": "Upstream strategy against underreporting: Oversampling\n\nUndercoverage and Underreporting\nOversampling is crucial for wealth surveys\nOversampling in HFCS 2021: 🇧🇪 🇨🇾 🇩🇪 🇪🇪 🇪🇸 🇮🇹 🇫🇮 🇫🇷 🇬🇷 🇭🇷 🇭🇺 🇮🇪 🇱🇻 🇱🇹 🇱🇺 🇵🇹 🇸🇰\nNo oversampling: 🇦🇹 🇨🇿 🇲🇹 🇳🇱 🇸🇮\nHow does oversampling work?\n\nExternal personal wealth data (🇫🇷 🇪🇸 🇱🇹)\nList of streets with high-income people (🇩🇪)\nIncome tax data (🇱🇺 20% of the sample from top 10% earners)\nRegions with higher average income or house prices (🇧🇪 🇬🇷)\nElectricity consumption (🇨🇾)"
   },
   {
     "objectID": "slides/05_wealth/index.html#downstream-strategy-against-underreporting-pareto-estimation",
@@ -133,11 +133,39 @@
     "text": "Cumulative density function of wealth in Germany\n\n\n\n\n\n\n\nSource: Disslbacher et al. (2020)"
   },
   {
+    "objectID": "slides/05_wealth/index.html#new-data-source-distributional-wealth-accounts-dwa",
+    "href": "slides/05_wealth/index.html#new-data-source-distributional-wealth-accounts-dwa",
+    "title": "    Economic Policy Visualization",
+    "section": "New data source: Distributional wealth accounts (DWA)",
+    "text": "New data source: Distributional wealth accounts (DWA)\n\n\n\nSource: DWA, ECB"
+  },
+  {
     "objectID": "slides/05_wealth/index.html#net-wealth-distribution-in-austria",
     "href": "slides/05_wealth/index.html#net-wealth-distribution-in-austria",
     "title": "    Economic Policy Visualization",
     "section": "Net wealth distribution in Austria",
     "text": "Net wealth distribution in Austria"
+  },
+  {
+    "objectID": "slides/05_wealth/index.html#self-positioning-in-the-wealth-distribution",
+    "href": "slides/05_wealth/index.html#self-positioning-in-the-wealth-distribution",
+    "title": "    Economic Policy Visualization",
+    "section": "Self-positioning in the wealth distribution",
+    "text": "Self-positioning in the wealth distribution\n\n\n\n\n\n\n\n\n\n\nCorrect positioning of households in the richest decile: 0\nAverage estimated decile in the richest decile: 6\nAverage estimated decile in the poorest decile: 3\n\n\n\n\n\nNote: for animated version, see here"
+  },
+  {
+    "objectID": "slides/05_wealth/index.html#gender-wealth-gap-in-austria",
+    "href": "slides/05_wealth/index.html#gender-wealth-gap-in-austria",
+    "title": "    Economic Policy Visualization",
+    "section": "Gender wealth gap in Austria",
+    "text": "Gender wealth gap in Austria\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMean wealth\nMean GWG (in €)\nMean GWG (in %)\nMedian Wealth\nMedian GWG (in €)\nMedian GWG (in %)\n\n\n\n\nAll respondents\n\n\n\n\n\n\n\n\nCouples\n356,553\n\n\n173,683\n\n\n\n\nMale\n207,485\n58,417\n28\n82,285\n13,862\n17\n\n\nFemale\n149,068\n\n\n68,422\n\n\n\n\nMale respondent\n\n\n\n\n\n\n\n\nMale\n270,307\n110,995\n41.1\n99,347\n27,085\n27.3\n\n\nFemale\n159,312\n\n\n72,262\n\n\n\n\nFemale respondent\n\n\n\n\n\n\n\n\nMale\n138,830\n957\n0.7\n63,825\n−1,395\n-2.2\n\n\nFemale\n137,873\n\n\n65,220\n\n\n\n\n\n\n\n\nNote: The respondent in HFCS is the financially most knowledgeable person who is best informed about the household’s finances.  Source: Rehm et al. (2022)"
+  },
+  {
+    "objectID": "slides/05_wealth/index.html#migrant-wealth-gap-in-austria",
+    "href": "slides/05_wealth/index.html#migrant-wealth-gap-in-austria",
+    "title": "    Economic Policy Visualization",
+    "section": "Migrant wealth gap in Austria",
+    "text": "Migrant wealth gap in Austria\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMean wealth\nMean MWG (in €)\nMean MWG (in %)\nMedian Wealth\nMedian MWG (in €)\nMedian MWG (in %)\n\n\n\n\nNatives\n165,730\n\n\n59,001\n\n\n\n\nMigrants\n\n\n\n\n\n\n\n\nTotal\n98,007\n67,723\n41\n15,931\n43,070\n73\n\n\n1st generation\n63,001\n102,729\n62\n9,917\n49,084\n83\n\n\n2nd generation\n139,775\n25,955\n16\n32,763\n26,238\n44\n\n\n1st generation migrants only\n\n\n\n\n\n\n\n\nShort stay\n39,598\n126,132\n76\n4,935\n54,066\n92\n\n\nLong stay\n86,317\n79,413\n48\n20,196\n38,805\n66\n\n\n\n\n\n\nNote: First-generation migrants are distinguished into short (⩽20 years) and long (&gt;20 years) time since arrival in Austria. Source: Muckenhuber et al. (2022)"
   },
   {
     "objectID": "slides/05_wealth/index.html#income-and-wealth-inequality-across-europe",
@@ -147,18 +175,18 @@
     "text": "Income and wealth inequality across Europe"
   },
   {
-    "objectID": "slides/05_wealth/index.html#global-income-and-wealth-inequality",
-    "href": "slides/05_wealth/index.html#global-income-and-wealth-inequality",
+    "objectID": "slides/05_wealth/index.html#perceptions-of-fairness-in-wealth-disparities",
+    "href": "slides/05_wealth/index.html#perceptions-of-fairness-in-wealth-disparities",
     "title": "    Economic Policy Visualization",
-    "section": "Global income and wealth inequality",
-    "text": "Global income and wealth inequality\n\n\n\n\n\n\n\nSource: Chancel et al. (2022)"
+    "section": "Perceptions of fairness in wealth disparities",
+    "text": "Perceptions of fairness in wealth disparities\n\n\n\n\n\n\n\nSchnetzer et al. (2024)"
   },
   {
-    "objectID": "slides/05_wealth/index.html#private-and-public-wealth",
-    "href": "slides/05_wealth/index.html#private-and-public-wealth",
+    "objectID": "slides/05_wealth/index.html#private-public-wealth-gap",
+    "href": "slides/05_wealth/index.html#private-public-wealth-gap",
     "title": "    Economic Policy Visualization",
-    "section": "Private and public wealth",
-    "text": "Private and public wealth\n\n\n\n\n\n\n\nSource: Chancel et al. (2022)"
+    "section": "Private-public wealth gap",
+    "text": "Private-public wealth gap\n\n\n\n\n\n\n\nSource: Chancel et al. (2022)"
   },
   {
     "objectID": "slides/05_wealth/index.html#axes",
@@ -193,7 +221,7 @@
     "href": "slides/05_wealth/index.html#bibliography",
     "title": "    Economic Policy Visualization",
     "section": "Bibliography",
-    "text": "Bibliography\n\n\n\n\n\n\n\nPI 0750 Economic Policy (Applied track) | Winter term 2024\n\n\n\n\nChancel, Lucas/Piketty, Thomas/Saez, Emmanuel/Zucman, Gabriel (2022). World inequality report 2022. World Inequality Lab.\n\n\nDisslbacher, Franziska/Ertl, Michael/List, Emanuel/Mokre, Patrick/Schnetzer, Matthias (2020). On top of the top - adjusting wealth distributions using national rich lists (Working Paper Series No. 20). INEQ.\n\n\nGabaix, Xavier (2016). Power Laws in Economics: An Introduction. Journal of Economic Perspectives, 30(1), 185–206. DOI: 10.1257/jep.30.1.185\n\n\nKennickell, Arthur B./Woodburn, R. Louise (1999). Consistent Weight Design for the 1989, 1992 and 1995 SCFs, and the Distribution of Wealth. Review of Income and Wealth, 45(2), 193–215. DOI: 10.1111/j.1475-4991.1999.tb00328.x\n\n\nOECD (2013). OECD guidelines for micro statistics on household wealth. OECD. DOI: 10.1787/9789264194878-en\n\n\nVermeulen, Philip (2016). Estimating the Top Tail of the Wealth Distribution. The American Economic Review, 106(5), 646–650. DOI: 10.1257/aer.p20161021"
+    "text": "Bibliography\n\n\n\n\n\n\n\nPI 0750 Economic Policy (Applied track) | Winter term 2024\n\n\n\n\nChancel, Lucas/Piketty, Thomas/Saez, Emmanuel/Zucman, Gabriel (2022). World inequality report 2022. World Inequality Lab.\n\n\nDisslbacher, Franziska/Ertl, Michael/List, Emanuel/Mokre, Patrick/Schnetzer, Matthias (2020). On top of the top - adjusting wealth distributions using national rich lists (Working Paper Series No. 20). INEQ.\n\n\nGabaix, Xavier (2016). Power Laws in Economics: An Introduction. Journal of Economic Perspectives, 30(1), 185–206. DOI: 10.1257/jep.30.1.185\n\n\nKennickell, Arthur B./Woodburn, R. Louise (1999). Consistent Weight Design for the 1989, 1992 and 1995 SCFs, and the Distribution of Wealth. Review of Income and Wealth, 45(2), 193–215. DOI: 10.1111/j.1475-4991.1999.tb00328.x\n\n\nMuckenhuber, Mattias/Rehm, Miriam/Schnetzer, Matthias (2022). A Tale of Integration? The Migrant Wealth Gap in Austria. European Journal of Population, 38(2), 163–190. DOI: 10.1007/s10680-021-09604-1\n\n\nOECD (2013). OECD guidelines for micro statistics on household wealth. OECD. DOI: 10.1787/9789264194878-en\n\n\nRehm, Miriam/Schneebaum, Alyssa/Schuster, Barbara (2022). Intra-Couple Wealth Inequality: What’s Socio-Demographics Got to Do with It? European Journal of Population, 38(4), 681–720. DOI: 10.1007/s10680-022-09633-4\n\n\nSchnetzer, Matthias/Hofmann, Julia/Marterbauer, Markus (2024). Fairness Perceptions of Wealth Inequality in Europe. Review of Income and Wealth (R&R).\n\n\nVermeulen, Philip (2016). Estimating the Top Tail of the Wealth Distribution. The American Economic Review, 106(5), 646–650. DOI: 10.1257/aer.p20161021"
   },
   {
     "objectID": "slides/04_income/index.html#distribution-of-income-in-economic-policy",
@@ -315,6 +343,13 @@
     "text": "Glass ceiling\n\nThat room [at the top] rarely opens up because those mediocrities are too well-screened by parents who hire private tutors, buy cultural enrichment, teach etiquette, set expectations, stand as personal examples of success, coach interview technique, navigate any bureaucratic maze put before them, set up home in nice areas, arrange internships via friends and, just to rub in their supremacy, make direct gifts of cash and assets. To fail under these conditions is a kind of achievement in itself.\n\n\nJanan GaneshFinancial Times (December 9, 2016)"
   },
   {
+    "objectID": "slides/06_mobility/index.html#cultural-capital-matters",
+    "href": "slides/06_mobility/index.html#cultural-capital-matters",
+    "title": "    Economic Policy Visualization",
+    "section": "Cultural capital matters",
+    "text": "Cultural capital matters\n“Did you and your family regularly attend cultural activities (e.g. theatre) when you were ten years old?”\n\n\n\nSource: Six/Schnetzer (2024)"
+  },
+  {
     "objectID": "slides/06_mobility/index.html#traditional-theory",
     "href": "slides/06_mobility/index.html#traditional-theory",
     "title": "    Economic Policy Visualization",
@@ -354,7 +389,7 @@
     "href": "slides/06_mobility/index.html#educational-mobility-in-austria",
     "title": "    Economic Policy Visualization",
     "section": "Educational mobility in Austria",
-    "text": "Educational mobility in Austria\n\n\n\n\n\n\n\nNote: Sample of 25 to 44 years of age"
+    "text": "Educational mobility in Austria\n\n\n\n\n\n\n\n\n\nSource: Statistics Austria. Note: Sample of 25 to 44 years of age."
   },
   {
     "objectID": "slides/06_mobility/index.html#decreasing-absolute-mobility-in-the-us",
@@ -364,11 +399,11 @@
     "text": "Decreasing absolute mobility in the US\n\n\n\n\n\n\n\nSource: Chetty et al. (2017)"
   },
   {
-    "objectID": "slides/06_mobility/index.html#multigenerational-persistence",
-    "href": "slides/06_mobility/index.html#multigenerational-persistence",
+    "objectID": "slides/06_mobility/index.html#long-term-social-persistence",
+    "href": "slides/06_mobility/index.html#long-term-social-persistence",
     "title": "    Economic Policy Visualization",
-    "section": "Multigenerational persistence",
-    "text": "Multigenerational persistence\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: Neidhöfer/Stockhausen (2018)"
+    "section": "Long-term social persistence",
+    "text": "Long-term social persistence\n\n\n🇬🇧 Clark/Cummins (2015): Richest british families around 1850 still own four times the average family wealth in 2012  (= 5 generations later)\n🇮🇹 Barone/Mocetti (2020): Families with highest income in Florence in 1427 still are at the top of the income distribution in 2011  (= 6 centuries later)\n🇩🇪 Braun/Stuhler (2017): Social status in Germany also depends from the great-grandparents. (= 4 generations later)"
   },
   {
     "objectID": "slides/06_mobility/index.html#mobility-takes-generations",
@@ -376,13 +411,6 @@
     "title": "    Economic Policy Visualization",
     "section": "Mobility takes generations",
     "text": "Mobility takes generations\n\n\n\n\n\n\n\n\n\nSource: OECD (2018)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#long-term-social-persistence",
-    "href": "slides/06_mobility/index.html#long-term-social-persistence",
-    "title": "    Economic Policy Visualization",
-    "section": "Long-term social persistence",
-    "text": "Long-term social persistence\n\n\n🇬🇧 Clark/Cummins (2015): Richest british families around 1850 still own four times the average family wealth in 2012  (= 5 generations later)\n🇮🇹 Barone/Mocetti (2020): Families with highest income in Florence in 1427 still are at the top of the income distribution in 2011  (= 6 centuries later)\n🇩🇪 Braun/Stuhler (2017): Social status in Germany also depends from the great-grandparents. (= 4 generations later)"
   },
   {
     "objectID": "slides/06_mobility/index.html#colors-in-r",
@@ -424,7 +452,7 @@
     "href": "slides/06_mobility/index.html#bibliography",
     "title": "    Economic Policy Visualization",
     "section": "Bibliography",
-    "text": "Bibliography\n\n\n\n\n\n\n\nPI 0750 Economic Policy (Applied track) | Winter term 2024\n\n\n\n\nBarone, Guglielmo/Mocetti, Sauro (2020). Intergenerational Mobility in the Very Long Run: Florence 1427-2011. The Review of Economic Studies, 88(4), 1863–1891. DOI: 10.1093/restud/rdaa075\n\n\nBecker, Gary/Tomes, Nigel (1979). An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility. The Journal of Political Economy, 87(6), 1153–1189.\n\n\nBecker, Gary/Tomes, Nigel (1986). Human Capital and the Rise and Fall of Families. Journal of Labor Economics, 4(3), S1–S39.\n\n\nBraun, Sebastian Till/Stuhler, Jan (2017). The Transmission of Inequality Across Multiple Generations: Testing Recent Theories with Evidence from Germany. The Economic Journal, 128(609), 576–611. DOI: 10.1111/ecoj.12453\n\n\nChetty, Raj/Grusky, David/Hell, Maximilian/Hendren, Nathaniel/Manduca, Robert/Narang, Jimmy (2017). The Fading American Dream: Trends in Absolute Income Mobility Since 1940. Science, 356(6336), 398–406. DOI: 10.1126/science.aal4617\n\n\nClark, Gregory/Cummins, Neil (2015). Intergenerational Wealth Mobility in England, 1858–2012: Surnames and Social Mobility. The Economic Journal, 125(582), 61–85. DOI: 10.1111/ecoj.12165\n\n\nCorak, Miles (2013). Income Inequality, Equality of Opportunity, and Intergenerational Mobility. Journal of Economic Perspectives, 27(3), 79–102. DOI: 10.1257/jep.27.3.79\n\n\nDaly, Herman E. (1982). Chicago School Individualism Versus Sexual Reproduction: A Critique of Becker and Tomes. Journal of Economic Issues, 16(1), 307–312.\n\n\nFranzini, Maurizio/Raitano, Michele (2009). Persistence of Inequality in Europe: The Role of Family Economic Conditions. International Review of Applied Economics, 23(3), 345–366. DOI: 10.1080/02692170902811777\n\n\nMani, Anandi/Mullainathan, Sendhil/Shafir, Eldar/Zhao, Jiaying (2013). Poverty Impedes Cognitive Function. Science, 341(6149), 976–980. DOI: 10.1126/science.1238041\n\n\nNeidhöfer, Guido/Stockhausen, Maximilian (2018). Dynastic Inequality Compared: Multigenerational Mobility in the United States, the United Kingdom, and Germany. Review of Income and Wealth, 65(2), 383–414. DOI: 10.1111/roiw.12364\n\n\nOECD (2018). A broken social elevator? How to promote social mobility. OECD Publishing. DOI: 10.1787/9789264301085-en\n\n\nScherer, Cédric (2022). Graphic Design with Ggplot2. https://rstudio-conf-2022.github.io/ggplot2-graphic-design/"
+    "text": "Bibliography\n\n\n\n\n\n\n\nPI 0750 Economic Policy (Applied track) | Winter term 2024\n\n\n\n\nBarone, Guglielmo/Mocetti, Sauro (2020). Intergenerational Mobility in the Very Long Run: Florence 1427-2011. The Review of Economic Studies, 88(4), 1863–1891. DOI: 10.1093/restud/rdaa075\n\n\nBecker, Gary/Tomes, Nigel (1979). An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility. The Journal of Political Economy, 87(6), 1153–1189.\n\n\nBecker, Gary/Tomes, Nigel (1986). Human Capital and the Rise and Fall of Families. Journal of Labor Economics, 4(3), S1–S39.\n\n\nBraun, Sebastian Till/Stuhler, Jan (2017). The Transmission of Inequality Across Multiple Generations: Testing Recent Theories with Evidence from Germany. The Economic Journal, 128(609), 576–611. DOI: 10.1111/ecoj.12453\n\n\nChetty, Raj/Grusky, David/Hell, Maximilian/Hendren, Nathaniel/Manduca, Robert/Narang, Jimmy (2017). The Fading American Dream: Trends in Absolute Income Mobility Since 1940. Science, 356(6336), 398–406. DOI: 10.1126/science.aal4617\n\n\nClark, Gregory/Cummins, Neil (2015). Intergenerational Wealth Mobility in England, 1858–2012: Surnames and Social Mobility. The Economic Journal, 125(582), 61–85. DOI: 10.1111/ecoj.12165\n\n\nCorak, Miles (2013). Income Inequality, Equality of Opportunity, and Intergenerational Mobility. Journal of Economic Perspectives, 27(3), 79–102. DOI: 10.1257/jep.27.3.79\n\n\nDaly, Herman E. (1982). Chicago School Individualism Versus Sexual Reproduction: A Critique of Becker and Tomes. Journal of Economic Issues, 16(1), 307–312.\n\n\nFranzini, Maurizio/Raitano, Michele (2009). Persistence of Inequality in Europe: The Role of Family Economic Conditions. International Review of Applied Economics, 23(3), 345–366. DOI: 10.1080/02692170902811777\n\n\nMani, Anandi/Mullainathan, Sendhil/Shafir, Eldar/Zhao, Jiaying (2013). Poverty Impedes Cognitive Function. Science, 341(6149), 976–980. DOI: 10.1126/science.1238041\n\n\nOECD (2018). A broken social elevator? How to promote social mobility. OECD Publishing. DOI: 10.1787/9789264301085-en\n\n\nScherer, Cédric (2022). Graphic Design with Ggplot2. https://rstudio-conf-2022.github.io/ggplot2-graphic-design/\n\n\nSix, Eva/Schnetzer, Matthias (2024). Highbrow Heritage: The Effects of Childhood Cultural Capital on Wealth. Review of Economics of the Household. DOI: 10.1007/s11150-024-09733-6"
   },
   {
     "objectID": "gallery.html",
