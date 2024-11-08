@@ -7,7 +7,7 @@ title: |
         <i class='fas {{< var course.icon >}} fa-stack-1x fa-inverse' style='margin-top:-5pt'></i>
       </span><br>
     {{< var course.subtitle >}}
-author: "{{< var instructor.name >}}"  
+author: '{{< var instructor.name >}}'
 subtitle: Data
 date: October 14, 2024
 date-format: long
@@ -130,7 +130,7 @@ Source: @disslbacher:2020
 Illustrations by [https://openpeeps.com](https://openpeeps.com).
 :::
 
-# From conceptual disparities to data
+# Disparities in data acquisition and definitions
 
 <center>
 ![](../../data/img/avatar_laptop.png){height=350}
@@ -138,6 +138,29 @@ Illustrations by [https://openpeeps.com](https://openpeeps.com).
 
 ::: footer
 :::
+
+## Administrative and survey data
+
+::: {.tbl-classic}
+|            | **Administrative Data** | **Survey Data** |
+|------------|-------------------------|-----------------|
+| **Purpose** | Collected also for non-statistical purposes (e.g., taxation, regulation). | Collected specifically for statistical analysis. |
+| **Coverage** | Can cover large populations (e.g., entire tax base or workforce). | Often based on samples, though some are nationally representative. |
+| **Frequency** | Often collected regularly (e.g., monthly, annually). | Can be periodic (quarterly, annually, sometimes even every few years). |
+| **Accuracy** | High for administrative processes (e.g., tax filing) but may not capture informal sectors (many estimations!). | High precision for sample groups but subject to sampling error and response bias. |
+| **Timeliness** | May have delays in processing or availability for statistical use. | Data collection timelines can be long, but surveys are often designed for quick use. |
+| **Cost** | Generally lower cost, since the data is already being collected. | Higher cost, as it requires specific planning, data collection, and processing. |
+| **Adaptability** | Limited flexibility; cannot be easily tailored for specific statistical needs. | Can be customized to gather specific data, but requires careful design and execution. |
+: {tbl-colwidths="[10,45,45]"}
+:::
+
+## Survey modes {.smaller}
+
+- [Survey modes:]{.secfont .hl .hl-dred} Computer-assisted personal interviews (CAPI), telephone interviews (CATI), web interviews (CAWI)
+- [Mixed-mode survey:]{.secfont .hl .hl-dred} *Improve coverage* (several modes to contact hard-to-reach respondents) and *reduce non-response* (respondents may choose preferential mode)
+- [Caveats:]{.secfont .hl .hl-dred} *Selection effects*, i.e. different types of respondents choose different modes, and *measurement effects*, i.e. respondents give different answers in different modes [@vannieuwenhuyze:2010] 
+
+The survey mode might be important for critical questions, for instance, party preferences. @aichholzer:2018 finds that survey responses of voting for far right FPÖ is higher in CAWI among other things due to lower effects of social desirability.
 
 ## Income according to Canberra Group {.smaller}
 
@@ -223,13 +246,13 @@ kable_classic(full_width = F)
 ## Income data sources in Austria
 
 ::: {.tbl-classic .tbl-larger}
-| Income Type | Aggregate time series | Long-term distribution | Short-term distribution |
+| Income Type | Long-term aggregate | Long-term distribution | Short-term distribution |
 |-------------|-----------------------|------------------------|----------------------|
-| Employee income | [WTD]{.hl .hl-dred} [SSD]{.hl .hl-dred} | [WTD]{.hl .hl-dred} [SSD]{.hl .hl-dred} | [WTD]{.hl .hl-dred} [SSD]{.hl .hl-dred} [SES]{.hl .hl-blue} [EU-SILC]{.hl .hl-blue} [HFCS]{.hl .hl-blue} |
-| Self-employed | [ITD]{.hl .hl-dred} [(IWITD)]{.hl .hl-dred} | | [ITD]{.hl .hl-dred} [(IWITD)]{.hl .hl-dred} [EU-SILC]{.hl .hl-blue} [HFCS]{.hl .hl-blue} |
-| Property income | [CGT]{.hl .hl-dred} [(ITD)]{.hl .hl-dred} | | [EU-SILC]{.hl .hl-blue} [HFCS]{.hl .hl-blue} |
-| Transfers | [Various admin. sources]{.hl .hl-dred} | | [EU-SILC]{.hl .hl-blue} [HFCS]{.hl .hl-blue} |
-| Disposable household income | [SNA]{.hl .hl-dred} | | [HBS]{.hl .hl-blue} [EU-SILC]{.hl .hl-blue} [HFCS]{.hl .hl-blue} |
+| Employee income | [WTD]{.hl .hl-dred} [SSD]{.hl .hl-dred} | [WTD]{.hl .hl-dred} [SSD]{.hl .hl-dred} | [WTD]{.hl .hl-dred} [SSD]{.hl .hl-dred} [SES]{.hl .hl-blue} [EU-SILC]{.hl .hl-diagonal} [HFCS]{.hl .hl-blue} |
+| Self-employed | [ITD]{.hl .hl-dred} [(IWITD)]{.hl .hl-dred} | [ITD]{.hl .hl-dred} [(IWITD)]{.hl .hl-dred} | [ITD]{.hl .hl-dred} [(IWITD)]{.hl .hl-dred} [EU-SILC]{.hl .hl-diagonal} [HFCS]{.hl .hl-blue} |
+| Property income | [CGT]{.hl .hl-dred} [(ITD)]{.hl .hl-dred} | | [EU-SILC]{.hl .hl-diagonal} [HFCS]{.hl .hl-blue} |
+| Transfers | [Various admin. sources]{.hl .hl-dred} | | [EU-SILC]{.hl .hl-diagonal} [HFCS]{.hl .hl-blue} |
+| Disposable household income | [SNA]{.hl .hl-dred} | | [HBS]{.hl .hl-blue} [EU-SILC]{.hl .hl-diagonal} [HFCS]{.hl .hl-blue} |
 
 : {tbl-colwidths="[25,25,20,30]"}
 :::

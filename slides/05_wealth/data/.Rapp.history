@@ -1,0 +1,3 @@
+load("/Users/matthiasschnetzer/Daten/Lehre/wipol_viz_MA/slides/05_wealth/data/selfassessment.RData")
+ls()
+selfassessment

@@ -1,10 +1,10 @@
 ---
-title: "{{< var course.title >}}"
-subtitle: "{{< var course.subtitle >}}"
+title: '{{< var course.title >}}'
+subtitle: '{{< var course.subtitle >}}'
 details: |
     {{< var course.number >}} • {{< var course.semester >}} <br> {{< var university.name >}}
-course-icon: "{{< var course.icon >}}"
-course-icon-bg: "{{< var course.icon-bg >}}"
+course-icon: '{{< var course.icon >}}'
+course-icon-bg: '{{< var course.icon-bg >}}'
 page-layout: full
 format:
   html:

@@ -186,6 +186,15 @@ lord-icon.large {
 .hl-brown { background-color: $brown; }
 .hl-grey { background-color: $grey200; }
 
+.hl-diagonal {
+  background: linear-gradient(135deg, $dred 50%, $blue 50%);
+  color: $white; 
+  font-weight: 400;
+  padding: 0.05rem 0.25rem;
+  line-height: 1.6;
+}
+
+
 /* Slides standards */
 
 .backgrounds .title-slide {

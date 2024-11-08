@@ -1,0 +1,471 @@
+---
+metadata-files: 
+    - ../../_variables.yml
+title: |
+    <span class='fa-stack course-icon'>
+        <i class='fas {{< var course.icon-bg >}} fa-stack-2x blue'></i>
+        <i class='fas {{< var course.icon >}} fa-stack-1x fa-inverse' style='margin-top:-5pt'></i>
+      </span><br>
+    {{< var course.subtitle >}}
+author: '{{< var instructor.name >}}'
+subtitle: Mobility · Colors
+date: November 11, 2024
+date-format: long
+from: markdown+emoji
+bibliography: ../../data/lit/wipol_advanced.bib
+csl: ../../data/lit/wipol.csl
+execute:
+  freeze: auto
+  echo: true
+  fig-width: 6
+  fig-height: 5
+format:
+  revealjs:
+    theme: ../econpol_slides.scss
+    footer: '{{< var course.number >}} {{< var course.title >}} | {{< var course.semester >}}'
+    logo: ../../data/img/wu-logo-simple.png
+    header-includes: |
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+    slide-number: true
+    show-slide-number: all
+    transition: fade
+    progress: true
+    multiplex: false
+    scrollable: false
+    preview-links: false
+    hide-inactive-cursor: true
+    highlight-style: printing
+    pause: true
+---
+
+## Discuss with your neighbour {.smaller}
+
+[How would you describe the state of intergenerational social mobility in your country?]{.bubble .bubble-bottom-left .absolute top="20%" left="25%" style="max-width:350px;--bubcol: var(--bubcol-blue);font-size:1.5rem;"}
+
+[Which channels do you know where parents exert influence on the socio-economic outcomes of children?]{.bubble .bubble-bottom-right .absolute top="50%" left="30%" style="max-width:350px;--bubcol: var(--bubcol-dred);font-size:1.5rem;"}
+
+![](img/discuss1.png){.absolute bottom="0px" left="5%" height="600px"}
+![](img/discuss2.png){.absolute bottom="0px" right="5%" height="600px" style="transform: rotateY(180deg);"}
+
+::: footer
+Illustrations by [https://openpeeps.com](https://openpeeps.com).
+:::
+
+
+## Selected channels of intergenerational persistence {.medium}
+
+::: {.altlist .incremental}
+- Children of well-off families [attend better educational institutions]{.marker-hl}, which results in higher incomes later on.
+- Family background shapes [individual labor market-related]{.marker-hl} characteristics (Habitus, social and cultural capital, health, etc.)
+- Children of poorer families face [higher opportunity costs]{.marker-hl} at their job search and tend to accept the first job opportunity
+- [Social networks]{.marker-hl} of the well-off facilitate job search substantially
+:::
+
+::: {.aside}
+Source: @franzini:2009
+:::
+
+## Glass ceiling
+
+::: {.blockquote style="font-size:1.9rem;"}
+That room [at the top] rarely opens up because those mediocrities are too well-screened by parents who hire private tutors, buy cultural enrichment, teach etiquette, set expectations, stand as personal examples of success, coach interview technique, navigate any bureaucratic maze put before them, set up home in nice areas, arrange internships via friends and, just to rub in their supremacy, make direct gifts of cash and assets. To fail under these conditions is a kind of achievement in itself.  
+:::
+
+::: {style="font-size:1.2rem;text-align:right;font-family:'Roboto Slab';"}
+Janan Ganesh<br>Financial Times (December 9, 2016)
+:::
+
+## Cultural capital matters {.smaller}
+
+"Did you and your family regularly attend cultural activities (e.g. theatre) when you were ten years old?"
+
+![](img/culture.png)
+
+
+::: {.aside}
+Source: @six:2024
+:::
+
+## Traditional theory {.smaller}
+
+@becker:1979, @becker:1986:
+
+::: {.incremental}
+- Optimization problem for parental investments into the human capital of descendants (utility of parents is maximized)
+- Stochastic term for "birth lottery" (genetic abilities, talents): *Nature versus Nurture*
+- Parental utility does not only depend on the life-cycle income of the descendant, but there is dynastic utility
+:::
+
+. . .
+
+Response by @daly:1982: Provision of descendants in future generations is a public good, since the future offspring may potentially descend from all other members in a society.
+
+. . .
+
+Objection by @mani:2013: Rational parental behaviour is limited by income and wealth, since poverty impedes cognitive abilities of adults and hinders rational investment decisions in childern.
+
+## Measurement of intergenerational mobility {.medium}
+
+::: {style="text-align:center;"}
+Intergenerational earnings elasticity: $\beta$
+$$log~y_{ic} = \alpha + \beta~y_{ip} + \varepsilon_{ic}$$
+Intergenerational earnings correlation: $\rho$
+$$\rho = \beta~\frac{\sigma_p}{\sigma_c}$$
+with $\sigma$ being the standard deviation.
+:::
+
+## Life cycle vs. current income
+
+::: {style="font-size:1.5rem;"}
+(Measurable) current income corresponds to life cycle income plus random transitory deviations
+$$ y_{ic}^* = y_{ic} + \omega_{ic} \\
+y_{ip}^* = y_{ip} + \omega_{ip} $$
+
+Intergenerational elasticity is calculated with current income records
+
+$$ plim~\widehat{\beta} = \frac{cov(y_{ip}^*, y_{ic}^*)}{var(y_{ip}^*)} = \\ 
+= \frac{\beta\left[var(y_{ip}) + cov(y_{ip}, \omega_{ip})\right] + cov(y_{ic}, \omega_{ic})/\beta + cov(\omega_{ic}, \omega_{ip})}{var(y_{ip}) + 2 \cdot cov(y_{ip}, \omega_{ip}) + var(\omega_{ip})} $$
+ 
+Consequently there is an attenuation bias (downward bias)
+$$ plim~\widehat{\beta} = \beta \frac{var(y_{ip})}{var(y_{ip}) + var(\omega_{ip})} < \beta $$
+:::
+
+## Transition matrices {.smaller}
+
+A transition matrix captures the probabilities of switches $p_{ij}$ from status $i$ to $j$.
+
+$$
+  P =
+  \left[ {\begin{array}{cccc}
+    p_{11} & p_{12} & \cdots & p_{1n}\\
+    p_{21} & p_{22} & \cdots & p_{2n}\\
+    \vdots & \vdots & \ddots & \vdots\\
+    p_{m1} & p_{m2} & \cdots & p_{mn}\\
+  \end{array} } \right]
+$$
+
+<br>
+
+There are various indices to compare transition matrices:
+
+- Prais-Index: $M(P) = \frac{n - trace(P)}{n-1}$ where $M(P) \in [0,1]$
+- Absolute Average Jump (AAJ): $\Omega = \frac{\sum_{i=1}^{n}|rank_{ic} - rank_{ip}|}{n}$
+
+## Great Gatsby curve {.smaller}
+
+```{r gatsby}
+#| echo: false
+#| results: 'asis'
+#| fig-width: 8.5
+#| fig-height: 5
+#| fig-align: center
+library(tidyverse)
+library(ggrepel)
+library(ggtext)
+
+load("data/gatsby.RData")
+
+gatsby <- gatsby |> 
+  mutate(mobility = 1-mobility) |> 
+  filter(iso3c != "OECD24") |>
+  left_join(countrycode::codelist |> select(iso3c, country.name.en))
+
+gatsby |>
+  ggplot(aes(x = inequality, y=mobility)) +
+  geom_smooth(method = "lm", se = F, color = "darkred") +
+  geom_point(color = ifelse(gatsby$iso3c == "AUT", "darkred", "black")) +
+  geom_text_repel(aes(label=country.name.en), size = 3.2, family = "Roboto Condensed", segment.size = 0.2, color = ifelse(gatsby$iso3c == "AUT", "darkred", "black")) +
+  labs(x = "Gini coefficient (more inequality <span style = 'font-family:Arial;'>&rightarrow;</span>)", y = "Intergenerational earnings elasticity (less mobility <span style = 'font-family:Arial;'>&rightarrow;</span>)") +
+  theme_minimal(base_family = "Roboto Condensed") +
+  theme(panel.grid.minor = element_blank(),
+  panel.grid.major = element_line(linewidth = 0.2),
+  axis.title.y = element_markdown(size = 12, margin = margin(r = 0.5, unit="lines")),
+  axis.title.x = element_markdown(size = 12, margin = margin(t = 0.5, unit="lines")),
+  axis.text = element_text(size = 10))
+```
+
+::: {.aside}
+Source: @oecd:2018, @corak:2013
+:::
+
+
+## Educational mobility in Austria {.smaller}
+
+```{r edumob}
+#| echo: false
+#| results: 'asis'
+#| fig-width: 8.5
+#| fig-height: 5
+#| fig-align: center
+library(MetBrewer)
+library(ggalluvial)
+
+raw <- tribble(~Parents, ~Children, ~Share, ~Total,
+              "Compulsory", "Compulsory", 36.2, 395800,
+              "Compulsory", "Apprenticeship", 42.3, 395800,
+              "Compulsory", "Higher secondary", 12.1, 395800, 
+              "Compulsory", "Tertiary", 9.4, 395800, 
+              "Apprenticeship", "Compulsory", 8.9, 1184300,
+              "Apprenticeship", "Apprenticeship", 54.1, 1184300,
+              "Apprenticeship", "Higher secondary", 18.7, 1184300,
+              "Apprenticeship", "Tertiary", 18.3, 1184300,
+              "Higher secondary", "Compulsory", 5.9, 379000,
+              "Higher secondary", "Apprenticeship", 20.8, 379000,
+              "Higher secondary", "Higher secondary", 30.8, 379000,
+              "Higher secondary", "Tertiary", 42.5, 379000,
+              "Tertiary", "Compulsory", 5.8, 443300,
+              "Tertiary", "Apprenticeship", 11.7, 443300,
+              "Tertiary", "Higher secondary", 21.2, 443300,
+              "Tertiary", "Tertiary", 61.3, 443300
+              )
+
+df <- raw |> mutate(Flow = 1:n()) |> 
+  pivot_longer(cols = c(Parents, Children), names_to = "Generation", 
+              values_to = "Education")  |> 
+  mutate(freq = Total*Share/100,
+         Education = factor(Education, levels = rev(c("Compulsory","Apprenticeship",
+                                                  "Higher secondary","Tertiary"))),
+         Generation = factor(Generation, levels = c("Parents", "Children")))
+
+
+df |> ggplot(aes(x = Generation, y = freq, stratum = Education, alluvium = Flow)) +
+  geom_flow(aes(fill = Education), alpha = 0.8, width = 1/40, 
+            linewidth = 0.1, color = "black",
+            aes.flow = "forward") +
+  geom_stratum(aes(fill = Education), width = 0.05, color = "black", linewidth = 0.1, reverse = T) +
+  geom_text(stat = "stratum", reverse = T, aes(label = after_stat(stratum), color = Education), 
+            size = 5, family = "Barlow Condensed", nudge_x = -0.07,
+            data = df |> filter(Generation == "Parents")) +
+  geom_text(stat = "stratum", reverse = T, aes(label = after_stat(stratum), color = Education), 
+            size = 5, family = "Barlow Condensed", nudge_x = 0.07,
+            data = df |> filter(Generation == "Children")) +
+  geom_text(stat = "alluvium", 
+            aes(label = ifelse(Generation == "Parents" & 
+                                 (Share > 20 | Education == "Apprenticeship"), 
+                               glue::glue("{round(Share,0)}%"), NA)), 
+            nudge_x = 0.05,  size = 3.5, family = "Roboto Condensed") +
+  scale_fill_manual(values = met.brewer("Egypt")) +
+  scale_color_manual(values = met.brewer("Egypt")) +
+  scale_x_discrete(expand = c(0.05,0.05)) +
+  scale_y_discrete(expand = c(0.02,0.02)) +
+  labs(x=NULL, y=NULL) +
+  coord_flip() +
+  theme_minimal(base_family = "Barlow Condensed") +
+  theme(legend.position = "none",
+        panel.grid = element_blank(),
+        plot.caption = element_text(margin = margin(t=1, unit = "lines"),
+                                    color = "gray40", size = 8),
+        axis.text = element_text(size = 15, color = "black"),
+        axis.text.x = element_blank())
+```
+
+::: {.aside}
+Source: Statistics Austria. Note: Sample of 25 to 44 years of age.
+:::
+
+## Decreasing absolute mobility in the US {.smaller}
+
+![](img/mobilityusa.png){fig-align="center"}
+
+::: {.aside}
+Source: @chetty:2017
+:::
+
+
+## Long-term social persistence {.medium}
+
+::: {.iconlist}
+- :uk: @clark:2015: Richest british families around 1850 still own four times the average family wealth in 2012 <br> (= [5 generations later]{.marker-hl})
+- :it: @barone:2020: Families with highest income in Florence in 1427 still are at the top of the income distribution in 2011 <br> (= [6 centuries later]{.marker-hl})
+- :de: @braun:2017: Social status in Germany also depends from the great-grandparents.<br> (= [4 generations later]{.marker-hl})
+:::
+
+## Mobility takes generations {.smaller}
+
+```{r generations}
+#| echo: false
+#| results: 'asis'
+#| fig-width: 6
+#| fig-height: 5.5
+#| fig-align: center
+library(stringi)
+load("data/oecd.RData")
+
+socmob <- socmob |>
+  mutate(country = ifelse(iso3c == "CHN", "China", country),
+  country = fct_reorder(country, generations, .desc = T))
+
+socmob |> filter(iso3c != "OECD24") |>
+  ggplot(aes(x = country, y = generations)) +
+  geom_segment(aes(xend = country, yend = 0), linewidth = 4, color = "darkred", alpha = 0.3) +
+  geom_point(size = 4, color = "darkred") +
+  geom_text(aes(label = generations), color = "white", fontface = "bold", size = 2.5) + 
+  annotate("richtext", x = 24, y = 6, label = "Expected **number of generations**<br>it takes an offspring from<br>a family at the **bottom 10%** to <br>reach the **mean income**", hjust = 0, family = "Roboto Condensed", size = 3.5, label.color = NA) +
+  coord_flip() +
+  labs(x = NULL, y = NULL) +
+  theme_minimal(base_family = "Roboto Condensed") +
+  theme(panel.grid = element_blank())
+```
+
+::: {.aside}
+Source: @oecd:2018
+:::
+
+
+# All colours are beautiful
+
+<center>
+![](../../data/img/avatar_sweatshirt.png){width=250}
+</center>
+
+::: footer
+:::
+
+## Colors in R {.medium}
+
+You can assign colors by [names]{.hl .hl-dred} 
+
+- "red", "green", "chocolate", "cadetblue", etc.
+- See a complete list of the 657 colors typing [colors()]{.secfont}
+
+. . .
+
+```{r colors}
+#| echo: false
+head(colors(), 12)
+```
+
+. . .
+
+<br> 
+Alternatively, you can use [hex color codes]{.hl .hl-dred}
+
+- #F8766D, #00BA38, #619CFF, etc.
+- Use color picker to get hex code, e.g. [https://htmlcolorcodes.com](https://htmlcolorcodes.com)
+
+
+## Color palettes of {RColorBrewer} {.smaller}
+
+::: {.columns}
+::: {.column width="33%" .center}
+Sequential
+
+[Use to encode numerical information *with order*]{style="font-size:1.3rem;"}
+```{r seq}
+#| echo: false
+#| fig-height: 7
+library(RColorBrewer)
+display.brewer.all(type = "seq")
+```
+:::
+::: {.column width="33%" .center .fragment}
+Diverging
+
+[Use to encode numerical information with *critical midpoint*]{style="font-size:1.3rem;"}
+```{r div}
+#| echo: false
+#| fig-height: 7
+display.brewer.all(type = "div")
+```
+:::
+::: {.column width="33%" .center .fragment}
+Qualitative
+
+[Use to encode *categorical* information]{style="font-size:1.3rem;"}
+```{r qual}
+#| echo: false
+#| fig-height: 7
+display.brewer.all(type = "qual")
+```
+:::
+:::
+
+::: {.aside}
+Source: @scherer:2022
+:::
+
+## Color blindness {.smaller}
+
+::: {.columns}
+::: {.column}
+You may check whether the color scale works for people who can distinguish fewer colours than others with [{colorBlindness}]{.secfont}.
+
+```{r cblind}
+#| echo: false
+#| fig-height: 4
+library(colorBlindness)
+colorBlindness::displayAllColors(rainbow(6))
+```
+:::
+::: {.column .fragment}
+The [viridis]{.secfont} color scale is discriminable under the most common forms of colour blindness, and reproduces well in greyscale.
+
+```{r viridis}
+#| echo: false
+#| fig-height: 4
+colorBlindness::displayAllColors(viridis::viridis(6))
+```
+:::
+:::
+
+## Fancy palettes {.medium}
+
+::: {.columns}
+::: {.column .center}
+[[{MetBrewer}]{.secfont}](https://github.com/BlakeRMills/MetBrewer)
+```{r met}
+#| echo: false
+library(MetBrewer)
+library(unikn)
+unikn::seecol(list(met.brewer("Tiepolo"), met.brewer("Homer1"), met.brewer("Austria"), 
+met.brewer("Lakota"), met.brewer("Navajo")),
+pal_names = c("Tiepolo","Homer1","Austria","Lakota","Navajo"),
+title = "", grid=F)
+```
+:::
+::: {.column .center}
+[[{wesanderson}]{.secfont}](https://github.com/karthik/wesanderson)
+```{r wes}
+#| echo: false
+library(wesanderson)
+unikn::seecol(list(wes_palette("Zissou1"), wes_palette("Darjeeling1"), 
+wes_palette("Cavalcanti1"), wes_palette("FantasticFox1"), wes_palette("Moonrise3")),
+pal_names = c("Zissou1","Darjeeling1","Cavalcanti1","FantasticFox1","Moonrise3"),
+title = "", grid=F)
+```
+:::
+:::
+
+
+## Color scales in {ggplot} {.smaller}
+
+::: {.center .secfont style="font-size:2.5rem;"}
+scale_color_\* <br> scale_fill_\*
+:::
+
+::: {.columns}
+::: {.column .center}
+Continuous: 
+
+- [ continuous(type)]{.secfont}
+- [distiller(palette)]{.secfont}
+- [gradient(high, low)]{.secfont}
+- [gradient2(high, mid, low)]{.secfont}
+- [gradientn(colours)]{.secfont}
+- [viridis_c(option)]{.secfont}
+:::
+::: {.column .center}
+Discrete:
+
+- [manual(values)]{.secfont}
+- [brewer(palette)]{.secfont}
+- [grey(start, end)]{.secfont}
+- [viridis_d(option)]{.secfont}
+:::
+:::
+
+
+## Bibliography {.bibstyle}
+
+:::footer
+:::

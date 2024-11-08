@@ -7,7 +7,7 @@ title: |
         <i class='fas {{< var course.icon >}} fa-stack-1x fa-inverse' style='margin-top:-5pt'></i>
       </span><br>
     {{< var course.subtitle >}}
-author: "{{< var instructor.name >}}"  
+author: '{{< var instructor.name >}}'  
 subtitle: Visualization
 date: October 21, 2024
 date-format: long
@@ -559,7 +559,7 @@ Source: @scherer:2022
 #| eval: false
 #| echo: true
 #| code-line-numbers: "1|2|3|4"
-data + 
+data |>  
   ggplot(aes(x = year, y = value, color = category)) +
   geom_point(alpha = 0.5, shape = 21) +
   scale_color_manual(values = c("red", "blue", "yellow"))

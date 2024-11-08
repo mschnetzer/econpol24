@@ -1,0 +1,428 @@
+---
+metadata-files: 
+    - ../../_variables.yml
+title: |
+    <span class='fa-stack course-icon'>
+        <i class='fas {{< var course.icon-bg >}} fa-stack-2x blue'></i>
+        <i class='fas {{< var course.icon >}} fa-stack-1x fa-inverse' style='margin-top:-5pt'></i>
+      </span><br>
+    {{< var course.subtitle >}}
+author: '{{< var instructor.name >}}'
+subtitle: 'Income · Geometries'
+date: October 28, 2024
+date-format: long
+from: markdown+emoji
+bibliography: ../../data/lit/wipol_advanced.bib
+csl: ../../data/lit/wipol.csl
+execute:
+  echo: true
+format:
+  revealjs:
+    theme: ../econpol_slides.scss
+    footer: '{{< var course.number >}} {{< var course.title >}} | {{< var course.semester >}}'
+    logo: ../../data/img/wu-logo-simple.png
+    header-includes: |
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+    slide-number: true
+    show-slide-number: all
+    transition: fade
+    progress: true
+    multiplex: false
+    scrollable: true
+    preview-links: false
+    hide-inactive-cursor: true
+    highlight-style: printing
+    pause: true
+---
+
+## Distribution of income in economic policy {.smaller}
+
+- Income (compensation for labor and investment) is
+  - production cost in [supply-side]{.hl .hl-dred} approach
+  - determinant for consumption in [demand-side]{.hl .hl-blue} approach
+- In neoclassical economics, income inequality arises from differences in marginal productivity and might [stimulate]{.hl .hl-dred} economic growth due to differential savings rates (and thus loanable funds), investment, and incentives for effort [@josifidis:2018].
+- In (Post-)Keynesian economics, income inequality is the result of institutional settings, power relations, etc. Inequality [harms]{.hl .hl-blue} economic growth in most of these models due to detrimental effects on aggregate demand [@kurz:2010].
+
+
+# Functional income distribution
+
+<center>
+![](../../data/img/avatar_hands.png){width=250}
+</center>
+
+::: footer
+:::
+
+## Functional distribution {.medium}
+
+Income accounts in the System of National Accounts show primary (from production) and secondary (from redistribution) income flows. It is also the base for functional distribution:
+
+::: {.columns .secfont style="font-size:1.5rem;"}
+::: {.column width="60%"}
+Gross domestic product (GDP) at market prices <br>
+$+$ Primary incomes receivable from the rest of world <br>
+$-$ Primary incomes payable to the rest of world
+
+---
+
+$=$ Gross national income (GNI) at market prices <br>
+$-$ Consumption of fixed capital
+
+---
+
+$=$ Net national income **at market prices** <br>
+$-$ Taxes on products <br>
+$+$ Subsidies on products
+
+---
+
+$=$ Net national income **at factor cost**
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="30%"}
+<br><br>
+[&larr; Rest of World]{.hl .hl-dred}<br><br><br>
+[&larr; Depreciation]{.hl .hl-blue}<br><br><br>
+[&larr; Government]{.hl .hl-green}<br><br>
+[&larr; Production factors]{.hl .hl-brown}
+:::
+:::
+
+## Income accounts for Austria, 2021 {.medium}
+
+```{r snaaut}
+#| echo: false
+#| output: asis
+#| fig-width: 10
+#| fig-height: 5
+library(tidyverse)
+library(networkD3)
+library(MetBrewer)
+
+# Daten: Tabelle "Löhne und Gehälter nach VGR Konzept - brutto und netto" sowie Tabelle "Verteilung des Bruttoinlandsproduktes in Millarden Euro, laufende Preise"
+
+snaut <- tribble(
+  ~source, ~target, ~value,
+  "Gross domestic product  (MP)", "Net national income (FC)", 319.6,
+  "Gross domestic product  (MP)", "Consumption of fixed capital", 99.4,
+  "Gross domestic product  (MP)", "Taxes on products – Subsidies", 54.3,
+  "Gross domestic product  (MP)", "Primary income with rest of world (ROW)", 0.2,
+  "Net national income (FC)", "Compensation of employees", 234.8,
+  "Net national income (FC)", "Net operating surplus + mixed income", 84.8,
+  "Compensation of employees", "Net wages and salaries", 138.6,
+  "Compensation of employees", "Wage tax", 27.2,
+  "Compensation of employees", "Social security cont. Employees", 29.0,
+  "Compensation of employees", "Social security cont. Employers", 40.0
+)
+
+nodes <- data.frame(
+  name=c(snaut$source, snaut$target) |> unique()
+)
+
+nodes$group <- factor(case_when(
+  nodes$name == "Net national income (FC)" ~ "NNI",
+  nodes$name == "Compensation of employees" ~ "CE",
+  TRUE ~ "nocol"))
+
+snaut$group <- "linkcol"
+snaut$IDsource <- match(snaut$source, nodes$name)-1 
+snaut$IDtarget <- match(snaut$target, nodes$name)-1
+
+my_color <- 'd3.scaleOrdinal() .domain(["NNI", "CE", "nocol", "linkcol"]) 
+            .range(["#d03161", "#5d8198", "#d4d4d4", "#e4e4e4"])'
+
+p <- sankeyNetwork(Links = snaut, Nodes = nodes,
+              Source = "IDsource", Target = "IDtarget", 
+              NodeGroup = "group", LinkGroup = "group",
+              Value = "value", NodeID = "name", colourScale = my_color,
+              sinksRight=FALSE, fontSize = 14, fontFamily = 'Roboto Slab', 
+              width = "1000px", height="500px")
+
+htmlwidgets::onRender(p, '
+  function(el) { 
+    var nodeWidth = this.sankey.nodeWidth();
+    var links = this.sankey.links();
+        
+    links.forEach((d, i) => {
+      var startX = d.source.x + nodeWidth;
+      var endX = d.target.x;
+      
+      var startY = d.source.y + d.sy + d.dy / 2;
+      var endY = d.target.y + d.ty + d.dy / 2;
+      
+      d3.select(el).select("svg g")
+        .append("text")
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "middle")
+        .attr("font-size", "13")
+        .attr("font-family", "Roboto Slab")
+        .attr("x", startX + ((endX - startX) / 2))
+        .attr("y", startY + ((endY - startY) / 2))
+        .text(d.value);
+    })
+  }
+')
+```
+
+::: {.fragment}
+::: {style="font-size:1.5rem;text-align:center;font-family:'Roboto Slab"}
+Wage share = [Compensation of Employees]{.hl .hl-blue} / [Net national income at factor cost]{.hl .hl-dred}
+:::
+:::
+
+## The wage share in Austria {.medium}
+
+```{r wsaut}
+#| echo: false
+#| output: asis
+#| fig-align: center
+#| fig-width: 10
+#| fig-heigh: 5
+library(tidyverse)
+library(MetBrewer)
+library(readxl)
+
+# Go to AMECO Online Database -> Adjusted Wage Share -> Add Anglosaxon countries -> Export Data
+
+wsdata <- readxl::read_xlsx("data/ameco.xlsx")  |> 
+  select(country = Country, `2025`:`1960`)  |> 
+  mutate(across(-country, as.numeric))  |> 
+  pivot_longer(-country, names_to = "year", values_to = "value")  |> 
+  mutate(country = str_remove_all(country, " \\(1\\)"),
+         year = as.Date(paste0(year,"-01-01"))) |> 
+  filter(year <= "2023-01-01")
+
+wsdata |> filter(country == "Austria") |>
+  ggplot(aes(x=year, y=value)) +
+  geom_line(linewidth = 1.5, color = "red", lineend = "round") +
+  geom_text(aes(label = country), color = "red", hjust = 0, nudge_x = 100,
+  family = "Barlow Condensed",
+  data = wsdata |> filter(country == "Austria") |> slice_max(year)) + 
+  scale_x_date(limits = c(min(wsdata$year), as.Date("2025-01-01")),
+              breaks= seq(min(wsdata$year),max(wsdata$year), by = "10 years"), 
+              date_labels = "%Y") +
+  scale_y_continuous(limits = c(55,80), labels = scales::percent_format(scale = 1)) +
+  labs(y = "Wage share in % of GDP at factor cost", x = NULL, caption = "Data: Ameco.") +
+  theme_minimal(base_family = "Barlow Condensed", base_size = 16) + 
+  theme(legend.text = element_text(size = 14),
+        legend.position = "none",
+        panel.grid.minor = element_blank(),
+        plot.caption = element_text(size = 10, margin = margin(t = 1, unit = "lines")),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 12))
+```
+
+
+## Functional income distribution in Continental Europe {.medium}
+
+```{r wseur}
+#| echo: false
+#| output: asis
+#| fig-align: center
+#| fig-width: 10
+#| fig-heigh: 5
+wsdata |> filter(country %in% c("Germany","Spain","France","Italy")) |>
+  ggplot(aes(x = year, y = value, group = country, color = country)) +
+  geom_line(linewidth = 1.2, lineend = "round") +
+  geom_text(aes(label = country, color = country), hjust = 0, nudge_x = 100,
+  family = "Barlow Condensed",
+  data = wsdata |> filter(country %in% c("Germany","Spain","France","Italy")) |> slice_max(year, by = country)) + 
+  scale_color_manual(name = NULL, values = met.brewer("Austria"),) +
+  scale_x_date(limits = c(min(wsdata$year), as.Date("2025-01-01")), 
+              breaks= seq(min(wsdata$year),max(wsdata$year), by = "10 years"), 
+              date_labels = "%Y") +
+  scale_y_continuous(limits = c(55,80), labels = scales::percent_format(scale = 1)) +
+  labs(y = "Wage share in % of GDP at factor cost", x = NULL, 
+      caption = "Data: Ameco.") +
+  theme_minimal(base_family = "Barlow Condensed", base_size = 16) + 
+  theme(legend.position = "none",
+        panel.grid.minor = element_blank(),
+        plot.caption = element_text(size = 10, margin = margin(t = 1, unit = "lines")),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 12))
+```
+
+
+## Functional distribution in Anglosaxon countries {.medium}
+
+```{r wsanglo}
+#| echo: false
+#| output: asis
+#| fig-align: center
+#| fig-width: 10
+#| fig-height: 5
+#| dpi: 320
+wsdata |> filter(country %in% c("United States","United Kingdom")) |>
+  ggplot(aes(x = year, y = value, group = country, color = country)) +
+  geom_line(linewidth = 1.2, lineend = "round") +
+    geom_text(aes(label = str_wrap(country, 10), color = country), 
+    hjust = 0, nudge_x = 100, lineheight = 0.9, family = "Barlow Condensed",
+  data = wsdata |> filter(country %in% c("United States","United Kingdom")) |> 
+  slice_max(year, by = country)) +
+  scale_color_manual(name = NULL, values = met.brewer("Juarez")) +
+  scale_x_date(limits = c(min(wsdata$year), as.Date("2025-01-01")),
+              breaks= seq(min(wsdata$year),max(wsdata$year), by = "10 years"), 
+              date_labels = "%Y") +
+  scale_y_continuous(limits = c(55,80), labels = scales::percent_format(scale = 1)) +
+  labs(y = "Wage share in % of GDP at factor cost", x = NULL, 
+        caption = "Data: Ameco.") +
+  theme_minimal(base_family = "Barlow Condensed", base_size = 16) + 
+  theme(legend.text = element_text(size = 14),
+        legend.position = "none",
+        panel.grid.minor = element_blank(),
+        plot.caption = element_text(size = 10, margin = margin(t = 1, unit = "lines")),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 12))
+```
+
+## Factors influencing the wage share {.medium}
+
+- [Labour market]{.marker-hl}
+  - Unemployment rate
+  - Tightness of labour market [(e.g. labour shortage)]{.grey600 style="font-size:1.3rem"}
+- [Production factors]{.marker-hl}
+  - Globalization
+  - Technological change
+- [Institutions & Policy]{.marker-hl}
+  - Organization of workers [(e.g. collective bargaining, workers councils)]{.grey600 style="font-size:1.3rem"}
+  - Influence of capital income earners
+
+::: {.aside}
+<i class="fa-solid fa-book"></i> Reading recommendation: @stockhammer:2015
+:::
+
+# Personal income distribution
+
+<center>
+![](../../data/img/avatar_finger.png){width=250}
+</center>
+
+::: footer
+:::
+
+## Personal income inequality
+
+```{r pineq}
+#| echo: false
+#| output: asis
+#| fig-align: center
+#| fig-width: 10
+#| fig-height: 5
+#| dpi: 320
+
+library(geomtextpath)
+
+# gini <- get_eurostat("ilc_di12", time_format = "num", type = "label", filters = list(geo = c("AT","FR","IT","DE","ES"), age = "TOTAL"))
+
+load("data/gini.RData")
+
+gini |>
+  ggplot(aes(x = time, y = values, group = geo, color = geo)) +
+  geom_textline(aes(label = geo), linewidth = 1.2, lineend = "round",
+  hjust = 0.05, family = "Barlow Condensed", size = 6, face = "bold") +
+  scale_color_manual(name = NULL, values = met.brewer("Juarez")) +
+  scale_x_continuous(expand = c(0,0)) +
+  labs(y = "Gini coefficient of equivalised disposable income", x = NULL, 
+        caption = "Data: Eurostat.") +
+  theme_minimal(base_family = "Barlow Condensed", base_size = 16) + 
+  theme(legend.text = element_text(size = 14),
+        legend.position = "none",
+        panel.grid.minor = element_blank(),
+        plot.caption = element_text(size = 10, margin = margin(t = 1, unit = "lines")),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 12))
+```
+
+## Historical development of global personal inequality: 3 views
+
+::: {layout="[[1,1], [1]]" .dred style="font-size:1.5rem;text-align:center"}
+![Simon Kuznets](img/kuznets.png){width=400px}
+
+![Thomas Piketty](img/piketty.png){width=400px}
+
+![Branko Milanovic](img/milanovic.png){width=800px}
+:::
+
+## Global inequality 1820-2020 {.smaller}
+
+![](img/globalineq1820_2020.png){fig-align="center" height="500px"}
+
+::: {.aside}
+Source: @wir:2022
+:::
+
+## Decomposition of global inequality {.smaller}
+
+![](img/theildecom.png){fig-align="center" height="500px"}
+
+::: {.aside}
+Source: @wir:2022
+:::
+
+# Show me your geometries!
+
+<center>
+![](../../data/img/avatar_break.png){width=250}
+</center>
+
+::: footer
+:::
+
+## Selected geometries in {ggplot} {.smaller}
+
+::: {.tbl-classic .tbl-smaller}
+|  | Geometry | Explanation |
+|--|----------|-------------|
+| ![](img/geom_ribbon.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | area, ribbon | An area plot is the continuous analogue of a stacked bar chart. |
+| ![](img/geom_bar.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | bar, col | Bar charts may be proportional (bar) or with absolute values (col). |
+| ![](img/geom_boxplot.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | boxplot | The boxplot compactly displays the distribution of a continuous variable.|
+| ![](img/geom_density.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | density, histogram | Kernel density plot, which is a smoothed version of the histogram. |
+| ![](img/geom_abline.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | hline, vline, abline | Draws a horizontal or vertical line with an intercept or a line with a slope. |
+| ![](img/geom_line.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | line, path | Line between observations in order of variable (line) or appearance (path) |
+| ![](img/geom_errorbar.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | linerange, errorbar | Various ways of representing a vertical interval defined by x, ymin and ymax. |
+| ![](img/geom_point.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | point, jitter | The point geom is used to create scatterplots and jitter avoids overplotting. |
+| ![](img/geom_curve.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | segment, curve | Draws a straight or curved line between points (x,y) and (xend, yend). |
+| ![](img/geom_smooth.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | smooth | Smoothed line with standard error bounds across a scatterplot. |
+| ![](img/geom_violin.png){height="35" style="vertical-align:middle;padding:0;margin:0;"} | violin | A violin plot is a compact display of a continuous distribution. |
+
+: {tbl-colwidths="[5,22,73]"}
+:::
+
+
+## Additional geometries {.smaller}
+
+::: {.columns .center style="font-size:1.3rem;"}
+::: {.column width="33%"}
+[ggstream::geom_stream()]{.secfont}
+![](img/geom_stream.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[waffle::geom_waffle()]{.secfont}
+![](img/geom_waffle.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[ggchicklet::geom_chicklet()]{.secfont}
+![](img/geom_chicklet.png){height="200"}
+:::
+:::
+
+::: {.columns .center style="font-size:1.3rem;"}
+::: {.column width="33%" .fragment}
+[ggridges::geom_density_ridges()]{.secfont}
+![](img/geom_ridges.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[ggsankey::geom_sankey()]{.secfont}
+![](img/geom_sankey.png){height="200"}
+:::
+::: {.column width="33%" .fragment}
+[ggbump::geom_bump()]{.secfont}
+![](img/geom_bump.png){height="200"}
+:::
+:::
+
+## Bibliography {.bibstyle}
+
+:::footer
+:::

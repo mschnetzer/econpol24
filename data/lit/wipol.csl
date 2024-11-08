@@ -213,7 +213,7 @@
         </choose>
       </else-if>
       <else>
-        <text variable="title"/>
+        <text variable="title"  text-case="title"/>
       </else>
     </choose>
   </macro>
