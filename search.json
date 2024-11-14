@@ -504,67 +504,130 @@
     "text": "Growth in economic policy\n\nIn recent years economic growth has come to occupy an exalted position in the hierarchy of goals of government policy […] At least in professional economic discussion, we need to give a definite and distinctive meaning to growth as a policy objective. Let it be neither a new synonym for good things in general nor a fashionable way to describe other economic objectives. Let growth be something it is possible to oppose as well as to favor, depending on judgments of social priorities and opportunities.\n\n\nJames Tobin (1964)"
   },
   {
-    "objectID": "slides/07_growth/index.html#beyond-gdp-initiatives",
-    "href": "slides/07_growth/index.html#beyond-gdp-initiatives",
+    "objectID": "slides/07_growth/index.html#wages-employment-and-growth",
+    "href": "slides/07_growth/index.html#wages-employment-and-growth",
     "title": "    Economic Policy Visualization",
-    "section": "Beyond GDP initiatives",
-    "text": "Beyond GDP initiatives\n\nEven though many aspects of the living standard correlate with GDP, there are also some blind spots (informal sector and non-market production, environmental and health externalities, etc.).\nGDP is not designed as comprehensive measure of prosperity and well-being. “Beyond GDP” initiatives aim to find additional indicators for environmental and social aspects of progress.\nIn 2007, the EU commission organized a conference on “Beyond GDP” which led to a roadmap for the “EU 2020 Strategy”.\nMuch attention for Stiglitz-Sen-Fitoussi Report in 2009 with 12 recommendations how to measure progress.\nUnited Nations formally adopted 17 “Sustainable Development Goals” (or Agenda 2030) in their general assembly in 2015."
+    "section": "Wages, employment, and growth",
+    "text": "Wages, employment, and growth\nTwo questions in Post-Keynesian economics:\n\nWhich effect do real wage increases have on employment?\nWhich effect does a shift in the functional distribution have on growth?\n\n\n\n Lavoie, Marc (2006): Introduction to Post-Keynesian Economics. Palgrave Macmillan: New York, chapters 4 & 5."
   },
   {
-    "objectID": "slides/07_growth/index.html#the-growth-imperative",
-    "href": "slides/07_growth/index.html#the-growth-imperative",
+    "objectID": "slides/07_growth/index.html#wage-increase-and-employment",
+    "href": "slides/07_growth/index.html#wage-increase-and-employment",
     "title": "    Economic Policy Visualization",
-    "section": "The growth imperative",
-    "text": "The growth imperative\n\n\n\n\n\nGrowth is an important goal in economic policy\nMagic square of economic policy promotes high GDP growth (besides low inflation, high emplpoyment, and balanced trade)\nUN Sustainable Development Goals (SDG): “Promote inclusive and sustainable economic growth, employment and decent work for all”\nMore specifically, “sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries”"
+    "section": "Wage increase and employment",
+    "text": "Wage increase and employment\nNeoclassical model of the labour market:\n\nPrice (real wage) brings supply and demand into equilibrium\nLM = one market among many\nEffect of real wage increase on employment is negative\nWhy? Wages are costs\n\nPost-Keynesians:\n\nLabour market is downstream of production\nProduction is determined by effective demand\nEffect of real wage increase on employment is positive\nWhy? Wages are demand"
   },
   {
-    "objectID": "slides/07_growth/index.html#rule-of-70",
-    "href": "slides/07_growth/index.html#rule-of-70",
+    "objectID": "slides/07_growth/index.html#post-keynesian-growth-models",
+    "href": "slides/07_growth/index.html#post-keynesian-growth-models",
     "title": "    Economic Policy Visualization",
-    "section": "Rule of 70",
-    "text": "Rule of 70\nWe often underestimate the power of growth! How long does it take for a variable to double with a specific growth rate? The rule of 70 is a good approximation. Just divide 70 by the annual growth rate:\n\\[ \\Delta = \\frac{70}{g} \\]\nEven with a moderate growth rate of 2%, total GDP doubles in 35 years. An annual growth rate of 7% would mean a doubling of production in only 10 years."
+    "section": "Post-Keynesian growth models",
+    "text": "Post-Keynesian growth models\n4 generations of PK growth models:\n\nKeynes, Kalecki\nRobinson, Kaldor\nBhaduri, Marglin, Dutt, Taylor\nBarbosa, Rada, Rezai, Hein, Onaran, Stockhammer\n\n\n\n\n\n\n\nFull employment\nUnemployment\n\n\n\n\nFull capacity utilization\nKaldor (v.1)\nRobinson\n\n\nExcess capacity\n-\nKalecki"
   },
   {
-    "objectID": "slides/07_growth/index.html#measuring-gdp",
-    "href": "slides/07_growth/index.html#measuring-gdp",
+    "objectID": "slides/07_growth/index.html#general-framework",
+    "href": "slides/07_growth/index.html#general-framework",
     "title": "    Economic Policy Visualization",
-    "section": "Measuring GDP",
-    "text": "Measuring GDP\n\n1937: Simon Kuznets presented the modern concept of GDP to US Congress following the Great Depression, warning that it is not a measure of national welfare.\n1953: System of National Accounts (SNA) aims to harmonize measurement of GDP across the globe.\n1995: European System of Accounts (ESA) is used by member states of the European Union (latest adaption 2010)\nThree calculations: output, expenditure, and income approaches\nGDP is not entirely exact: some components have to be estimated (e.g. tip, underground economy)\nGDP has methodological gaps and some arbitrary definitions of what is productive, e.g. it includes childcare by nannies but not by parents.\n\n\n\nShort read: Economist: Why GDP is so difficult to measure?"
+    "section": "General framework",
+    "text": "General framework\n\nPost-Keynesian growth model: Investment and savings function depend on distribution (neither savings nor technological progress determine growth)\nAggregate output equals wages and profits (\\(r\\) = profit rate) \\[ pX = wN + prK \\]\n\\(\\delta\\) is the wage share and \\(\\pi\\) is the profit share \\[ \\delta = \\frac{wN}{pX} \\\\\n\\pi = \\frac{prK}{pX} = \\frac{rK}{X} \\]"
   },
   {
-    "objectID": "slides/07_growth/index.html#gdp-growth-across-the-globe",
-    "href": "slides/07_growth/index.html#gdp-growth-across-the-globe",
+    "objectID": "slides/07_growth/index.html#determination-of-profit-rate",
+    "href": "slides/07_growth/index.html#determination-of-profit-rate",
     "title": "    Economic Policy Visualization",
-    "section": "GDP growth across the globe",
-    "text": "GDP growth across the globe\n\n\nLinear scale (1989 = 1)\n\n\n\n\n\n\n\n\n\n\nLogarithmic scale (1989 = 1)\n\n\n\n\n\n\n\n\n\n\n\n\nSource: World Bank"
+    "section": "Determination of profit rate",
+    "text": "Determination of profit rate\n\nLet \\(X_{fe}\\) be potential output, \\(l\\) labour/output ratio, \\(v\\) capital/output ratio (= technology, assumed constant: \\(v=1\\)) and \\(u\\) capacity utilization \\[ l=\\frac{N}{X}; v=\\frac{K}{X_{fe}}; u=\\frac{X}{X_{fe}} \\] \\[ p=w\\frac{N}{X} + rp \\frac{K}{X}; \\frac{K}{X} = \\frac{v}{u}; v=1; \\] \\[ p = wl + rpu^{−1} \\rightarrow \\pi = \\frac{rp}{up} = \\frac{r}{u} \\rightarrow r= \\pi u \\]\nProfit rate \\(r\\) depends on profit share \\(\\pi\\) and capacity utilization \\(u\\)"
   },
   {
-    "objectID": "slides/07_growth/index.html#reeeally-long-term-growth-of-gdp",
-    "href": "slides/07_growth/index.html#reeeally-long-term-growth-of-gdp",
+    "objectID": "slides/07_growth/index.html#recall-partial-derivatives",
+    "href": "slides/07_growth/index.html#recall-partial-derivatives",
     "title": "    Economic Policy Visualization",
-    "section": "Reeeally long-term growth of GDP",
-    "text": "Reeeally long-term growth of GDP\n\n\nLinear scale  \n\nLogarithmic scale  \n\n\n\nSource: Our world in data"
+    "section": "Recall partial derivatives",
+    "text": "Recall partial derivatives\n\\[ y = \\frac{u(x)}{v(x)} \\]\n\\[ y' = \\frac{u'(x) \\cdot v(x) - v'(x) \\cdot u(x)}{v^2(x)} \\]"
   },
   {
-    "objectID": "slides/07_growth/index.html#why-do-some-economies-grow-and-others-dont",
-    "href": "slides/07_growth/index.html#why-do-some-economies-grow-and-others-dont",
+    "objectID": "slides/07_growth/index.html#first-generation-kaldor-robinson",
+    "href": "slides/07_growth/index.html#first-generation-kaldor-robinson",
     "title": "    Economic Policy Visualization",
-    "section": "Why do some economies grow and others don’t?",
-    "text": "Why do some economies grow and others don’t?\n\n\n\n\n\n\n\nRelated reading: Cuaresma et al. (2020)"
+    "section": "First generation: Kaldor-Robinson",
+    "text": "First generation: Kaldor-Robinson\n\nAssumption: Workers do not save, full capacity utilization (\\(u=1\\))\nGrowth rate of investments consists of growth of autonomous investments \\(g_0\\) and the elasticity to the profit rate \\(\\alpha r\\) \\[ g_I = g_0 + \\alpha r \\]\nSavings come only out of profits (Cambridge equation: Pasinetti, 1962) with \\(s\\) as saving propensity of capitalists \\[ g_S = sr \\]\nIn equilibrium \\(g_S = g_I\\) and thus \\[ sr = g_0 + \\alpha r \\\\\nr^∗= \\frac{g_0}{(s − \\alpha)} \\]"
   },
   {
-    "objectID": "slides/07_growth/index.html#reasons-for-differences-in-economic-growth",
-    "href": "slides/07_growth/index.html#reasons-for-differences-in-economic-growth",
+    "objectID": "slides/07_growth/index.html#section",
+    "href": "slides/07_growth/index.html#section",
     "title": "    Economic Policy Visualization",
-    "section": "Reasons for differences in economic growth",
-    "text": "Reasons for differences in economic growth\nEconomists historically focus on the “factors of production”, like physical capital and human capital to explain differences in growth (Mankiw et al., 1992; Young, 1995).\nThe contemporary literature (Acemoglu et al., 2019; Glaeser et al., 2004) additionally highlights\n\nculture (e.g., the willingness to trust and engage in trade with strangers)\ngeography (e.g., ease of transportation, resources)\ninstitutions (e.g., welfare state regimes, democracy, legal rights)\n(luck)\n\n\n\nShort read: Asterisk Magazine"
+    "section": "",
+    "text": "How does the profit rate react to saving? \\[ \\frac{\\partial r^*}{\\partial s} = − \\frac{g_0}{(s−\\alpha)^2} &lt;0 \\]\nThe equilibrium growth rate with \\(r^*\\) is \\[ g^∗ = g_0 + \\alpha r^* = g_0 + \\alpha \\frac{g_0}{s− \\alpha} = \\frac{sg_0}{s−\\alpha} \\]\nHow does the growth rate react to saving? \\[ \\frac{\\partial g^*}{\\partial s} = \\frac{g_0(s−\\alpha)−sg_0}{(s−\\alpha)^2} = −\\frac{\\alpha g_0}{(s−\\alpha)^2} &lt;0 \\]\nHigher propensity to save reduces growth and profitability due to lower aggregate demand."
   },
   {
-    "objectID": "slides/07_growth/index.html#which-chart-describes-best-what-you-want-to-show",
-    "href": "slides/07_growth/index.html#which-chart-describes-best-what-you-want-to-show",
+    "objectID": "slides/07_growth/index.html#second-generation-neo-kaleckians",
+    "href": "slides/07_growth/index.html#second-generation-neo-kaleckians",
     "title": "    Economic Policy Visualization",
-    "section": "Which chart describes best what you want to show?",
-    "text": "Which chart describes best what you want to show?"
+    "section": "Second generation: Neo-Kaleckians",
+    "text": "Second generation: Neo-Kaleckians\n\nCapacity utilization now endogenous (relax assumption of \\(u=1\\)); a high capacity utilization leads firms to invest more to satisfy expected demand \\[ g_I = g_0 + \\alpha r + \\beta u \\]\nIn equilibrium \\(g_I = g_S = sr\\) and since \\(r = u \\pi\\) \\[ su\\pi = g_0 + \\alpha u \\pi + \\beta u \\\\\nu^* = \\frac{g_0}{\\pi(s−\\alpha)−\\beta} \\\\\n\\frac{\\partial u^*}{\\partial \\pi} = −\\frac{(s-\\alpha)g_0}{\\left[ \\pi (s−\\alpha)− \\beta\\right]^2} &lt;0 \\]\nA rising profit share reduces aggregate demand (lower consumption propensity of capitalists) and thus capacity utilization"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#section-1",
+    "href": "slides/07_growth/index.html#section-1",
+    "title": "    Economic Policy Visualization",
+    "section": "",
+    "text": "The profit rate falls with rising profit share: \\[ r^* = \\pi u^* = \\frac{\\pi g_0}{\\pi (s−\\alpha)−\\beta} \\\\\n\\frac{\\partial r^*}{\\partial \\pi} = −\\frac{g_0}{[\\pi (s−\\alpha)−\\beta]^2} &lt;0 \\]\nThe growth rate also reacts negatively to a rising profit share \\[ g^* = g_0 + \\alpha r^* + \\beta u^* = \\frac{g_0 \\pi s}{\\pi (s−\\alpha)−\\beta} \\\\\n\\frac{\\partial g^*}{\\partial \\pi} = −\\frac{g_0 s \\beta}{[\\pi (s−\\alpha)−\\beta]^2} &lt;0 \\]"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#third-generation-bhaduri-marglin",
+    "href": "slides/07_growth/index.html#third-generation-bhaduri-marglin",
+    "title": "    Economic Policy Visualization",
+    "section": "Third generation: Bhaduri-Marglin",
+    "text": "Third generation: Bhaduri-Marglin\n\nFocus on the profit share \\(\\pi\\) instead of the profit rate \\(r\\) in the investment function \\[ g_I = g_0 + \\alpha \\pi + \\beta u \\]\nCapacity utilization reacts negatively to a rising profit share \\[ s \\pi u = g_0 + \\alpha \\pi + \\beta u \\\\\nu^* = \\frac{g_0 + \\alpha \\pi}{s\\pi - \\beta} \\\\\n\\frac{\\partial u^*}{\\partial \\pi} = −\\frac{sg_0 + \\alpha\\beta}{(s\\pi - \\beta)^2} &lt;0 \\]"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#wage-ledprofit-led-debate",
+    "href": "slides/07_growth/index.html#wage-ledprofit-led-debate",
+    "title": "    Economic Policy Visualization",
+    "section": "Wage-led/profit-led debate",
+    "text": "Wage-led/profit-led debate\n\nSeminal theoretical paper: Bhaduri/Marglin (1990)\n\nWage-led vs. profit-led: When income is redistributed towards labour, does investment react more strongly to higher demand or to the lower profit rate?\n\nFirst empirical estimate: Bowles/Boyer (1995)\nTaken up by Post-Keynesians\n\nin Europe (Hein, Onaran, Stockhammer, etc.): Neo-Kaleckians, wage-led\nand in the US (Taylor, etc.): Neo-Goodwinians, profit-led"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#components-of-demand",
+    "href": "slides/07_growth/index.html#components-of-demand",
+    "title": "    Economic Policy Visualization",
+    "section": "Components of demand",
+    "text": "Components of demand\n\\[ Y = C + I + NX \\]\nWhat is the reaction of each component when income is redistributed towards labour?\n\n\nConsumption \\(C\\): rises\nInvestments \\(I\\): depends on firm‘s reaction to higher demand vs. lower profit rate\nNet exports \\(NX\\): imports rise, exports fall \\(\\rightarrow NX\\) fall"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#its-an-empirical-question",
+    "href": "slides/07_growth/index.html#its-an-empirical-question",
+    "title": "    Economic Policy Visualization",
+    "section": "It’s an empirical question",
+    "text": "It’s an empirical question\n\n\n\n\n\n\n\n\n\n\n\n\nWage share ↑\nConsumption\nInvestment\nNet exports\nDom. demand\nTotal demand\n\n\n\n\n🇪🇺\n↑\n↓\n↓\n↑\n↑\n\n\n🇩🇪\n↑\n↓\n↓\n↑\n↑\n\n\n🇫🇷\n↑\n↓\n↓\n↑\n↑\n\n\n🇮🇹\n↑\n↓\n↓\n↑\n↑\n\n\n🇬🇧\n↑\n↓\n↓\n↑\n↑\n\n\n🇺🇸\n↑\n↓\n↓\n↑\n↑\n\n\n🇯🇵\n↑\n↓\n↓\n↑\n↑\n\n\n🇨🇦\n↑\n↓\n↓\n↑\n↓\n\n\n🇦🇺\n↑\n↓\n↓\n↑\n↓\n\n\n🇲🇽\n↑\n↓\n↓\n↑\n↓\n\n\n🇦🇷\n↑\n↓\n↓\n↑\n↓\n\n\n🇨🇳\n↑\n↓\n↓\n↑\n↓\n\n\n🇮🇳\n↑\n↓\n↓\n↑\n↓\n\n\n🇿🇦\n↑\n↓\n↓\n↑\n↓\n\n\n\n\n\n\nSource: Onaran/Galanis (2012)"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#meta-regression-analysis",
+    "href": "slides/07_growth/index.html#meta-regression-analysis",
+    "title": "    Economic Policy Visualization",
+    "section": "Meta-Regression analysis",
+    "text": "Meta-Regression analysis\nIn a new article (Dammerer et al., 2024), we study\n\n578 estimates for the relationship between functional distribution and aggregate demand\nfrom 33 empirical studies\nover 163 years and 59 countries and regions\nwhereof 218 estimates refer to total demand and 360 to domestic demand\n\nWe find that\n\nTotal demand is profit-led on average, domestic demand is wage-led\nPublication bias is present. If corrected, total demand is less profit-led\n\n\n\nSummary of the paper: https://mschnetzer.github.io/scrollytell_mra/"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#histogram-of-estimates",
+    "href": "slides/07_growth/index.html#histogram-of-estimates",
+    "title": "    Economic Policy Visualization",
+    "section": "Histogram of estimates",
+    "text": "Histogram of estimates"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#funnel-plot-for-total-demand",
+    "href": "slides/07_growth/index.html#funnel-plot-for-total-demand",
+    "title": "    Economic Policy Visualization",
+    "section": "Funnel plot for total demand",
+    "text": "Funnel plot for total demand"
+  },
+  {
+    "objectID": "slides/07_growth/index.html#funnel-plot-for-domestic-demand",
+    "href": "slides/07_growth/index.html#funnel-plot-for-domestic-demand",
+    "title": "    Economic Policy Visualization",
+    "section": "Funnel plot for domestic demand",
+    "text": "Funnel plot for domestic demand"
   },
   {
     "objectID": "slides/07_growth/index.html#serif-and-sans-serif-fonts",
@@ -641,7 +704,7 @@
     "href": "slides/07_growth/index.html#bibliography",
     "title": "    Economic Policy Visualization",
     "section": "Bibliography",
-    "text": "Bibliography\n\n\n\n\n\n\n\nAcemoglu, Daron/Naidu, Suresh/Restrepo, Pascual/Robinson, James A. (2019). Democracy Does Cause Growth. Journal of Political Economy, 127(1), 47–100. DOI: 10.1086/700936\n\n\nCuaresma, Jesús Crespo/Danylo, Olha/Fritz, Steffen/Hofer, Martin/Kharas, Homi/Bayas, Juan Carlos Laso (2020). What Do We Know about Poverty in North Korea? Palgrave Communications, 6(40). DOI: 10.1057/s41599-020-0417-4\n\n\nGlaeser, Edward L./Porta, Rafael La/Lopez-de-Silanes, Florencio/Shleifer, Andrei (2004). Do Institutions Cause Growth? Journal of Economic Growth, 9(3), 271–303. DOI: 10.1023/b:joeg.0000038933.16398.ed\n\n\nMankiw, N. G./Romer, D./Weil, D. N. (1992). A Contribution to the Empirics of Economic Growth. The Quarterly Journal of Economics, 107(2), 407–437. DOI: 10.2307/2118477\n\n\nTobin, James (1964). Economic Growth as an Objective of Government Policy. American Economic Review, 54(3), 1–20.\n\n\nYoung, A. (1995). The Tyranny of Numbers: Confronting the Statistical Realities of the East Asian Growth Experience. The Quarterly Journal of Economics, 110(3), 641–680. DOI: 10.2307/2946695"
+    "text": "Bibliography\n\n\n\n\n\n\n\nBhaduri, Amit/Marglin, Stephen (1990). Unemployment and the Real Wage: The Economic Basis for Contesting Political Ideologies. Cambridge Journal of Economics, 14(4), 375–393. DOI: 10.1093/oxfordjournals.cje.a035141\n\n\nBowles, Samuel/Boyer, Robert (1995). Wages, Aggregate Demand, and Employment in an Open Economy: An Empirical Investigation. In Macroeconomic policy after the conservative era : Studies in investment, saving and finance (143–171). Cambridge Univ. Press.\n\n\nDammerer, Quirin/List, Ludwig/Rehm, Miriam/Schnetzer, Matthias (2024). Macroeconomic Effects of a Declining Wage Share: A Meta‐analysis of the Functional Income Distribution and Aggregate Demand. Journal of Economic Surveys. DOI: 10.1111/joes.12614\n\n\nOnaran, Özlem/Galanis, Giorgos (2012). Is aggregate demand wage-led or profit-led? National and global effects (Conditions of Work and Employment Series No. 40). ILO.\n\n\nPasinetti, Luigi L. (1962). Rate of Profit and Income Distribution in Relation to the Rate of Economic Growth. The Review of Economic Studies, 29(4), 267. DOI: 10.2307/2296303\n\n\nTobin, James (1964). Economic Growth as an Objective of Government Policy. American Economic Review, 54(3), 1–20."
   },
   {
     "objectID": "slides/09_policy/index.html#themes-1",
