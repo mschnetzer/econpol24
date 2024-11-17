@@ -522,7 +522,7 @@
     "href": "slides/07_growth/index.html#post-keynesian-growth-models",
     "title": "    Economic Policy Visualization",
     "section": "Post-Keynesian growth models",
-    "text": "Post-Keynesian growth models\n4 generations of PK growth models:\n\nKeynes, Kalecki\nRobinson, Kaldor\nBhaduri, Marglin, Dutt, Taylor\nBarbosa, Rada, Rezai, Hein, Onaran, Stockhammer\n\n\n\n\n\n\n\nFull employment\nUnemployment\n\n\n\n\nFull capacity utilization\nKaldor (v.1)\nRobinson\n\n\nExcess capacity\n-\nKalecki"
+    "text": "Post-Keynesian growth models\n4 generations of PK growth models:\n\nKeynes, Kalecki\nRobinson, Kaldor\nBhaduri, Marglin, Dutt, Taylor\nHein, Onaran, Stockhammer\n\n\n\n\n\n\n\nFull employment\nUnemployment\n\n\n\n\nFull capacity utilization\nKaldor (v.1)\nRobinson\n\n\nExcess capacity\n-\nKalecki"
   },
   {
     "objectID": "slides/07_growth/index.html#general-framework",
@@ -536,7 +536,7 @@
     "href": "slides/07_growth/index.html#determination-of-profit-rate",
     "title": "    Economic Policy Visualization",
     "section": "Determination of profit rate",
-    "text": "Determination of profit rate\n\nLet \\(X_{fe}\\) be potential output, \\(l\\) labour/output ratio, \\(v\\) capital/output ratio (= technology, assumed constant: \\(v=1\\)) and \\(u\\) capacity utilization \\[ l=\\frac{N}{X}; v=\\frac{K}{X_{fe}}; u=\\frac{X}{X_{fe}} \\] \\[ p=w\\frac{N}{X} + rp \\frac{K}{X}; \\frac{K}{X} = \\frac{v}{u}; v=1; \\] \\[ p = wl + rpu^{−1} \\rightarrow \\pi = \\frac{rp}{up} = \\frac{r}{u} \\rightarrow r= \\pi u \\]\nProfit rate \\(r\\) depends on profit share \\(\\pi\\) and capacity utilization \\(u\\)"
+    "text": "Determination of profit rate\n\nLet \\(X_{fe}\\) be potential output, \\(l\\) is labour/output ratio, \\(v\\) is capital/output ratio (= technology, assumed constant: \\(v=1\\)) and \\(u\\) is capacity utilization \\[ l=\\frac{N}{X};\\quad v=\\frac{K}{X_{fe}}=1;\\quad u=\\frac{X}{X_{fe}};\\quad \\frac{K}{X} = \\frac{v}{u} = u^{-1} \\] \\[ p=w\\frac{N}{X} + rp \\frac{K}{X};\\quad p = wl + rpu^{−1} \\] \\[ \\pi = \\frac{rK}{X} = \\frac{r}{u} \\rightarrow r= \\pi u \\]\nProfit rate \\(r\\) depends on profit share \\(\\pi\\) and capacity utilization \\(u\\)"
   },
   {
     "objectID": "slides/07_growth/index.html#recall-partial-derivatives",
@@ -564,7 +564,7 @@
     "href": "slides/07_growth/index.html#second-generation-neo-kaleckians",
     "title": "    Economic Policy Visualization",
     "section": "Second generation: Neo-Kaleckians",
-    "text": "Second generation: Neo-Kaleckians\n\nCapacity utilization now endogenous (relax assumption of \\(u=1\\)); a high capacity utilization leads firms to invest more to satisfy expected demand \\[ g_I = g_0 + \\alpha r + \\beta u \\]\nIn equilibrium \\(g_I = g_S = sr\\) and since \\(r = u \\pi\\) \\[ su\\pi = g_0 + \\alpha u \\pi + \\beta u \\\\\nu^* = \\frac{g_0}{\\pi(s−\\alpha)−\\beta} \\\\\n\\frac{\\partial u^*}{\\partial \\pi} = −\\frac{(s-\\alpha)g_0}{\\left[ \\pi (s−\\alpha)− \\beta\\right]^2} &lt;0 \\]\nA rising profit share reduces aggregate demand (lower consumption propensity of capitalists) and thus capacity utilization"
+    "text": "Second generation: Neo-Kaleckians\n\nCapacity utilization now endogenous (relax assumption of \\(u=1\\)); a high capacity utilization leads firms to invest more to satisfy expected demand \\[ g_I = g_0 + \\alpha r + \\beta u \\]\nIn equilibrium \\(g_I = g_S = sr\\) and since \\(r = u \\pi\\) \\[ su\\pi = g_0 + \\alpha u \\pi + \\beta u \\\\\nu^* = \\frac{g_0}{\\pi(s−\\alpha)−\\beta} \\\\\n\\frac{\\partial u^*}{\\partial \\pi} = −\\frac{(s-\\alpha)g_0}{\\left[ \\pi (s−\\alpha)− \\beta\\right]^2} &lt;0 \\]\nA rising profit share reduces aggregate demand (lower consumption propensity of capitalists; workers don’t save) and thus capacity utilization"
   },
   {
     "objectID": "slides/07_growth/index.html#section-1",
@@ -585,7 +585,7 @@
     "href": "slides/07_growth/index.html#wage-ledprofit-led-debate",
     "title": "    Economic Policy Visualization",
     "section": "Wage-led/profit-led debate",
-    "text": "Wage-led/profit-led debate\n\nSeminal theoretical paper: Bhaduri/Marglin (1990)\n\nWage-led vs. profit-led: When income is redistributed towards labour, does investment react more strongly to higher demand or to the lower profit rate?\n\nFirst empirical estimate: Bowles/Boyer (1995)\nTaken up by Post-Keynesians\n\nin Europe (Hein, Onaran, Stockhammer, etc.): Neo-Kaleckians, wage-led\nand in the US (Taylor, etc.): Neo-Goodwinians, profit-led"
+    "text": "Wage-led/profit-led debate\n\nSeminal theoretical paper: Bhaduri/Marglin (1990)\n\nWage-led vs. profit-led: When income is redistributed towards labour, does investment react more strongly to higher demand or to the lower profitability?\n\nFirst empirical estimate: Bowles/Boyer (1995)\nTaken up by Post-Keynesians\n\nin Europe (Hein, Onaran, Stockhammer, etc.): Neo-Kaleckians, wage-led\nand in the US (Taylor, etc.): Neo-Goodwinians, profit-led"
   },
   {
     "objectID": "slides/07_growth/index.html#components-of-demand",
@@ -606,7 +606,7 @@
     "href": "slides/07_growth/index.html#meta-regression-analysis",
     "title": "    Economic Policy Visualization",
     "section": "Meta-Regression analysis",
-    "text": "Meta-Regression analysis\nIn a new article (Dammerer et al., 2024), we study\n\n578 estimates for the relationship between functional distribution and aggregate demand\nfrom 33 empirical studies\nover 163 years and 59 countries and regions\nwhereof 218 estimates refer to total demand and 360 to domestic demand\n\nWe find that\n\nTotal demand is profit-led on average, domestic demand is wage-led\nPublication bias is present. If corrected, total demand is less profit-led\n\n\n\nSummary of the paper: https://mschnetzer.github.io/scrollytell_mra/"
+    "text": "Meta-Regression analysis\nIn a new article (Dammerer et al., 2024), we study\n\n578 estimates for the relationship between functional distribution and aggregate demand\nfrom 33 empirical studies\nover 163 years and 59 countries and regions\nwhereof 218 estimates refer to total demand and 360 to domestic demand\n\nWe find that\n\nTotal demand (\\(C+I+NX\\)) is profit-led on average\nDomestic demand (\\(C+I\\)) is wage-led\nPublication bias is present. If corrected, total demand is less profit-led\n\n\n\nSummary of the paper: https://mschnetzer.github.io/scrollytell_mra/"
   },
   {
     "objectID": "slides/07_growth/index.html#histogram-of-estimates",
