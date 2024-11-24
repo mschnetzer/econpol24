@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "In this table you find the dates and contents of all classes.\n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nContent\nSlides\nCode\nData\nAssignment\n\n\n\n\nOct 07, 2024\n10:00-12:00\nTC.4.02\nIntroduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct 14, 2024\n10.30-12.00\nTC.4.18\nData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2024\n10.30-12.00\nTC.4.18\nVisualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct 28, 2024\n10:00-12:00\nTC.3.07\nIncome · Geometries\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 04, 2024\n10:00-12:00\nD2.0.392\nWealth · Scales\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 11, 2024\n10:00-12:00\nD2.0.030\nMobility · Colors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 18, 2024\n10:00-12:00\nTC.5.12\nGrowth · Labels\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 25, 2024\n10:00-12:00\nTC.5.18\nTaxation · Maps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec 02, 2024\n10:00-12:00\nTC.4.14\nPolicy · Themes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec 09, 2024\n10:00-12:00\nTC.3.07\nStudent presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec 16, 2024\n10:00-12:00\nTC.4.14\nStudent presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2025\n10:00-12:00\nTC.3.07\nRound-up\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAssignments\nAssignment [1] provides the setup of the R infrastructure that is required in this course. There are no points for this assignment. Assignments [2] to [4] are recreations of examplary figures provided below. These examples are related to figures that are discussed in class. Students should then try to reproduce the plots at home and improve their individual coding skills. The raw data for the figures are available as *.csv files below.\n\nHomework 1\n\n\n\n\n\n\n\nInstall the latest R version (&gt; v4.4.0)\nInstall the latest version of RStudio Desktop\nOpen RStudio, copy the following code into the console and execute: install.packages(c(\"tidyverse\", \"rmarkdown\", \"scales\", \"lubridate\", \"colorspace\", \"devtools\")); sessionInfo()\nClick on Help &gt; About RStudio\nMake sure that both the R version (Console) and the RStudio version are visible, take a screenshot and upload it to the learning platform before October 14, 2024 at 9 a.m.\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\nPlease submit your chart before November 04, 2024 at 9 a.m. The data for this assignment is available here: \n\n\n\n\nHomework 3\n\n\n\n\n\n\nPlease submit your chart before November 18, 2024 at 9 a.m. The data for this assignment is available here: \n\n\n\n\nHomework 4\n\n\n\n\n\n\nPlease submit your chart before December 02, 2024 at 9 a.m. The data for this assignment is available here:"
+    "text": "In this table you find the dates and contents of all classes.\n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nContent\nSlides\nCode\nData\nAssignment\n\n\n\n\nOct 07, 2024\n10:00-12:00\nTC.4.02\nIntroduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct 14, 2024\n10.30-12.00\nTC.4.18\nData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2024\n10.30-12.00\nTC.4.18\nVisualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct 28, 2024\n10:00-12:00\nTC.3.07\nIncome · Geometries\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 04, 2024\n10:00-12:00\nD2.0.392\nWealth · Scales\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 11, 2024\n10:00-12:00\nD2.0.030\nMobility · Colors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 18, 2024\n10:00-12:00\nTC.5.12\nGrowth · Labels\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov 25, 2024\n10:00-12:00\nTC.5.18\nRedistribution · Maps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec 02, 2024\n10:00-12:00\nTC.4.14\nPolicy · Themes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec 09, 2024\n10:00-12:00\nTC.3.07\nStudent presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec 16, 2024\n10:00-12:00\nTC.4.14\nStudent presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2025\n10:00-12:00\nTC.3.07\nRound-up\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAssignments\nAssignment [1] provides the setup of the R infrastructure that is required in this course. There are no points for this assignment. Assignments [2] to [4] are recreations of examplary figures provided below. These examples are related to figures that are discussed in class. Students should then try to reproduce the plots at home and improve their individual coding skills. The raw data for the figures are available as *.csv files below.\n\nHomework 1\n\n\n\n\n\n\n\nInstall the latest R version (&gt; v4.4.0)\nInstall the latest version of RStudio Desktop\nOpen RStudio, copy the following code into the console and execute: install.packages(c(\"tidyverse\", \"rmarkdown\", \"scales\", \"lubridate\", \"colorspace\", \"devtools\")); sessionInfo()\nClick on Help &gt; About RStudio\nMake sure that both the R version (Console) and the RStudio version are visible, take a screenshot and upload it to the learning platform before October 14, 2024 at 9 a.m.\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\nPlease submit your chart before November 04, 2024 at 9 a.m. The data for this assignment is available here: \n\n\n\n\nHomework 3\n\n\n\n\n\n\nPlease submit your chart before November 18, 2024 at 9 a.m. The data for this assignment is available here: \n\n\n\n\nHomework 4\n\n\n\n\n\n\nPlease submit your chart before December 02, 2024 at 9 a.m. The data for this assignment is available here:"
   },
   {
     "objectID": "visualization.html",
@@ -39,7 +39,7 @@
     "href": "slides/01_introduction/index.html#schedule",
     "title": "    Economic Policy Visualization",
     "section": "Schedule",
-    "text": "Schedule\n\n  \n  \n\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nContent\nAssignment\n\n\n\n\nOct 07, 2024\n10:00-12:00\nTC.4.02\nIntroduction\n\n\n\nCircle Xmark\n\n\n\n\n\n\nOct 14, 2024\n10.30-12.00\nTC.4.18\nData\n\n\n\nPen\n\n\n\n\n\n\nOct 21, 2024\n10.30-12.00\nTC.4.18\nVisualization\n\n\n\nCircle Xmark\n\n\n\n\n\n\nOct 28, 2024\n10:00-12:00\nTC.3.07\nIncome · Geometries\n\n\n\nCircle Xmark\n\n\n\n\n\n\nNov 04, 2024\n10:00-12:00\nD2.0.392\nWealth · Scales\n\n\n\nPen\n\n\n\n\n\n\nNov 11, 2024\n10:00-12:00\nD2.0.030\nMobility · Colors\n\n\n\nCircle Xmark\n\n\n\n\n\n\nNov 18, 2024\n10:00-12:00\nTC.5.12\nGrowth · Labels\n\n\n\nPen\n\n\n\n\n\n\nNov 25, 2024\n10:00-12:00\nTC.5.18\nTaxation · Maps\n\n\n\nCircle Xmark\n\n\n\n\n\n\nDec 02, 2024\n10:00-12:00\nTC.4.14\nPolicy · Themes\n\n\n\nPen\n\n\n\n\n\n\nDec 09, 2024\n10:00-12:00\nTC.3.07\nStudent presentations\n\n\n\nCircle Xmark\n\n\n\n\n\n\nDec 16, 2024\n10:00-12:00\nTC.4.14\nStudent presentations\n\n\n\nCircle Xmark\n\n\n\n\n\n\nJan 13, 2025\n10:00-12:00\nTC.3.07\nRound-up\n\n\n\nCircle Xmark"
+    "text": "Schedule\n\n  \n  \n\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nContent\nAssignment\n\n\n\n\nOct 07, 2024\n10:00-12:00\nTC.4.02\nIntroduction\n\n\n\nCircle Xmark\n\n\n\n\n\n\nOct 14, 2024\n10.30-12.00\nTC.4.18\nData\n\n\n\nPen\n\n\n\n\n\n\nOct 21, 2024\n10.30-12.00\nTC.4.18\nVisualization\n\n\n\nCircle Xmark\n\n\n\n\n\n\nOct 28, 2024\n10:00-12:00\nTC.3.07\nIncome · Geometries\n\n\n\nCircle Xmark\n\n\n\n\n\n\nNov 04, 2024\n10:00-12:00\nD2.0.392\nWealth · Scales\n\n\n\nPen\n\n\n\n\n\n\nNov 11, 2024\n10:00-12:00\nD2.0.030\nMobility · Colors\n\n\n\nCircle Xmark\n\n\n\n\n\n\nNov 18, 2024\n10:00-12:00\nTC.5.12\nGrowth · Labels\n\n\n\nPen\n\n\n\n\n\n\nNov 25, 2024\n10:00-12:00\nTC.5.18\nRedistribution · Maps\n\n\n\nCircle Xmark\n\n\n\n\n\n\nDec 02, 2024\n10:00-12:00\nTC.4.14\nPolicy · Themes\n\n\n\nPen\n\n\n\n\n\n\nDec 09, 2024\n10:00-12:00\nTC.3.07\nStudent presentations\n\n\n\nCircle Xmark\n\n\n\n\n\n\nDec 16, 2024\n10:00-12:00\nTC.4.14\nStudent presentations\n\n\n\nCircle Xmark\n\n\n\n\n\n\nJan 13, 2025\n10:00-12:00\nTC.3.07\nRound-up\n\n\n\nCircle Xmark"
   },
   {
     "objectID": "slides/01_introduction/index.html#assignments",
@@ -322,181 +322,6 @@
     "text": "Bibliography\n\n\n\n\n\n\n\nChancel, Lucas/Piketty, Thomas/Saez, Emmanuel/Zucman, Gabriel (2022). World inequality report 2022. World Inequality Lab.\n\n\nJosifidis, Kosta/Supic, Novica (2018). Institutionalist Versus Neoclassical View on Income Distribution and Economic Progress: The OECD Panel Evidence. Panoeconomicus, 65(3), 319–337. DOI: 10.2298/pan1803319j\n\n\nKurz, Heinz D./Salvadori, Neri (2010). The Post-Keynesian Theories of Growth and Distribution: A Survey. In Setterfield, Mark (Ed.), Handbook of alternative theories of economic growth. Edward Elgar Publishing. DOI: 10.4337/9781849805582.00010\n\n\nStockhammer, Engelbert (2015). Determinants of the Wage Share: A Panel Analysis of Advanced and Developing Economies. British Journal of Industrial Relations, 55(1), 3–33. DOI: 10.1111/bjir.12165"
   },
   {
-    "objectID": "slides/06_mobility/index.html#discuss-with-your-neighbour",
-    "href": "slides/06_mobility/index.html#discuss-with-your-neighbour",
-    "title": "    Economic Policy Visualization",
-    "section": "Discuss with your neighbour",
-    "text": "Discuss with your neighbour\nHow would you describe the state of intergenerational social mobility in your country?\nWhich channels do you know where parents exert influence on the socio-economic outcomes of children?\n \n\nIllustrations by https://openpeeps.com."
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#selected-channels-of-intergenerational-persistence",
-    "href": "slides/06_mobility/index.html#selected-channels-of-intergenerational-persistence",
-    "title": "    Economic Policy Visualization",
-    "section": "Selected channels of intergenerational persistence",
-    "text": "Selected channels of intergenerational persistence\n\n\nChildren of well-off families attend better educational institutions, which results in higher incomes later on.\nFamily background shapes individual labor market-related characteristics (Habitus, social and cultural capital, health, etc.)\nChildren of poorer families face higher opportunity costs at their job search and tend to accept the first job opportunity\nSocial networks of the well-off facilitate job search substantially\n\n\n\n\nSource: Franzini/Raitano (2009)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#glass-ceiling",
-    "href": "slides/06_mobility/index.html#glass-ceiling",
-    "title": "    Economic Policy Visualization",
-    "section": "Glass ceiling",
-    "text": "Glass ceiling\n\nThat room [at the top] rarely opens up because those mediocrities are too well-screened by parents who hire private tutors, buy cultural enrichment, teach etiquette, set expectations, stand as personal examples of success, coach interview technique, navigate any bureaucratic maze put before them, set up home in nice areas, arrange internships via friends and, just to rub in their supremacy, make direct gifts of cash and assets. To fail under these conditions is a kind of achievement in itself.\n\n\nJanan GaneshFinancial Times (December 9, 2016)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#cultural-capital-matters",
-    "href": "slides/06_mobility/index.html#cultural-capital-matters",
-    "title": "    Economic Policy Visualization",
-    "section": "Cultural capital matters",
-    "text": "Cultural capital matters\n“Did you and your family regularly attend cultural activities (e.g. theatre) when you were ten years old?”\n\n\n\nSource: Six/Schnetzer (2024)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#traditional-theory",
-    "href": "slides/06_mobility/index.html#traditional-theory",
-    "title": "    Economic Policy Visualization",
-    "section": "Traditional theory",
-    "text": "Traditional theory\nBecker/Tomes (1979), Becker/Tomes (1986):\n\n\nOptimization problem for parental investments into the human capital of descendants (utility of parents is maximized)\nStochastic term for “birth lottery” (genetic abilities, talents): Nature versus Nurture\nParental utility does not only depend on the life-cycle income of the descendant, but there is dynastic utility\n\n\n\nResponse by Daly (1982): Provision of descendants in future generations is a public good, since the future offspring may potentially descend from all other members in a society.\n\n\nObjection by Mani et al. (2013): Rational parental behaviour is limited by income and wealth, since poverty impedes cognitive abilities of adults and hinders rational investment decisions in childern."
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#measurement-of-intergenerational-mobility",
-    "href": "slides/06_mobility/index.html#measurement-of-intergenerational-mobility",
-    "title": "    Economic Policy Visualization",
-    "section": "Measurement of intergenerational mobility",
-    "text": "Measurement of intergenerational mobility\n\nIntergenerational earnings elasticity: \\(\\beta\\) \\[log~y_{ic} = \\alpha + \\beta~y_{ip} + \\varepsilon_{ic}\\] Intergenerational earnings correlation: \\(\\rho\\) \\[\\rho = \\beta~\\frac{\\sigma_p}{\\sigma_c}\\] with \\(\\sigma\\) being the standard deviation."
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#life-cycle-vs.-current-income",
-    "href": "slides/06_mobility/index.html#life-cycle-vs.-current-income",
-    "title": "    Economic Policy Visualization",
-    "section": "Life cycle vs. current income",
-    "text": "Life cycle vs. current income\n\n(Measurable) current income corresponds to life cycle income plus random transitory deviations \\[ y_{ic}^* = y_{ic} + \\omega_{ic} \\\\\ny_{ip}^* = y_{ip} + \\omega_{ip} \\]\nIntergenerational elasticity is calculated with current income records\n\\[ plim~\\widehat{\\beta} = \\frac{cov(y_{ip}^*, y_{ic}^*)}{var(y_{ip}^*)} = \\\\\n= \\frac{\\beta\\left[var(y_{ip}) + cov(y_{ip}, \\omega_{ip})\\right] + cov(y_{ic}, \\omega_{ic})/\\beta + cov(\\omega_{ic}, \\omega_{ip})}{var(y_{ip}) + 2 \\cdot cov(y_{ip}, \\omega_{ip}) + var(\\omega_{ip})} \\]\nConsequently there is an attenuation bias (downward bias) \\[ plim~\\widehat{\\beta} = \\beta \\frac{var(y_{ip})}{var(y_{ip}) + var(\\omega_{ip})} &lt; \\beta \\]"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#transition-matrices",
-    "href": "slides/06_mobility/index.html#transition-matrices",
-    "title": "    Economic Policy Visualization",
-    "section": "Transition matrices",
-    "text": "Transition matrices\nA transition matrix captures the probabilities of switches \\(p_{ij}\\) from status \\(i\\) to \\(j\\).\n\\[\n  P =\n  \\left[ {\\begin{array}{cccc}\n    p_{11} & p_{12} & \\cdots & p_{1n}\\\\\n    p_{21} & p_{22} & \\cdots & p_{2n}\\\\\n    \\vdots & \\vdots & \\ddots & \\vdots\\\\\n    p_{m1} & p_{m2} & \\cdots & p_{mn}\\\\\n  \\end{array} } \\right]\n\\]\n\nThere are various indices to compare transition matrices:\n\nPrais-Index: \\(M(P) = \\frac{n - trace(P)}{n-1}\\) where \\(M(P) \\in [0,1]\\)\nAbsolute Average Jump (AAJ): \\(\\Omega = \\frac{\\sum_{i=1}^{n}|rank_{ic} - rank_{ip}|}{n}\\)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#great-gatsby-curve",
-    "href": "slides/06_mobility/index.html#great-gatsby-curve",
-    "title": "    Economic Policy Visualization",
-    "section": "Great Gatsby curve",
-    "text": "Great Gatsby curve\n\n\n\n\n\n\n\n\n\nSource: OECD (2018), Corak (2013)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#educational-mobility-in-austria",
-    "href": "slides/06_mobility/index.html#educational-mobility-in-austria",
-    "title": "    Economic Policy Visualization",
-    "section": "Educational mobility in Austria",
-    "text": "Educational mobility in Austria\n\n\n\n\n\n\n\n\n\nSource: Statistics Austria. Note: Sample of 25 to 44 years of age."
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#decreasing-absolute-mobility-in-the-us",
-    "href": "slides/06_mobility/index.html#decreasing-absolute-mobility-in-the-us",
-    "title": "    Economic Policy Visualization",
-    "section": "Decreasing absolute mobility in the US",
-    "text": "Decreasing absolute mobility in the US\n\n\n\n\n\n\n\nSource: Chetty et al. (2017)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#long-term-social-persistence",
-    "href": "slides/06_mobility/index.html#long-term-social-persistence",
-    "title": "    Economic Policy Visualization",
-    "section": "Long-term social persistence",
-    "text": "Long-term social persistence\n\n\n🇬🇧 Clark/Cummins (2015): Richest british families around 1850 still own four times the average family wealth in 2012  (= 5 generations later)\n🇮🇹 Barone/Mocetti (2020): Families with highest income in Florence in 1427 still are at the top of the income distribution in 2011  (= 6 centuries later)\n🇩🇪 Braun/Stuhler (2017): Social status in Germany also depends from the great-grandparents. (= 4 generations later)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#mobility-takes-generations",
-    "href": "slides/06_mobility/index.html#mobility-takes-generations",
-    "title": "    Economic Policy Visualization",
-    "section": "Mobility takes generations",
-    "text": "Mobility takes generations\n\n\n\n\n\n\n\n\n\nSource: OECD (2018)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#colors-in-r",
-    "href": "slides/06_mobility/index.html#colors-in-r",
-    "title": "    Economic Policy Visualization",
-    "section": "Colors in R",
-    "text": "Colors in R\nYou can assign colors by names\n\n“red”, “green”, “chocolate”, “cadetblue”, etc.\nSee a complete list of the 657 colors typing colors()\n\n\n\n\n [1] \"white\"         \"aliceblue\"     \"antiquewhite\"  \"antiquewhite1\"\n [5] \"antiquewhite2\" \"antiquewhite3\" \"antiquewhite4\" \"aquamarine\"   \n [9] \"aquamarine1\"   \"aquamarine2\"   \"aquamarine3\"   \"aquamarine4\"  \n\n\n\n\n Alternatively, you can use hex color codes\n\n#F8766D, #00BA38, #619CFF, etc.\nUse color picker to get hex code, e.g. https://htmlcolorcodes.com"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#color-palettes-of-rcolorbrewer",
-    "href": "slides/06_mobility/index.html#color-palettes-of-rcolorbrewer",
-    "title": "    Economic Policy Visualization",
-    "section": "Color palettes of {RColorBrewer}",
-    "text": "Color palettes of {RColorBrewer}\n\n\nSequential\nUse to encode numerical information with order\n\n\n\n\n\n\n\n\n\n\nDiverging\nUse to encode numerical information with critical midpoint\n\n\n\n\n\n\n\n\n\n\nQualitative\nUse to encode categorical information\n\n\n\n\n\n\n\n\n\n\n\n\nSource: Scherer (2022)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#color-blindness",
-    "href": "slides/06_mobility/index.html#color-blindness",
-    "title": "    Economic Policy Visualization",
-    "section": "Color blindness",
-    "text": "Color blindness\n\n\nYou may check whether the color scale works for people who can distinguish fewer colours than others with {colorBlindness}.\n\n\n\n\n\n\n\n\n\n\nThe viridis color scale is discriminable under the most common forms of colour blindness, and reproduces well in greyscale."
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#fancy-palettes",
-    "href": "slides/06_mobility/index.html#fancy-palettes",
-    "title": "    Economic Policy Visualization",
-    "section": "Fancy palettes",
-    "text": "Fancy palettes\n\n\n{MetBrewer}\n\n\n\n\n\n\n\n\n\n\n{wesanderson}"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#color-scales-in-ggplot",
-    "href": "slides/06_mobility/index.html#color-scales-in-ggplot",
-    "title": "    Economic Policy Visualization",
-    "section": "Color scales in {ggplot}",
-    "text": "Color scales in {ggplot}\n\nscale_color_*  scale_fill_*\n\n\n\nContinuous:\n\ncontinuous(type)\ndistiller(palette)\ngradient(high, low)\ngradient2(high, mid, low)\ngradientn(colours)\nviridis_c(option)\n\n\nDiscrete:\n\nmanual(values)\nbrewer(palette)\ngrey(start, end)\nviridis_d(option)"
-  },
-  {
-    "objectID": "slides/06_mobility/index.html#bibliography",
-    "href": "slides/06_mobility/index.html#bibliography",
-    "title": "    Economic Policy Visualization",
-    "section": "Bibliography",
-    "text": "Bibliography\n\n\n\n\n\n\n\nBarone, Guglielmo/Mocetti, Sauro (2020). Intergenerational Mobility in the Very Long Run: Florence 1427-2011. The Review of Economic Studies, 88(4), 1863–1891. DOI: 10.1093/restud/rdaa075\n\n\nBecker, Gary/Tomes, Nigel (1979). An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility. The Journal of Political Economy, 87(6), 1153–1189.\n\n\nBecker, Gary/Tomes, Nigel (1986). Human Capital and the Rise and Fall of Families. Journal of Labor Economics, 4(3), S1–S39.\n\n\nBraun, Sebastian Till/Stuhler, Jan (2017). The Transmission of Inequality Across Multiple Generations: Testing Recent Theories with Evidence from Germany. The Economic Journal, 128(609), 576–611. DOI: 10.1111/ecoj.12453\n\n\nChetty, Raj/Grusky, David/Hell, Maximilian/Hendren, Nathaniel/Manduca, Robert/Narang, Jimmy (2017). The Fading American Dream: Trends in Absolute Income Mobility Since 1940. Science, 356(6336), 398–406. DOI: 10.1126/science.aal4617\n\n\nClark, Gregory/Cummins, Neil (2015). Intergenerational Wealth Mobility in England, 1858–2012: Surnames and Social Mobility. The Economic Journal, 125(582), 61–85. DOI: 10.1111/ecoj.12165\n\n\nCorak, Miles (2013). Income Inequality, Equality of Opportunity, and Intergenerational Mobility. Journal of Economic Perspectives, 27(3), 79–102. DOI: 10.1257/jep.27.3.79\n\n\nDaly, Herman E. (1982). Chicago School Individualism Versus Sexual Reproduction: A Critique of Becker and Tomes. Journal of Economic Issues, 16(1), 307–312.\n\n\nFranzini, Maurizio/Raitano, Michele (2009). Persistence of Inequality in Europe: The Role of Family Economic Conditions. International Review of Applied Economics, 23(3), 345–366. DOI: 10.1080/02692170902811777\n\n\nMani, Anandi/Mullainathan, Sendhil/Shafir, Eldar/Zhao, Jiaying (2013). Poverty Impedes Cognitive Function. Science, 341(6149), 976–980. DOI: 10.1126/science.1238041\n\n\nOECD (2018). A broken social elevator? How to promote social mobility. OECD Publishing. DOI: 10.1787/9789264301085-en\n\n\nScherer, Cédric (2022). Graphic Design with Ggplot2. https://rstudio-conf-2022.github.io/ggplot2-graphic-design/\n\n\nSix, Eva/Schnetzer, Matthias (2024). Highbrow Heritage: The Effects of Childhood Cultural Capital on Wealth. Review of Economics of the Household. DOI: 10.1007/s11150-024-09733-6"
-  },
-  {
-    "objectID": "gallery.html",
-    "href": "gallery.html",
-    "title": "Gallery",
-    "section": "",
-    "text": "Selected charts created by students in this course"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\n            Economic Policy Visualization\n        ",
-    "section": "",
-    "text": "Economic Policy (Applied track)\n        \n        \n            Economic Policy Visualization\n        \n        \n            PI 0750 • Winter term 2024  Vienna University of Economics and Business\n        \n    \n    \n          \n            \n            \n          \n        \n\n\n\n\n\n\nLecturer\n\n   Dr. Matthias Schnetzer\n   https://mschnetzer.github.io\n   mschnetz@wu.ac.at\n   matschnetzer\n\n\n\nCourse details\n\n   Oct 7, 2024 – Jan 13, 2025\n   Mondays\n   10:00–12:00\n   WU Campus\n\n\n\nContact\nPlease contact me via e-mail and I will usually respond within a few days. Note that we use the learning platform learn.wu.ac.at for all assignments in this course.\n\n\n\nSummary\n“A picture is worth a thousand words”. This course approaches contemporary issues of economic policy by analyzing innovative and iconic data visualizations. Based on selected illustrations, we discuss the underlying data, the theoretical background and policy implications with a focus on the nexus between inequality and economic growth. In a second step, we will assemble plots in class and study the basics of data visualization for policy design and evaluation. Students are required to recreate figures at home to improve their skills in coding. The main task is that students will design a comprehensive data visualization in R and draft a report around that figure in RMarkdown (or Quarto). Student will need to bring their laptop to class and prior knowledge of data handling in R is beneficial.\n  \nTo sum up, students will gain:\n\n\nan overview of contemporary debates in economic policy based on recent empirical research\nan understanding of the basics of data visualization for policy design and evaluation\nknowledge how to enrich academic journal publications with informative figures"
-  },
-  {
-    "objectID": "slides/08_taxation/index.html#projections",
-    "href": "slides/08_taxation/index.html#projections",
-    "title": "    Economic Policy Visualization",
-    "section": "Projections",
-    "text": "Projections\nChoose a map projection! For instance, {giscoR} by Eurostat provides maps in the following three projections. Check coordinates for axis limits at https://epsg.io."
-  },
-  {
-    "objectID": "slides/08_taxation/index.html#the-sf-package",
-    "href": "slides/08_taxation/index.html#the-sf-package",
-    "title": "    Economic Policy Visualization",
-    "section": "The {sf} package",
-    "text": "The {sf} package\nThe sf (simple features) package deals with spatial geometries. These features have a geometry describing where on Earth the feature is located, and they have attributes, which describe other properties."
-  },
-  {
-    "objectID": "slides/08_taxation/index.html#plot-a-map",
-    "href": "slides/08_taxation/index.html#plot-a-map",
-    "title": "    Economic Policy Visualization",
-    "section": "Plot a map",
-    "text": "Plot a map\n\neurope_3035 |&gt; select(CNTR_ID, NAME_ENGL, geometry) |&gt; slice_head(n = 3)\n\nSimple feature collection with 3 features and 2 fields\nGeometry type: POLYGON\nDimension:     XY\nBounding box:  xmin: 3618229 ymin: 1900590 xmax: 5257241 ymax: 2889034\nProjected CRS: ETRS89-extended / LAEA Europe\n  CNTR_ID NAME_ENGL                       geometry\n1      AL   Albania POLYGON ((5148385 2216599, ...\n2      AT   Austria POLYGON ((4832035 2857837, ...\n3      AD   Andorra POLYGON ((3640254 2192873, ...\n\neurope_3035 |&gt; ggplot() + \n  geom_sf(fill = \"midnightblue\", linewidth = .1, color = \"white\") + \n  coord_sf(xlim = c(2377294, 7453440), ylim = c(1313597, 5628510), expand = F)"
-  },
-  {
-    "objectID": "slides/08_taxation/index.html#bibliography",
-    "href": "slides/08_taxation/index.html#bibliography",
-    "title": "    Economic Policy Visualization",
-    "section": "Bibliography",
-    "text": "Bibliography"
-  },
-  {
     "objectID": "slides/07_growth/index.html#growth-in-economic-policy",
     "href": "slides/07_growth/index.html#growth-in-economic-policy",
     "title": "    Economic Policy Visualization",
@@ -707,6 +532,412 @@
     "text": "Bibliography\n\n\n\n\n\n\n\nBhaduri, Amit/Marglin, Stephen (1990). Unemployment and the Real Wage: The Economic Basis for Contesting Political Ideologies. Cambridge Journal of Economics, 14(4), 375–393. DOI: 10.1093/oxfordjournals.cje.a035141\n\n\nBowles, Samuel/Boyer, Robert (1995). Wages, Aggregate Demand, and Employment in an Open Economy: An Empirical Investigation. In Macroeconomic policy after the conservative era : Studies in investment, saving and finance (143–171). Cambridge Univ. Press.\n\n\nDammerer, Quirin/List, Ludwig/Rehm, Miriam/Schnetzer, Matthias (2024). Macroeconomic Effects of a Declining Wage Share: A Meta‐analysis of the Functional Income Distribution and Aggregate Demand. Journal of Economic Surveys. DOI: 10.1111/joes.12614\n\n\nOnaran, Özlem/Galanis, Giorgos (2012). Is aggregate demand wage-led or profit-led? National and global effects (Conditions of Work and Employment Series No. 40). ILO.\n\n\nPasinetti, Luigi L. (1962). Rate of Profit and Income Distribution in Relation to the Rate of Economic Growth. The Review of Economic Studies, 29(4), 267. DOI: 10.2307/2296303\n\n\nTobin, James (1964). Economic Growth as an Objective of Government Policy. American Economic Review, 54(3), 1–20."
   },
   {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "Selected charts created by students in this course"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n            Economic Policy Visualization\n        ",
+    "section": "",
+    "text": "Economic Policy (Applied track)\n        \n        \n            Economic Policy Visualization\n        \n        \n            PI 0750 • Winter term 2024  Vienna University of Economics and Business\n        \n    \n    \n          \n            \n            \n          \n        \n\n\n\n\n\n\nLecturer\n\n   Dr. Matthias Schnetzer\n   https://mschnetzer.github.io\n   mschnetz@wu.ac.at\n   matschnetzer\n\n\n\nCourse details\n\n   Oct 7, 2024 – Jan 13, 2025\n   Mondays\n   10:00–12:00\n   WU Campus\n\n\n\nContact\nPlease contact me via e-mail and I will usually respond within a few days. Note that we use the learning platform learn.wu.ac.at for all assignments in this course.\n\n\n\nSummary\n“A picture is worth a thousand words”. This course approaches contemporary issues of economic policy by analyzing innovative and iconic data visualizations. Based on selected illustrations, we discuss the underlying data, the theoretical background and policy implications with a focus on the nexus between inequality and economic growth. In a second step, we will assemble plots in class and study the basics of data visualization for policy design and evaluation. Students are required to recreate figures at home to improve their skills in coding. The main task is that students will design a comprehensive data visualization in R and draft a report around that figure in RMarkdown (or Quarto). Student will need to bring their laptop to class and prior knowledge of data handling in R is beneficial.\n  \nTo sum up, students will gain:\n\n\nan overview of contemporary debates in economic policy based on recent empirical research\nan understanding of the basics of data visualization for policy design and evaluation\nknowledge how to enrich academic journal publications with informative figures"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#discuss-with-your-neighbour",
+    "href": "slides/06_mobility/index.html#discuss-with-your-neighbour",
+    "title": "    Economic Policy Visualization",
+    "section": "Discuss with your neighbour",
+    "text": "Discuss with your neighbour\nHow would you describe the state of intergenerational social mobility in your country?\nWhich channels do you know where parents exert influence on the socio-economic outcomes of children?\n \n\nIllustrations by https://openpeeps.com."
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#selected-channels-of-intergenerational-persistence",
+    "href": "slides/06_mobility/index.html#selected-channels-of-intergenerational-persistence",
+    "title": "    Economic Policy Visualization",
+    "section": "Selected channels of intergenerational persistence",
+    "text": "Selected channels of intergenerational persistence\n\n\nChildren of well-off families attend better educational institutions, which results in higher incomes later on.\nFamily background shapes individual labor market-related characteristics (Habitus, social and cultural capital, health, etc.)\nChildren of poorer families face higher opportunity costs at their job search and tend to accept the first job opportunity\nSocial networks of the well-off facilitate job search substantially\n\n\n\n\nSource: Franzini/Raitano (2009)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#glass-ceiling",
+    "href": "slides/06_mobility/index.html#glass-ceiling",
+    "title": "    Economic Policy Visualization",
+    "section": "Glass ceiling",
+    "text": "Glass ceiling\n\nThat room [at the top] rarely opens up because those mediocrities are too well-screened by parents who hire private tutors, buy cultural enrichment, teach etiquette, set expectations, stand as personal examples of success, coach interview technique, navigate any bureaucratic maze put before them, set up home in nice areas, arrange internships via friends and, just to rub in their supremacy, make direct gifts of cash and assets. To fail under these conditions is a kind of achievement in itself.\n\n\nJanan GaneshFinancial Times (December 9, 2016)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#cultural-capital-matters",
+    "href": "slides/06_mobility/index.html#cultural-capital-matters",
+    "title": "    Economic Policy Visualization",
+    "section": "Cultural capital matters",
+    "text": "Cultural capital matters\n“Did you and your family regularly attend cultural activities (e.g. theatre) when you were ten years old?”\n\n\n\nSource: Six/Schnetzer (2024)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#traditional-theory",
+    "href": "slides/06_mobility/index.html#traditional-theory",
+    "title": "    Economic Policy Visualization",
+    "section": "Traditional theory",
+    "text": "Traditional theory\nBecker/Tomes (1979), Becker/Tomes (1986):\n\n\nOptimization problem for parental investments into the human capital of descendants (utility of parents is maximized)\nStochastic term for “birth lottery” (genetic abilities, talents): Nature versus Nurture\nParental utility does not only depend on the life-cycle income of the descendant, but there is dynastic utility\n\n\n\nResponse by Daly (1982): Provision of descendants in future generations is a public good, since the future offspring may potentially descend from all other members in a society.\n\n\nObjection by Mani et al. (2013): Rational parental behaviour is limited by income and wealth, since poverty impedes cognitive abilities of adults and hinders rational investment decisions in childern."
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#measurement-of-intergenerational-mobility",
+    "href": "slides/06_mobility/index.html#measurement-of-intergenerational-mobility",
+    "title": "    Economic Policy Visualization",
+    "section": "Measurement of intergenerational mobility",
+    "text": "Measurement of intergenerational mobility\n\nIntergenerational earnings elasticity: \\(\\beta\\) \\[log~y_{ic} = \\alpha + \\beta~y_{ip} + \\varepsilon_{ic}\\] Intergenerational earnings correlation: \\(\\rho\\) \\[\\rho = \\beta~\\frac{\\sigma_p}{\\sigma_c}\\] with \\(\\sigma\\) being the standard deviation."
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#life-cycle-vs.-current-income",
+    "href": "slides/06_mobility/index.html#life-cycle-vs.-current-income",
+    "title": "    Economic Policy Visualization",
+    "section": "Life cycle vs. current income",
+    "text": "Life cycle vs. current income\n\n(Measurable) current income corresponds to life cycle income plus random transitory deviations \\[ y_{ic}^* = y_{ic} + \\omega_{ic} \\\\\ny_{ip}^* = y_{ip} + \\omega_{ip} \\]\nIntergenerational elasticity is calculated with current income records\n\\[ plim~\\widehat{\\beta} = \\frac{cov(y_{ip}^*, y_{ic}^*)}{var(y_{ip}^*)} = \\\\\n= \\frac{\\beta\\left[var(y_{ip}) + cov(y_{ip}, \\omega_{ip})\\right] + cov(y_{ic}, \\omega_{ic})/\\beta + cov(\\omega_{ic}, \\omega_{ip})}{var(y_{ip}) + 2 \\cdot cov(y_{ip}, \\omega_{ip}) + var(\\omega_{ip})} \\]\nConsequently there is an attenuation bias (downward bias) \\[ plim~\\widehat{\\beta} = \\beta \\frac{var(y_{ip})}{var(y_{ip}) + var(\\omega_{ip})} &lt; \\beta \\]"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#transition-matrices",
+    "href": "slides/06_mobility/index.html#transition-matrices",
+    "title": "    Economic Policy Visualization",
+    "section": "Transition matrices",
+    "text": "Transition matrices\nA transition matrix captures the probabilities of switches \\(p_{ij}\\) from status \\(i\\) to \\(j\\).\n\\[\n  P =\n  \\left[ {\\begin{array}{cccc}\n    p_{11} & p_{12} & \\cdots & p_{1n}\\\\\n    p_{21} & p_{22} & \\cdots & p_{2n}\\\\\n    \\vdots & \\vdots & \\ddots & \\vdots\\\\\n    p_{m1} & p_{m2} & \\cdots & p_{mn}\\\\\n  \\end{array} } \\right]\n\\]\n\nThere are various indices to compare transition matrices:\n\nPrais-Index: \\(M(P) = \\frac{n - trace(P)}{n-1}\\) where \\(M(P) \\in [0,1]\\)\nAbsolute Average Jump (AAJ): \\(\\Omega = \\frac{\\sum_{i=1}^{n}|rank_{ic} - rank_{ip}|}{n}\\)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#great-gatsby-curve",
+    "href": "slides/06_mobility/index.html#great-gatsby-curve",
+    "title": "    Economic Policy Visualization",
+    "section": "Great Gatsby curve",
+    "text": "Great Gatsby curve\n\n\n\n\n\n\n\n\n\nSource: OECD (2018), Corak (2013)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#educational-mobility-in-austria",
+    "href": "slides/06_mobility/index.html#educational-mobility-in-austria",
+    "title": "    Economic Policy Visualization",
+    "section": "Educational mobility in Austria",
+    "text": "Educational mobility in Austria\n\n\n\n\n\n\n\n\n\nSource: Statistics Austria. Note: Sample of 25 to 44 years of age."
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#decreasing-absolute-mobility-in-the-us",
+    "href": "slides/06_mobility/index.html#decreasing-absolute-mobility-in-the-us",
+    "title": "    Economic Policy Visualization",
+    "section": "Decreasing absolute mobility in the US",
+    "text": "Decreasing absolute mobility in the US\n\n\n\n\n\n\n\nSource: Chetty et al. (2017)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#long-term-social-persistence",
+    "href": "slides/06_mobility/index.html#long-term-social-persistence",
+    "title": "    Economic Policy Visualization",
+    "section": "Long-term social persistence",
+    "text": "Long-term social persistence\n\n\n🇬🇧 Clark/Cummins (2015): Richest british families around 1850 still own four times the average family wealth in 2012  (= 5 generations later)\n🇮🇹 Barone/Mocetti (2020): Families with highest income in Florence in 1427 still are at the top of the income distribution in 2011  (= 6 centuries later)\n🇩🇪 Braun/Stuhler (2017): Social status in Germany also depends from the great-grandparents. (= 4 generations later)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#mobility-takes-generations",
+    "href": "slides/06_mobility/index.html#mobility-takes-generations",
+    "title": "    Economic Policy Visualization",
+    "section": "Mobility takes generations",
+    "text": "Mobility takes generations\n\n\n\n\n\n\n\n\n\nSource: OECD (2018)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#colors-in-r",
+    "href": "slides/06_mobility/index.html#colors-in-r",
+    "title": "    Economic Policy Visualization",
+    "section": "Colors in R",
+    "text": "Colors in R\nYou can assign colors by names\n\n“red”, “green”, “chocolate”, “cadetblue”, etc.\nSee a complete list of the 657 colors typing colors()\n\n\n\n\n [1] \"white\"         \"aliceblue\"     \"antiquewhite\"  \"antiquewhite1\"\n [5] \"antiquewhite2\" \"antiquewhite3\" \"antiquewhite4\" \"aquamarine\"   \n [9] \"aquamarine1\"   \"aquamarine2\"   \"aquamarine3\"   \"aquamarine4\"  \n\n\n\n\n Alternatively, you can use hex color codes\n\n#F8766D, #00BA38, #619CFF, etc.\nUse color picker to get hex code, e.g. https://htmlcolorcodes.com"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#color-palettes-of-rcolorbrewer",
+    "href": "slides/06_mobility/index.html#color-palettes-of-rcolorbrewer",
+    "title": "    Economic Policy Visualization",
+    "section": "Color palettes of {RColorBrewer}",
+    "text": "Color palettes of {RColorBrewer}\n\n\nSequential\nUse to encode numerical information with order\n\n\n\n\n\n\n\n\n\n\nDiverging\nUse to encode numerical information with critical midpoint\n\n\n\n\n\n\n\n\n\n\nQualitative\nUse to encode categorical information\n\n\n\n\n\n\n\n\n\n\n\n\nSource: Scherer (2022)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#color-blindness",
+    "href": "slides/06_mobility/index.html#color-blindness",
+    "title": "    Economic Policy Visualization",
+    "section": "Color blindness",
+    "text": "Color blindness\n\n\nYou may check whether the color scale works for people who can distinguish fewer colours than others with {colorBlindness}.\n\n\n\n\n\n\n\n\n\n\nThe viridis color scale is discriminable under the most common forms of colour blindness, and reproduces well in greyscale."
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#fancy-palettes",
+    "href": "slides/06_mobility/index.html#fancy-palettes",
+    "title": "    Economic Policy Visualization",
+    "section": "Fancy palettes",
+    "text": "Fancy palettes\n\n\n{MetBrewer}\n\n\n\n\n\n\n\n\n\n\n{wesanderson}"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#color-scales-in-ggplot",
+    "href": "slides/06_mobility/index.html#color-scales-in-ggplot",
+    "title": "    Economic Policy Visualization",
+    "section": "Color scales in {ggplot}",
+    "text": "Color scales in {ggplot}\n\nscale_color_*  scale_fill_*\n\n\n\nContinuous:\n\ncontinuous(type)\ndistiller(palette)\ngradient(high, low)\ngradient2(high, mid, low)\ngradientn(colours)\nviridis_c(option)\n\n\nDiscrete:\n\nmanual(values)\nbrewer(palette)\ngrey(start, end)\nviridis_d(option)"
+  },
+  {
+    "objectID": "slides/06_mobility/index.html#bibliography",
+    "href": "slides/06_mobility/index.html#bibliography",
+    "title": "    Economic Policy Visualization",
+    "section": "Bibliography",
+    "text": "Bibliography\n\n\n\n\n\n\n\nBarone, Guglielmo/Mocetti, Sauro (2020). Intergenerational Mobility in the Very Long Run: Florence 1427-2011. The Review of Economic Studies, 88(4), 1863–1891. DOI: 10.1093/restud/rdaa075\n\n\nBecker, Gary/Tomes, Nigel (1979). An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility. The Journal of Political Economy, 87(6), 1153–1189.\n\n\nBecker, Gary/Tomes, Nigel (1986). Human Capital and the Rise and Fall of Families. Journal of Labor Economics, 4(3), S1–S39.\n\n\nBraun, Sebastian Till/Stuhler, Jan (2017). The Transmission of Inequality Across Multiple Generations: Testing Recent Theories with Evidence from Germany. The Economic Journal, 128(609), 576–611. DOI: 10.1111/ecoj.12453\n\n\nChetty, Raj/Grusky, David/Hell, Maximilian/Hendren, Nathaniel/Manduca, Robert/Narang, Jimmy (2017). The Fading American Dream: Trends in Absolute Income Mobility Since 1940. Science, 356(6336), 398–406. DOI: 10.1126/science.aal4617\n\n\nClark, Gregory/Cummins, Neil (2015). Intergenerational Wealth Mobility in England, 1858–2012: Surnames and Social Mobility. The Economic Journal, 125(582), 61–85. DOI: 10.1111/ecoj.12165\n\n\nCorak, Miles (2013). Income Inequality, Equality of Opportunity, and Intergenerational Mobility. Journal of Economic Perspectives, 27(3), 79–102. DOI: 10.1257/jep.27.3.79\n\n\nDaly, Herman E. (1982). Chicago School Individualism Versus Sexual Reproduction: A Critique of Becker and Tomes. Journal of Economic Issues, 16(1), 307–312.\n\n\nFranzini, Maurizio/Raitano, Michele (2009). Persistence of Inequality in Europe: The Role of Family Economic Conditions. International Review of Applied Economics, 23(3), 345–366. DOI: 10.1080/02692170902811777\n\n\nMani, Anandi/Mullainathan, Sendhil/Shafir, Eldar/Zhao, Jiaying (2013). Poverty Impedes Cognitive Function. Science, 341(6149), 976–980. DOI: 10.1126/science.1238041\n\n\nOECD (2018). A broken social elevator? How to promote social mobility. OECD Publishing. DOI: 10.1787/9789264301085-en\n\n\nScherer, Cédric (2022). Graphic Design with Ggplot2. https://rstudio-conf-2022.github.io/ggplot2-graphic-design/\n\n\nSix, Eva/Schnetzer, Matthias (2024). Highbrow Heritage: The Effects of Childhood Cultural Capital on Wealth. Review of Economics of the Household. DOI: 10.1007/s11150-024-09733-6"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#the-rise-of-the-welfare-state",
+    "href": "slides/08_redistribution/index.html#the-rise-of-the-welfare-state",
+    "title": "    Economic Policy Visualization",
+    "section": "The rise of the welfare state…",
+    "text": "The rise of the welfare state…\n\n\n\n\n\n\n\nSource: Chancel et al. (2022)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#and-the-demise-of-income-taxation",
+    "href": "slides/08_redistribution/index.html#and-the-demise-of-income-taxation",
+    "title": "    Economic Policy Visualization",
+    "section": "…and the demise of income taxation?",
+    "text": "…and the demise of income taxation?\n\n\n\n\n\n\n\nSource: Chancel et al. (2022)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#government-revenue-and-expenditure-in-austria",
+    "href": "slides/08_redistribution/index.html#government-revenue-and-expenditure-in-austria",
+    "title": "    Economic Policy Visualization",
+    "section": "Government revenue and expenditure in Austria",
+    "text": "Government revenue and expenditure in Austria\n\n\n\nSource: WIFO (2023)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#taxation-in-austria",
+    "href": "slides/08_redistribution/index.html#taxation-in-austria",
+    "title": "    Economic Policy Visualization",
+    "section": "Taxation in Austria",
+    "text": "Taxation in Austria\n\n\n\nIncome tax (wages and pensions, self-employed income, capital gains, property income, etc.)\nCorporate income tax\nValue added tax, alcohol tax (liquors), beer tax, wine tax, tobacco tax\nCarbon tax, Mineral oil tax, energy tax, natural gas tax, coal tax\nMotor vehicle tax, standardised consumption tax (one-off tax on motor vehicles)\n\n\n\n\n\nProperty tax\nReal estate transfer tax\nInsurance tax\nAdvertizing tax, digital tax (on online ad banners)\nAir transport tax\nMunicipal tax"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#composition-of-primary-income-in-austria",
+    "href": "slides/08_redistribution/index.html#composition-of-primary-income-in-austria",
+    "title": "    Economic Policy Visualization",
+    "section": "Composition of primary income in Austria",
+    "text": "Composition of primary income in Austria"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#composition-of-tax-revenue-by-private-households",
+    "href": "slides/08_redistribution/index.html#composition-of-tax-revenue-by-private-households",
+    "title": "    Economic Policy Visualization",
+    "section": "Composition of tax revenue by private households",
+    "text": "Composition of tax revenue by private households"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#tax-burden-on-employment-across-the-oecd",
+    "href": "slides/08_redistribution/index.html#tax-burden-on-employment-across-the-oecd",
+    "title": "    Economic Policy Visualization",
+    "section": "Tax burden on employment across the OECD",
+    "text": "Tax burden on employment across the OECD\n\n\n\nNote: Tax wedge is defined as the ratio between the amount of taxes paid by an average single worker and the total labour cost for the employer. Source: OECD"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#tax-burden-on-wealth-across-the-oecd",
+    "href": "slides/08_redistribution/index.html#tax-burden-on-wealth-across-the-oecd",
+    "title": "    Economic Policy Visualization",
+    "section": "Tax burden on wealth across the OECD",
+    "text": "Tax burden on wealth across the OECD\n\n\n\nNote: Tax on property is defined as recurrent and non-recurrent taxes on the use, ownership or transfer of property in % of total tax revenues. Source: OECD"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#inheritances-as-potential-source-of-tax-revenue",
+    "href": "slides/08_redistribution/index.html#inheritances-as-potential-source-of-tax-revenue",
+    "title": "    Economic Policy Visualization",
+    "section": "Inheritances as potential source of tax revenue",
+    "text": "Inheritances as potential source of tax revenue\n\n\n\n\n\n\n\nSource: Grünberger et al. (2024)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#revenue-potential-of-inheritance-taxation",
+    "href": "slides/08_redistribution/index.html#revenue-potential-of-inheritance-taxation",
+    "title": "    Economic Policy Visualization",
+    "section": "Revenue potential of inheritance taxation",
+    "text": "Revenue potential of inheritance taxation\n\n\n\n\n\n\n\nSource: Grünberger et al. (2024)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#redistributive-effects-of-taxation",
+    "href": "slides/08_redistribution/index.html#redistributive-effects-of-taxation",
+    "title": "    Economic Policy Visualization",
+    "section": "Redistributive effects of taxation",
+    "text": "Redistributive effects of taxation\n\n\n\nNote: Only economically active population. Source: WIFO (2023)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#composition-of-social-monetary-and-in-kind-benefits",
+    "href": "slides/08_redistribution/index.html#composition-of-social-monetary-and-in-kind-benefits",
+    "title": "    Economic Policy Visualization",
+    "section": "Composition of social monetary and in-kind benefits",
+    "text": "Composition of social monetary and in-kind benefits\n\nMonetary benefits in red, and in-kind benefits in blue colors. Monetary social benefits account for roughly one quarter."
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#distribution-of-transfers",
+    "href": "slides/08_redistribution/index.html#distribution-of-transfers",
+    "title": "    Economic Policy Visualization",
+    "section": "Distribution of transfers",
+    "text": "Distribution of transfers\n\n\n\nNote: Provision = allowances for family, care, etc.; Insurance = unemployment benefits, etc.; Welfare = basic and housing benefits, etc.;  Source: WIFO (2023)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#income-redistribution-in-austria",
+    "href": "slides/08_redistribution/index.html#income-redistribution-in-austria",
+    "title": "    Economic Policy Visualization",
+    "section": "Income redistribution in Austria",
+    "text": "Income redistribution in Austria\n\n\n\nSource: WIFO (2023)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#income-redistribution-across-oecd-countries",
+    "href": "slides/08_redistribution/index.html#income-redistribution-across-oecd-countries",
+    "title": "    Economic Policy Visualization",
+    "section": "Income redistribution across OECD countries",
+    "text": "Income redistribution across OECD countries\n\n\n\nNote: Countries are sorted by absolute reduction in Gini coefficient  Source: OECD IDD"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#projections",
+    "href": "slides/08_redistribution/index.html#projections",
+    "title": "    Economic Policy Visualization",
+    "section": "Projections",
+    "text": "Projections\nChoose a map projection! For instance, {giscoR} by Eurostat provides maps in the following three projections. Check coordinates for axis limits at https://epsg.io."
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#the-sf-package",
+    "href": "slides/08_redistribution/index.html#the-sf-package",
+    "title": "    Economic Policy Visualization",
+    "section": "The {sf} package",
+    "text": "The {sf} package\nThe sf (simple features) package deals with spatial geometries. These features have a geometry describing where on Earth the feature is located, and they have attributes, which describe other properties."
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#plot-a-map",
+    "href": "slides/08_redistribution/index.html#plot-a-map",
+    "title": "    Economic Policy Visualization",
+    "section": "Plot a map",
+    "text": "Plot a map\n\neurope_3035 |&gt; select(CNTR_ID, NAME_ENGL, geometry) |&gt; slice_head(n = 3)\n\nSimple feature collection with 3 features and 2 fields\nGeometry type: POLYGON\nDimension:     XY\nBounding box:  xmin: 3618229 ymin: 1900590 xmax: 5257241 ymax: 2889034\nProjected CRS: ETRS89-extended / LAEA Europe\n  CNTR_ID NAME_ENGL                       geometry\n1      AL   Albania POLYGON ((5148385 2216599, ...\n2      AT   Austria POLYGON ((4832035 2857837, ...\n3      AD   Andorra POLYGON ((3640254 2192873, ...\n\neurope_3035 |&gt; ggplot() + \n  geom_sf(fill = \"midnightblue\", linewidth = .1, color = \"white\") + \n  coord_sf(xlim = c(2377294, 7453440), ylim = c(1313597, 5628510), expand = F)"
+  },
+  {
+    "objectID": "slides/08_redistribution/index.html#bibliography",
+    "href": "slides/08_redistribution/index.html#bibliography",
+    "title": "    Economic Policy Visualization",
+    "section": "Bibliography",
+    "text": "Bibliography\n\n\n\n\n\n\n\nChancel, Lucas/Piketty, Thomas/Saez, Emmanuel/Zucman, Gabriel (2022). World inequality report 2022. World Inequality Lab.\n\n\nGrünberger, Klaus/Derndorfer, Judith/Schnetzer, Matthias (2024). Erbschaften in Österreich: Eine Modellschätzung Intergenerationeller Vermögenstransfers Bis 2050. Wirtschaft Und Gesellschaft, 50(1), 21–41. DOI: 10.59288/wug501.230\n\n\nWIFO (2023). Umverteilung durch den staat in Österreich 2019 und entwicklungen von 2005 bis 2019. Österreichisches Institut für Wirtschaftsforschung."
+  },
+  {
+    "objectID": "slides/09_policy/index.html#keynesian-legitimation-for-fiscal-policy",
+    "href": "slides/09_policy/index.html#keynesian-legitimation-for-fiscal-policy",
+    "title": "    Economic Policy Visualization",
+    "section": "Keynesian legitimation for fiscal policy",
+    "text": "Keynesian legitimation for fiscal policy\n\nAggregate demand determines economic growth\nLack of aggregate demand and involuntary unemployment persists\nFiscal policy is essential to reduce economic volatility\nAnti-cyclical fiscal policy (government spending and taxation)\nNo balanced budget required in the short term\nPublic investment features multiplier effect"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#the-fiscal-multiplier",
+    "href": "slides/09_policy/index.html#the-fiscal-multiplier",
+    "title": "    Economic Policy Visualization",
+    "section": "The fiscal multiplier",
+    "text": "The fiscal multiplier\n\\[ Y = C(\\theta) + I(r) + G + NX \\]\n\n\\[ C = \\alpha_0 + \\alpha_1 (1 - \\theta) Y \\]\n\n\n\\[ Y - \\alpha_1(1-\\theta)Y = \\alpha_0 + I(r) + G + NX \\]\n\n\n\\[ \\frac{\\partial Y}{\\partial G} = \\frac{1}{(1 - \\alpha_1 + \\alpha_1 \\theta)} \\]\n\n\n\\[ \\alpha_1 \\in (0, 1); \\; \\theta \\in (0, 1); \\; \\frac{\\partial Y}{\\partial G} &gt; 1 \\]"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#second-round-effects",
+    "href": "slides/09_policy/index.html#second-round-effects",
+    "title": "    Economic Policy Visualization",
+    "section": "Second-round effects",
+    "text": "Second-round effects\n\\[ \\alpha_1 = 0.6; \\; \\theta = 0.3; \\]\nTotal multiplier: \\[ Y^* = 1/(1 - 0.6 + 0.6 \\cdot 0.3) \\simeq 1.7 \\]\nFirst round: \\[ \\alpha_1 (1-\\theta)\\Delta Y = 0.6 \\cdot (1-0.3) \\cdot 1 \\simeq 0.4 \\]\nSecond round: \\[ 0.6 \\cdot (1-0.3) \\cdot 0.4 \\simeq 0.2 \\]"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#keynes-cross",
+    "href": "slides/09_policy/index.html#keynes-cross",
+    "title": "    Economic Policy Visualization",
+    "section": "Keynes Cross",
+    "text": "Keynes Cross"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#keynes-cross-1",
+    "href": "slides/09_policy/index.html#keynes-cross-1",
+    "title": "    Economic Policy Visualization",
+    "section": "Keynes Cross",
+    "text": "Keynes Cross"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#keynes-cross-2",
+    "href": "slides/09_policy/index.html#keynes-cross-2",
+    "title": "    Economic Policy Visualization",
+    "section": "Keynes Cross",
+    "text": "Keynes Cross"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#discuss-with-your-neighbour",
+    "href": "slides/09_policy/index.html#discuss-with-your-neighbour",
+    "title": "    Economic Policy Visualization",
+    "section": "Discuss with your neighbour",
+    "text": "Discuss with your neighbour\nWhat do you expect the effect of fiscal consolidation (taxes and spending) on income distribution to be?\nWhat are the potential channels for these effects?"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#sectoral-balances-net-lendingnet-borrowing",
+    "href": "slides/09_policy/index.html#sectoral-balances-net-lendingnet-borrowing",
+    "title": "    Economic Policy Visualization",
+    "section": "Sectoral balances (net lending/net borrowing)",
+    "text": "Sectoral balances (net lending/net borrowing)\n\n\n\nSource: Eurostat [tipsnf10]"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#effects-of-fiscal-consolidation-on-distribution",
+    "href": "slides/09_policy/index.html#effects-of-fiscal-consolidation-on-distribution",
+    "title": "    Economic Policy Visualization",
+    "section": "Effects of fiscal consolidation on distribution",
+    "text": "Effects of fiscal consolidation on distribution\nStudies typically find that inequality increases in periods of fiscal consolidation (with similar data):\n\nBall et al. (2013): 17 OECD countries from 1978 to 2009\nAgnello/Sousa (2014): 18 industrialized countries from 1978 to 2009\nWoo et al. (2016): 17 OECD countries from 1980 to 2010\nHeimberger (2020): 17 OECD countries from 1978 to 2013\n\nData on fiscal consolidation is provided by Devries et al. (2011): “A New Action-based Dataset of Fiscal Consolidation”. Narrative approach that focuses on policy actions (tax hikes and/or spending cuts) taken by governments with the intent of reducing the budget deficit.\nMethodology: Impulse response functions (IRF) from local projections as proposed by Jordà (2005)."
+  },
+  {
+    "objectID": "slides/09_policy/index.html#consolidation-episodes",
+    "href": "slides/09_policy/index.html#consolidation-episodes",
+    "title": "    Economic Policy Visualization",
+    "section": "Consolidation episodes",
+    "text": "Consolidation episodes\n\n\n\n\n\n\n\n\n\n\nCountry\nEpidodes\nCountry\nEpidodes\n\n\n\n\n🇦🇺\n1985–1988, 1994–1999\n🇮🇹\n1991–1998, 2004–2007, 2010–2013\n\n\n🇦🇹\n1980–1981, 1984, 1996–1997, 2001–2002, 2011–2013\n🇯🇵\n1979–1983, 1997–1998, 2003–2007\n\n\n🇧🇪\n1982–1985, 1987, 1990, 1992–1994, 1996–1997, 2010–2013\n🇳🇱\n1981–1988, 1991–1993, 2004–2005\n\n\n🇨🇦\n1984–1997\n🇵🇹\n1983, 2000, 2002, 2005–2007, 2010–2013\n\n\n🇩🇰\n1983–1986, 1995, 2011–2013\n🇪🇸\n1983–1984, 1989, 1992–1997, 2009–2013\n\n\n🇫🇮\n1992–1997\n🇸🇪\n1984, 1993–1998\n\n\n🇫🇷\n1979, 1987, 1991, 1995–1997, 2011–2013\n🇬🇧\n1979–1982, 1994–1999, 2010–2013\n\n\n🇩🇪\n1982–1984, 1991–1995, 1997, 1999–2000, 2003–2004, 2006–2007, 2011–2013\n🇺🇸\n1978, 1980–1981, 1985–1988, 1990–1998, 2011–2013\n\n\n🇮🇪\n1982–1988, 2009–2013\n\n\n\n\n\n\n\n\nSource: Devries et al. (2011)"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#austerity-measures-have-dampened-growth-in-europe",
+    "href": "slides/09_policy/index.html#austerity-measures-have-dampened-growth-in-europe",
+    "title": "    Economic Policy Visualization",
+    "section": "Austerity measures have dampened growth in Europe",
+    "text": "Austerity measures have dampened growth in Europe"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#fiscal-consolidation-increases-inequality",
+    "href": "slides/09_policy/index.html#fiscal-consolidation-increases-inequality",
+    "title": "    Economic Policy Visualization",
+    "section": "Fiscal consolidation increases inequality",
+    "text": "Fiscal consolidation increases inequality\n\n\n\n\n\n\n\nSource: Ball et al. (2013)"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#fiscal-consolidation-spending-versus-taxes",
+    "href": "slides/09_policy/index.html#fiscal-consolidation-spending-versus-taxes",
+    "title": "    Economic Policy Visualization",
+    "section": "Fiscal consolidation: Spending versus taxes",
+    "text": "Fiscal consolidation: Spending versus taxes\n\n\n\n\n\n\n\nSource: Ball et al. (2013)"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#larger-effect-for-spending-based-consolidation",
+    "href": "slides/09_policy/index.html#larger-effect-for-spending-based-consolidation",
+    "title": "    Economic Policy Visualization",
+    "section": "Larger effect for spending-based consolidation",
+    "text": "Larger effect for spending-based consolidation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: Woo et al. (2016)"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#fiscal-consolidation-increases-long-term-unemployment",
+    "href": "slides/09_policy/index.html#fiscal-consolidation-increases-long-term-unemployment",
+    "title": "    Economic Policy Visualization",
+    "section": "Fiscal consolidation increases (long-term) unemployment",
+    "text": "Fiscal consolidation increases (long-term) unemployment\n\n\n\n\n\n\n\nSource: Ball et al. (2013)"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#effects-of-contractionary-monetary-policy-shocks",
+    "href": "slides/09_policy/index.html#effects-of-contractionary-monetary-policy-shocks",
+    "title": "    Economic Policy Visualization",
+    "section": "Effects of contractionary monetary policy shocks",
+    "text": "Effects of contractionary monetary policy shocks\nStudy by Furceri et al. (2018):\n\n(unanticipated) changes in short-term interest rates for a panel of 32 countries from 1990 to 2013\ncontractionary monetary policy shocks increase income inequality, expansionary monetary policy reduces inequality\neffect is asymmetric: tightening of monetary policy raises inequality more than easing lowers it"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#effect-of-monetary-policy-on-output-unemployment-and-inflation",
+    "href": "slides/09_policy/index.html#effect-of-monetary-policy-on-output-unemployment-and-inflation",
+    "title": "    Economic Policy Visualization",
+    "section": "Effect of monetary policy on output, unemployment and inflation",
+    "text": "Effect of monetary policy on output, unemployment and inflation\n\n\n\n\n\n\n\nSource: Furceri et al. (2018)"
+  },
+  {
+    "objectID": "slides/09_policy/index.html#effect-of-monetary-policy-shocks-on-inequality",
+    "href": "slides/09_policy/index.html#effect-of-monetary-policy-shocks-on-inequality",
+    "title": "    Economic Policy Visualization",
+    "section": "Effect of monetary policy shocks on inequality",
+    "text": "Effect of monetary policy shocks on inequality\n\n\n\n\n\n\n\nSource: Furceri et al. (2018)"
+  },
+  {
     "objectID": "slides/09_policy/index.html#themes-1",
     "href": "slides/09_policy/index.html#themes-1",
     "title": "    Economic Policy Visualization",
@@ -725,7 +956,7 @@
     "href": "slides/09_policy/index.html#bibliography",
     "title": "    Economic Policy Visualization",
     "section": "Bibliography",
-    "text": "Bibliography"
+    "text": "Bibliography\n\n\n\n\n\n\n\nAgnello, Luca/Sousa, Ricardo M. (2014). How Does Fiscal Consolidation Impact on Income Inequality? Review of Income and Wealth, 60(4), 702–726. DOI: 10.1111/roiw.12004\n\n\nBall, Laurence/Furceri, Davide/Leigh, Daniel/Loungani, Prakash (2013). The distributional effects of fiscal consolidation (Working Paper No. WP/13/151). IMF.\n\n\nDevries, Pete/Guajardo, Jaime/Leigh, Daniel/Pescatori, Andrea (2011). A new action-based dataset of fiscal consolidation (Working Paper No. WP/11/128). IMF.\n\n\nFurceri, Davide/Loungani, Prakash/Zdzienicka, Aleksandra (2018). The Effects of Monetary Policy Shocks on Inequality. Journal of International Money and Finance, 85, 168–186. DOI: 10.1016/j.jimonfin.2017.11.004\n\n\nHeimberger, Philipp (2020). The Dynamic Effects of Fiscal Consolidation Episodes on Income Inequality: Evidence for 17 OECD Countries over 19782013. Empirica, 47(1), 53–81. DOI: 10.1007/s10663-018-9404-z\n\n\nJordà, Òscar (2005). Estimation and Inference of Impulse Responses by Local Projections. American Economic Review, 95(1), 161–182. DOI: 10.1257/0002828053828518\n\n\nWoo, Jaejoon/Bova, Elva/Kinda, Tidiane/Zhang, Y. Sophia (2016). Distributional Consequences of Fiscal Adjustments: What Do the Data Say? IMF Economic Review, 65(2), 273–307. DOI: 10.1057/s41308-016-0021-1"
   },
   {
     "objectID": "slides/03_visualization/index.html#william-playfair-1759-1823",

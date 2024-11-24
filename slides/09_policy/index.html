@@ -94,7 +94,27 @@
     code span.va { color: #0057ae; } /* Variable */
     code span.vs { color: #bf0303; } /* VerbatimString */
     code span.wa { color: #bf0303; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-e0ca6a99699933a71ec2d16d92452977.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -405,14 +425,255 @@ Dr.&nbsp;Matthias Schnetzer
 
   <p class="date">December 2, 2024</p>
 </section>
+<section id="keynesian-legitimation-for-fiscal-policy" class="slide level2">
+<h2>Keynesian legitimation for fiscal policy</h2>
+<ul>
+<li><span class="marker-hl">Aggregate demand</span> determines economic growth</li>
+<li>Lack of aggregate demand and involuntary <span class="marker-hl">unemployment</span> persists</li>
+<li>Fiscal policy is essential to reduce economic volatility</li>
+<li><span class="marker-hl">Anti-cyclical</span> fiscal policy (government spending and taxation)</li>
+<li><span class="marker-hl">No balanced budget</span> required in the short term</li>
+<li>Public investment features <span class="marker-hl">multiplier effect</span></li>
+</ul>
+</section>
+<section id="the-fiscal-multiplier" class="slide level2 medium">
+<h2>The fiscal multiplier</h2>
+<p><span class="math display">\[ Y = C(\theta) + I(r) + G + NX \]</span></p>
+<div class="fragment">
+<p><span class="math display">\[ C = \alpha_0 + \alpha_1 (1 - \theta) Y \]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[ Y - \alpha_1(1-\theta)Y = \alpha_0 + I(r) + G + NX \]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[ \frac{\partial Y}{\partial G} = \frac{1}{(1 - \alpha_1 + \alpha_1 \theta)} \]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[ \alpha_1 \in (0, 1); \; \theta \in (0, 1); \; \frac{\partial Y}{\partial G} &gt; 1 \]</span></p>
+</div>
+</section>
+<section id="second-round-effects" class="slide level2 medium">
+<h2>Second-round effects</h2>
+<p><span class="math display">\[ \alpha_1 = 0.6; \; \theta = 0.3; \]</span></p>
+<p>Total multiplier: <span class="math display">\[ Y^* = 1/(1 - 0.6 + 0.6 \cdot 0.3) \simeq 1.7 \]</span></p>
+<p>First round: <span class="math display">\[ \alpha_1 (1-\theta)\Delta Y = 0.6 \cdot (1-0.3) \cdot 1 \simeq 0.4 \]</span></p>
+<p>Second round: <span class="math display">\[ 0.6 \cdot (1-0.3) \cdot 0.4 \simeq 0.2 \]</span></p>
+</section>
+<section id="keynes-cross" class="slide level2">
+<h2>Keynes Cross</h2>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="keynes-cross-1" class="slide level2" data-visibility="uncounted">
+<h2>Keynes Cross</h2>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="keynes-cross-2" class="slide level2" data-visibility="uncounted">
+<h2>Keynes Cross</h2>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="discuss-with-your-neighbour" class="slide level2 smaller">
+<h2>Discuss with your neighbour</h2>
+<p><span class="bubble bubble-bottom-left absolute" style="max-width:450px;--bubcol: var(--bubcol-blue);font-size:1.5rem;top: 20%; left: 20%; ">What do you expect the effect of fiscal consolidation (taxes and spending) on income distribution to be?</span></p>
+<p><span class="bubble bubble-bottom-right absolute" style="max-width:350px;--bubcol: var(--bubcol-dred);font-size:1.5rem;top: 45%; left: 35%; ">What are the potential channels for these effects?</span></p>
+<p><img data-src="img/discuss1.png" class="absolute" style="left: 5%; bottom: 0px; height: 400px; "> <img data-src="img/discuss2.png" class="absolute" style="transform: rotateY(180deg);bottom: 0px; right: 5%; height: 400px; "></p>
+</section>
+<section id="sectoral-balances-net-lendingnet-borrowing" class="slide level2 smaller">
+<h2>Sectoral balances (net lending/net borrowing)</h2>
+<p><img data-src="index_files/figure-revealjs/balances-1.png" width="1152"></p>
+
+<aside><div>
+<p>Source: Eurostat [tipsnf10]</p>
+</div></aside></section>
+<section id="effects-of-fiscal-consolidation-on-distribution" class="slide level2 smaller">
+<h2>Effects of fiscal consolidation on distribution</h2>
+<p>Studies typically find that <span class="marker-hl">inequality increases</span> in periods of fiscal consolidation (with similar data):</p>
+<ul>
+<li><span class="citation" data-cites="ball:2013">Ball et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2013</a>)</span>: 17 OECD countries from 1978 to 2009</li>
+<li><span class="citation" data-cites="agnello:2014">Agnello/Sousa (<a href="#/bibliography" role="doc-biblioref" onclick="">2014</a>)</span>: 18 industrialized countries from 1978 to 2009</li>
+<li><span class="citation" data-cites="woo:2016">Woo et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2016</a>)</span>: 17 OECD countries from 1980 to 2010</li>
+<li><span class="citation" data-cites="heimberger:2020">Heimberger (<a href="#/bibliography" role="doc-biblioref" onclick="">2020</a>)</span>: 17 OECD countries from 1978 to 2013</li>
+</ul>
+<p>Data on fiscal consolidation is provided by <span class="citation" data-cites="devries:2011">Devries et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2011</a>)</span>: “A New Action-based Dataset of Fiscal Consolidation”. Narrative approach that focuses on policy actions (tax hikes and/or spending cuts) taken by governments with the intent of reducing the budget deficit.</p>
+<p>Methodology: Impulse response functions (IRF) from local projections as proposed by <span class="citation" data-cites="jorda:2005">Jordà (<a href="#/bibliography" role="doc-biblioref" onclick="">2005</a>)</span>.</p>
+</section>
+<section id="consolidation-episodes" class="slide level2 smaller">
+<h2>Consolidation episodes</h2>
+<div class="tbl-classic tbl-smaller">
+<table class="caption-top">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 40%">
+<col style="width: 10%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Country</th>
+<th style="text-align: left;">Epidodes</th>
+<th style="text-align: center;">Country</th>
+<th style="text-align: left;">Epidodes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="emoji" data-emoji="australia">🇦🇺</span></td>
+<td style="text-align: left;">1985–1988, 1994–1999</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="it">🇮🇹</span></td>
+<td style="text-align: left;">1991–1998, 2004–2007, 2010–2013</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="emoji" data-emoji="austria">🇦🇹</span></td>
+<td style="text-align: left;">1980–1981, 1984, 1996–1997, 2001–2002, 2011–2013</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="jp">🇯🇵</span></td>
+<td style="text-align: left;">1979–1983, 1997–1998, 2003–2007</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="emoji" data-emoji="belgium">🇧🇪</span></td>
+<td style="text-align: left;">1982–1985, 1987, 1990, 1992–1994, 1996–1997, 2010–2013</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="netherlands">🇳🇱</span></td>
+<td style="text-align: left;">1981–1988, 1991–1993, 2004–2005</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="emoji" data-emoji="canada">🇨🇦</span></td>
+<td style="text-align: left;">1984–1997</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="portugal">🇵🇹</span></td>
+<td style="text-align: left;">1983, 2000, 2002, 2005–2007, 2010–2013</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="emoji" data-emoji="denmark">🇩🇰</span></td>
+<td style="text-align: left;">1983–1986, 1995, 2011–2013</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="es">🇪🇸</span></td>
+<td style="text-align: left;">1983–1984, 1989, 1992–1997, 2009–2013</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="emoji" data-emoji="finland">🇫🇮</span></td>
+<td style="text-align: left;">1992–1997</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="sweden">🇸🇪</span></td>
+<td style="text-align: left;">1984, 1993–1998</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="emoji" data-emoji="fr">🇫🇷</span></td>
+<td style="text-align: left;">1979, 1987, 1991, 1995–1997, 2011–2013</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="uk">🇬🇧</span></td>
+<td style="text-align: left;">1979–1982, 1994–1999, 2010–2013</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="emoji" data-emoji="de">🇩🇪</span></td>
+<td style="text-align: left;">1982–1984, 1991–1995, 1997, 1999–2000, 2003–2004, 2006–2007, 2011–2013</td>
+<td style="text-align: center;"><span class="emoji" data-emoji="us">🇺🇸</span></td>
+<td style="text-align: left;">1978, 1980–1981, 1985–1988, 1990–1998, 2011–2013</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="emoji" data-emoji="ireland">🇮🇪</span></td>
+<td style="text-align: left;">1982–1988, 2009–2013</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="devries:2011">Devries et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2011</a>)</span></p>
+</div></aside></section>
+<section id="austerity-measures-have-dampened-growth-in-europe" class="slide level2">
+<h2>Austerity measures have dampened growth in Europe</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/austerity.png" class="quarto-figure quarto-figure-center" height="500"></p>
+</figure>
+</div>
+</section>
+<section id="fiscal-consolidation-increases-inequality" class="slide level2 smaller">
+<h2>Fiscal consolidation increases inequality</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/consolidation.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="ball:2013">Ball et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2013</a>)</span></p>
+</div></aside></section>
+<section id="fiscal-consolidation-spending-versus-taxes" class="slide level2 smaller">
+<h2>Fiscal consolidation: Spending versus taxes</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/spending_tax.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="ball:2013">Ball et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2013</a>)</span></p>
+</div></aside></section>
+<section id="larger-effect-for-spending-based-consolidation" class="slide level2 smaller">
+<h2>Larger effect for spending-based consolidation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/tax-based.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/spending-based.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="woo:2016">Woo et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2016</a>)</span></p>
+</div></aside></section>
+<section id="fiscal-consolidation-increases-long-term-unemployment" class="slide level2 smaller">
+<h2>Fiscal consolidation increases (long-term) unemployment</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/unemployment.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="ball:2013">Ball et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2013</a>)</span></p>
+</div></aside></section>
+<section id="effects-of-contractionary-monetary-policy-shocks" class="slide level2">
+<h2>Effects of contractionary monetary policy shocks</h2>
+<p>Study by <span class="citation" data-cites="furceri:2018">Furceri et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span>:</p>
+<ul>
+<li>(unanticipated) changes in short-term interest rates for a panel of 32 countries from 1990 to 2013</li>
+<li>contractionary monetary policy shocks increase income inequality, expansionary monetary policy reduces inequality</li>
+<li>effect is asymmetric: tightening of monetary policy raises inequality more than easing lowers it</li>
+</ul>
+</section>
+<section id="effect-of-monetary-policy-on-output-unemployment-and-inflation" class="slide level2 smaller">
+<h2>Effect of monetary policy on output, unemployment and inflation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/monetarypolicy.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="furceri:2018">Furceri et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span></p>
+</div></aside></section>
+<section id="effect-of-monetary-policy-shocks-on-inequality" class="slide level2 smaller">
+<h2>Effect of monetary policy shocks on inequality</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/monetaryineq.png" class="quarto-figure quarto-figure-center" height="500"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="furceri:2018">Furceri et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span></p>
+</div></aside></section>
 <section>
 <section id="themes" class="title-slide slide level1 center">
 <h1>Themes</h1>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../../data/img/avatar_break.png" class="quarto-figure quarto-figure-center" height="350"></p>
-</figure>
-</div>
+<center>
+<img data-src="../../data/img/avatar_break.png" width="250">
+</center>
 <div class="footer">
 
 </div>
@@ -485,13 +746,36 @@ Dr.&nbsp;Matthias Schnetzer
 </table>
 </div>
 </section>
-<section id="bibliography" class="slide level2 bibstyle">
+<section id="bibliography" class="slide level2 bibstyle smaller scrollable">
 <h2>Bibliography</h2>
 <div class="footer">
 
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-agnello:2014" class="csl-entry" role="listitem">
+Agnello, Luca/Sousa, Ricardo M. (2014). How Does Fiscal Consolidation Impact on Income Inequality? <em>Review of Income and Wealth</em>, <em>60</em>(4), 702–726. DOI: <a href="https://doi.org/10.1111/roiw.12004">10.1111/roiw.12004</a>
+</div>
+<div id="ref-ball:2013" class="csl-entry" role="listitem">
+Ball, Laurence/Furceri, Davide/Leigh, Daniel/Loungani, Prakash (2013). <em>The distributional effects of fiscal consolidation</em> (Working Paper No. WP/13/151). IMF.
+</div>
+<div id="ref-devries:2011" class="csl-entry" role="listitem">
+Devries, Pete/Guajardo, Jaime/Leigh, Daniel/Pescatori, Andrea (2011). <em>A new action-based dataset of fiscal consolidation</em> (Working Paper No. WP/11/128). IMF.
+</div>
+<div id="ref-furceri:2018" class="csl-entry" role="listitem">
+Furceri, Davide/Loungani, Prakash/Zdzienicka, Aleksandra (2018). The Effects of Monetary Policy Shocks on Inequality. <em>Journal of International Money and Finance</em>, <em>85</em>, 168–186. DOI: <a href="https://doi.org/10.1016/j.jimonfin.2017.11.004">10.1016/j.jimonfin.2017.11.004</a>
+</div>
+<div id="ref-heimberger:2020" class="csl-entry" role="listitem">
+Heimberger, Philipp (2020). The Dynamic Effects of Fiscal Consolidation Episodes on Income Inequality: Evidence for 17 <span>OECD</span> Countries over 1978<span></span>2013. <em>Empirica</em>, <em>47</em>(1), 53–81. DOI: <a href="https://doi.org/10.1007/s10663-018-9404-z">10.1007/s10663-018-9404-z</a>
+</div>
+<div id="ref-jorda:2005" class="csl-entry" role="listitem">
+Jordà, Òscar (2005). Estimation and Inference of Impulse Responses by Local Projections. <em>American Economic Review</em>, <em>95</em>(1), 161–182. DOI: <a href="https://doi.org/10.1257/0002828053828518">10.1257/0002828053828518</a>
+</div>
+<div id="ref-woo:2016" class="csl-entry" role="listitem">
+Woo, Jaejoon/Bova, Elva/Kinda, Tidiane/Zhang, Y. Sophia (2016). Distributional Consequences of Fiscal Adjustments: What Do the Data Say? <em><span>IMF</span> Economic Review</em>, <em>65</em>(2), 273–307. DOI: <a href="https://doi.org/10.1057/s41308-016-0021-1">10.1057/s41308-016-0021-1</a>
+</div>
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
