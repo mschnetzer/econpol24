@@ -48,222 +48,245 @@ In recent years economic growth has come to occupy an exalted position in the hi
 James @tobin:1964
 :::
 
-## Beyond GDP initiatives {.smaller}
+# The macroeconomics of distribution
 
-- Even though many aspects of the living standard correlate with GDP, there are also some blind spots (informal sector and non-market production, environmental and health externalities, etc.).
-- GDP is not designed as comprehensive measure of prosperity and well-being. "Beyond GDP" initiatives aim to find additional indicators for [environmental and social aspects of progress]{.hl .hl-dred}.
-- In 2007, the EU commission organized a conference on "Beyond GDP" which led to a roadmap for the "EU 2020 Strategy".
-- Much attention for Stiglitz-Sen-Fitoussi Report in 2009 with 12 recommendations how to measure progress.
-- United Nations formally adopted 17 "Sustainable Development Goals" (or Agenda 2030) in their general assembly in 2015.
+<center>
+![](../../data/img/avatar_hoodie.png){width=250}
+</center>
 
-## The growth imperative {.medium}
-
-::: {.columns}
-::: {.column width="20%"}
-![](img/sdg8.png)
-:::
-::: {.column width="80%"}
-- Growth is an important goal in economic policy
-- *Magic square of economic policy* promotes high GDP growth (besides low inflation, high emplpoyment, and balanced trade)
-- UN Sustainable Development Goals (SDG): "Promote inclusive and sustainable economic growth, employment and decent work for all"
-- More specifically, "sustain per capita economic growth in accordance with national circumstances and, in particular, [at least 7 per cent]{.hl .hl-dred} gross domestic product growth per annum in the least developed countries"
-:::
+::: footer
 :::
 
-## Rule of 70 {.medium}
 
-We often underestimate the power of growth! How long does it take for a variable [to double]{.hl .hl-dred} with a specific growth rate? The rule of 70 is a good approximation. Just divide 70 by the annual growth rate:
+## Wages, employment, and growth
 
-$$ \Delta = \frac{70}{g} $$
+Two questions in Post-Keynesian economics:
 
-Even with a moderate growth rate of 2%, total GDP doubles in 35 years. An annual growth rate of 7% would mean a doubling of production in only 10 years.
-
-## Measuring GDP {.smaller}
-
-- 1937: Simon Kuznets presented the modern concept of GDP to US Congress following the Great Depression, warning that it is not a measure of national welfare.
-- 1953: System of National Accounts (SNA) aims to harmonize measurement of GDP across the globe.
-- 1995: European System of Accounts (ESA) is used by member states of the European Union (latest adaption 2010)
-- Three calculations: output, expenditure, and income approaches
-- GDP is not entirely exact: some components have to be estimated (e.g. tip, underground economy)
-- GDP has methodological gaps and some arbitrary definitions of what is productive, e.g. it includes childcare by nannies but not by parents.
+- Which effect do **real wage increases** have on **employment**?
+- Which effect does a **shift in the functional distribution** have on **growth**?
 
 ::: {.aside}
-Short read: [Economist: Why GDP is so difficult to measure?](https://www.economist.com/the-economist-explains/2016/01/27/why-gdp-is-so-difficult-to-measure)
+<i class="fa-solid fa-book"></i> Lavoie, Marc (2006): Introduction to Post-Keynesian Economics. Palgrave Macmillan: New York, chapters 4 & 5.
 :::
 
-## GDP growth across the globe {.smaller}
+## Wage increase and employment {.smaller}
 
-```{r worldbank}
-#| echo: false
-#| results: 'asis'
-library(tidyverse)
-library(MetBrewer)
-load("data/worldbank.RData")
+### Neoclassical model of the labour market:
+- Price (real wage) brings supply and demand into equilibrium
+- LM = one market among many
+- Effect of real wage increase on employment is negative
+- Why? Wages are costs
 
-# Create 7% p.a. series
-synt <- data.frame(country = "7% growth p.a.", year = 1989:2021, value = 1) |> 
-  mutate(index = 1 * 1.07 ^ (row_number() - 1))
+### Post-Keynesians:
+- Labour market is downstream of production
+- Production is determined by effective demand
+- Effect of real wage increase on employment is positive
+- Why? Wages are demand
 
-# Create index (1989 = 1)
-plotdat <- gdp |> 
-  mutate(index = NY.GDP.MKTP.KD / NY.GDP.MKTP.KD[year == 1989], .by = country) |>  
-  bind_rows(synt) |>
-  mutate(country = fct_reorder2(country, year, index))
+## Post-Keynesian growth models {.smaller}
 
-p1 <- plotdat |> 
-  ggplot(aes(x = year, y = index, group = country, color = country)) + 
-  geom_line(size =0.9) +
-  geom_point(data = plotdat |> filter(country == "China", year %in% c(1996,2004,2011,2019)), shape = 21, size = 3, show.legend = F) + 
-  geom_text(data = plotdat |> filter(country == "China", year %in% c(1996,2004,2011,2019)), size = 3, vjust = -1, hjust = 1, show.legend = F, aes(label = glue::glue("{year}: >{round(index,0)}x"))) + 
-  scale_color_met_d("Archambault") +
-  labs(x = NULL, y = NULL) +
-  theme_minimal() +
-  theme(legend.title = element_blank(),
-  legend.background = element_rect(fill = "white", color = NA),
-  legend.position = c(0.2, 0.75),
-  panel.grid.minor = element_blank())
-```
+### 4 generations of PK growth models:
 
-::: {.columns}
-::: {.column}
-[Linear scale (1989 = 1)]{.secfont}
-```{r linear}
-#| echo: false
-p1 + scale_y_continuous(labels = scales::number_format(suffix = "x"),
-breaks = c(1, 2, seq(4,16,4)))
-```
+- Keynes, Kalecki
+- Robinson, Kaldor
+- Bhaduri, Marglin, Dutt, Taylor
+- Hein, Onaran, Stockhammer
+
+<br>
+
+::: {.tbl-classic .tbl-larger}
+|     | Full employment | Unemployment |
+|-----|-----------------|--------------|
+| **Full capacity utilization** | Kaldor (v.1) | Robinson |
+| **Excess capacity** | - | Kalecki |
 :::
-::: {.column .fragment}
-[Logarithmic scale (1989 = 1)]{.secfont}
-```{r log}
-#| echo: false
-p1 + scale_y_log10(labels = scales::number_format(suffix = "x"),
-breaks = c(1, 2, seq(4,16,4)))
-```
+
+
+# The wage-led/profit-led debate
+
+<center>
+![](../../data/img/avatar_explain.png){width=250}
+</center>
+
+::: footer
 :::
+
+
+## General framework {.smaller}
+
+- Post-Keynesian growth model: Investment and savings function depend on distribution (neither savings nor technological progress determine growth)
+- Aggregate output equals wages and profits ($r$ = profit rate)
+$$ pX = wN + prK $$
+- $\delta$ is the wage share and $\pi$ is the profit share
+$$ \delta = \frac{wN}{pX} \\
+\pi = \frac{prK}{pX} = \frac{rK}{X} $$
+
+## Determination of profit rate {.smaller}
+
+- Let $X_{fe}$ be potential output, $l$ is labour/output ratio, $v$ is capital/output ratio (= technology, assumed constant: $v=1$) and $u$ is capacity utilization
+$$ l=\frac{N}{X};\quad v=\frac{K}{X_{fe}}=1;\quad u=\frac{X}{X_{fe}};\quad \frac{K}{X} = \frac{v}{u} = u^{-1} $$ 
+$$ p=w\frac{N}{X} + rp \frac{K}{X};\quad p = wl + rpu^{−1} $$
+$$ \pi = \frac{rK}{X} = \frac{r}{u} \rightarrow r= \pi u $$
+
+- Profit rate $r$ depends on profit share $\pi$ and capacity utilization $u$
+
+## Recall partial derivatives
+
+$$ y = \frac{u(x)}{v(x)} $$
+
+$$ y' = \frac{u'(x) \cdot v(x) - v'(x) \cdot u(x)}{v^2(x)} $$
+
+## First generation: Kaldor-Robinson {.smaller}
+
+- Assumption: Workers do not save, full capacity utilization ($u=1$)
+- Growth rate of investments consists of growth of autonomous investments $g_0$ and the elasticity to the profit rate $\alpha r$
+$$ g_I = g_0 + \alpha r $$
+- Savings come only out of profits [[Cambridge equation]{.marker-hl}: @pasinetti:1962] with $s$ as saving propensity of capitalists
+$$ g_S = sr $$
+- In equilibrium $g_S = g_I$ and thus
+$$ sr = g_0 + \alpha r \\ 
+r^∗= \frac{g_0}{(s − \alpha)} $$
+
+## {.smaller}
+
+- How does the profit rate react to saving?
+$$ \frac{\partial r^*}{\partial s} = − \frac{g_0}{(s−\alpha)^2} <0 $$
+- The equilibrium growth rate with $r^*$ is
+$$ g^∗ = g_0 + \alpha r^* = g_0 + \alpha \frac{g_0}{s− \alpha} = \frac{sg_0}{s−\alpha} $$
+- How does the growth rate react to saving?
+$$ \frac{\partial g^*}{\partial s} = \frac{g_0(s−\alpha)−sg_0}{(s−\alpha)^2} = −\frac{\alpha g_0}{(s−\alpha)^2} <0 $$
+- Higher propensity to save reduces growth and profitability due to lower aggregate demand.
+
+## Second generation: Neo-Kaleckians {.smaller}
+
+- Capacity utilization now endogenous (relax assumption of $u=1$); a high capacity utilization leads firms to invest more to satisfy expected demand
+$$ g_I = g_0 + \alpha r + \beta u $$
+- In equilibrium $g_I = g_S = sr$ and since $r = u \pi$ 
+$$ su\pi = g_0 + \alpha u \pi + \beta u \\ 
+u^* = \frac{g_0}{\pi(s−\alpha)−\beta} \\
+\frac{\partial u^*}{\partial \pi} = −\frac{(s-\alpha)g_0}{\left[ \pi (s−\alpha)− \beta\right]^2} <0 $$
+- A rising profit share reduces aggregate demand (lower consumption propensity of capitalists; workers don't save) and thus capacity utilization
+
+## {.smaller}
+
+- The profit rate falls with rising profit share:
+$$ r^* = \pi u^* = \frac{\pi g_0}{\pi (s−\alpha)−\beta} \\
+\frac{\partial r^*}{\partial \pi} = −\frac{g_0}{[\pi (s−\alpha)−\beta]^2} <0 $$
+- The growth rate also reacts negatively to a rising profit share
+$$ g^* = g_0 + \alpha r^* + \beta u^* = \frac{g_0 \pi s}{\pi (s−\alpha)−\beta} \\ 
+\frac{\partial g^*}{\partial \pi} = −\frac{g_0 s \beta}{[\pi (s−\alpha)−\beta]^2} <0 $$
+
+## Third generation: Bhaduri-Marglin {.smaller}
+
+- Focus on the profit share $\pi$ instead of the profit rate $r$ in the investment function
+$$ g_I = g_0 + \alpha \pi + \beta u $$
+- Capacity utilization reacts negatively to a rising profit share
+$$ s \pi u = g_0 + \alpha \pi + \beta u \\
+u^* = \frac{g_0 + \alpha \pi}{s\pi - \beta} \\
+\frac{\partial u^*}{\partial \pi} = −\frac{sg_0 + \alpha\beta}{(s\pi - \beta)^2} <0 $$
+
+---
+
+::: {style="font-size:1.8rem;"}
+- Change in the profit rate is now ambiguous
+$$ r^* = \pi u^* = \frac{\pi(g_0 + \alpha\pi)}{s\pi - \beta} \\ 
+\frac{\partial r^*}{\partial \pi} = \frac{\alpha\pi - u^* \beta}{s\pi − \beta} < \mathtt{or} >0 $$
+- Same for the growth rate
+$$ g^* = g_0 + \alpha\pi + \beta u^* = \frac{s\pi(g_0 + \alpha\pi)}{s\pi - \beta} \\ 
+\frac{\partial g^*}{\partial \pi} = \frac{s(\alpha\pi - \beta u^*)}{s\pi - \beta} < \mathtt{or} > 0 $$ 
+- There are now [two cases]{.marker-hl}:
+$$ \frac{\partial g^*}{\partial \pi} = \begin{cases} 
+>0: \alpha\pi > \beta u^* & \mathtt{profit−led} \\ 
+<0: \alpha\pi < \beta u^* & \mathtt{wage-led} 
+\end{cases} $$
+:::
+
+## Wage-led/profit-led debate {.smaller}
+
+- Seminal theoretical paper: @bhaduri:1990
+  - [Wage-led]{.hl .hl-dred} vs. [profit-led]{.hl .hl-blue}: When income is redistributed towards labour, does investment react more strongly to higher demand or to the lower profitability?
+- First empirical estimate: @bowles:1995
+- Taken up by Post-Keynesians 
+  - in Europe (Hein, Onaran, Stockhammer, etc.): Neo-Kaleckians, [wage-led]{.hl .hl-dred}
+  - and in the US (Taylor, etc.): Neo-Goodwinians, [profit-led]{.hl .hl-blue}
+
+
+# The empirical assessment
+
+<center>
+![](../../data/img/avatar_laptop.png){width=250}
+</center>
+
+::: footer
+:::
+
+## Components of demand
+
+$$ Y = C + I + NX $$ 
+
+What is the reaction of each component when income is redistributed towards labour?
+
+::: {.incremental}
+- Consumption $C$: rises
+- Investments $I$: depends on firm‘s reaction to higher demand vs. lower profit rate 
+- Net exports $NX$: imports rise, exports fall $\rightarrow NX$ fall
+:::
+
+## It's an empirical question {.smaller}
+
+::: {.tbl-smaller}
+| Wage share &uarr; | Consumption | Investment | Net exports | Dom. demand | Total demand |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| :eu: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&uarr;**]{.dred} |
+| :de: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&uarr;**]{.dred} |
+| :fr: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&uarr;**]{.dred} |
+| :it: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&uarr;**]{.dred} |
+| :uk: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&uarr;**]{.dred} |
+| :us: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&uarr;**]{.dred} |
+| :jp: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&uarr;**]{.dred} |
+| :canada: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&darr;**]{.blue} |
+| :australia: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&darr;**]{.blue} |
+| :mexico: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&darr;**]{.blue} |
+| :argentina: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&darr;**]{.blue} |
+| :cn: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&darr;**]{.blue} |
+| :india: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&darr;**]{.blue} |
+| :south_africa: | [**&uarr;**]{.dred} | [**&darr;**]{.blue} | [**&darr;**]{.blue} | [**&uarr;**]{.dred} | [**&darr;**]{.blue} |
 :::
 
 ::: {.aside}
-Source: World Bank
+Source: @onaran:2012
 :::
 
-## Reeeally long-term growth of GDP {.smaller}
+## Meta-Regression analysis {.smaller}
 
-::: {.columns}
-::: {.column}
-[Linear scale]{.secfont}
-<br><br>
-![](img/gdp_growth_long.png){fig-align="center"}
-:::
-::: {.column}
-[Logarithmic scale]{.secfont}
-<br><br>
-![](img/gdp_growth_long_log.png){fig-align="center"}
-:::
-:::
+In a new article [@dammerer:2024], we study
 
-::: {.aside}
-Source: [Our world in data](https://ourworldindata.org/economic-growth)
-:::
+- 578 estimates for the relationship between functional distribution and aggregate demand
+- from 33 empirical studies
+- over 163 years and 59 countries and regions
+- whereof 218 estimates refer to total demand and 360 to domestic demand
 
-## Why do some economies grow and others don't? {.medium}
+We find that 
 
-![](img/korea.jpg){height="500" fig-align="center"}
+- Total demand ($C+I+NX$) is profit-led on average
+- Domestic demand ($C+I$) is wage-led
+- Publication bias is present. If corrected, total demand is less profit-led
 
-::: {.aside}
-Related reading: @crespo:2020
+:::{.aside}
+Summary of the paper: [https://mschnetzer.github.io/scrollytell_mra/](https://mschnetzer.github.io/scrollytell_mra/)
 :::
 
-## Reasons for differences in economic growth {.medium}
+## Histogram of estimates
 
-Economists historically focus on the "factors of production", like physical capital and human capital to explain differences in growth [@mankiw:1992; @young:1995].
+![](img/histogram_facet.png){fig-align="center"}
 
-The contemporary literature [@acemoglu:2019; @glaeser:2004] additionally highlights
+## Funnel plot for total demand
 
-- culture (e.g., the willingness to trust and engage in trade with strangers)
-- geography (e.g., ease of transportation, resources)
-- institutions (e.g., welfare state regimes, democracy, legal rights)
-- (luck)
+![](img/funnel_total.png){fig-align="center"}
 
-::: {.aside}
-Short read: [Asterisk Magazine](https://asteriskmag.com/issues/1/why-isn-t-the-whole-world-rich#1)
-:::
+## Funnel plot for domestic demand
 
-## Which chart describes best what you want to show? {.medium}
-
-::: {.columns}
-::: {.column}
-```{r abs}
-#| echo: false
-#| fig-height: 2.9
-library(tidyverse)
-library(MetBrewer)
-library(scales)
-load("data/gdp.RData")
-
-gdp |> filter(unit == "Chain linked volumes (2010), euro per capita") |> 
-  ggplot(aes(x = time, y = values, group = geo, color = geo)) +
-  geom_line(size = 1) +
-  scale_color_manual(name = NULL, values = met.brewer("Juarez")) +
-  scale_y_continuous(labels = scales::number_format(prefix = "€", big.mark = ",")) +
-  labs(x = NULL, y = NULL,  title = "GDP per capita in €") +
-  theme_minimal() +
-  theme(panel.grid.minor = element_blank(),
-        legend.position = "bottom")
-```
-
-```{r rates}
-#| echo: false
-#| fig-height: 2.9
-gdp |> filter(str_detect(unit, "percentage")) |> 
-  ggplot(aes(x = time, y = values, group = geo, color = geo)) +
-  geom_line(linewidth = 0.8) +
-  geom_point(size = 0.2) +
-  scale_color_manual(name = NULL, values = met.brewer("Juarez")) +
-  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
-  labs(x = NULL, y = NULL, title = "Growth rates of per capita GDP") +
-  theme_minimal() +
-  theme(panel.grid.major.x = element_blank(),
-        panel.grid.minor.y = element_blank(),
-        legend.position = "bottom")
-```
-
-:::
-::: {.column .fragment}
-```{r base}
-#| echo: false
-#| fig-height: 2.9
-gdp |> filter(unit == "Chain linked volumes (2010), euro per capita") |> 
-  mutate(base = values / values[time == 2000] * 100, .by = geo) |> 
-  ggplot(aes(x = time, y = base, group = geo, color = geo)) +
-  geom_hline(yintercept = 100, color = "black", size = 0.5) +
-  geom_line(size = 0.8) +
-  scale_color_manual(name = NULL, values = met.brewer("Juarez")) +
-  labs(x = NULL, y = NULL, title = "GDP per capita with anchor (2000 = 100)") +
-  theme_minimal() +
-  theme(legend.position = "bottom")
-```
-```{r bars}
-#| echo: false
-#| fig-height: 2.9
-gdp |> filter(str_detect(unit, "percentage")) |> 
-  ggplot(aes(x = time, y = values, fill = geo)) + 
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  facet_wrap(~geo, ncol = 5) +
-  scale_fill_manual(values = met.brewer("Juarez")) +
-  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
-  scale_x_reverse() +
-  labs(x = NULL, y = NULL, title = "GDP growth rates from 2000 to 2021") +
-  theme_minimal() +
-  theme(legend.position = "none",
-        axis.text.x = element_text(size = 7),
-        panel.border = element_rect(size = 0.1, fill = "transparent"),
-        panel.grid.minor = element_blank(),
-        plot.title.position = "plot")
-```
-:::
-:::
+![](img/funnel_domestic.png){fig-align="center"}
 
 
 # Labels and Fonts
