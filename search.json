@@ -812,11 +812,18 @@
     "text": "Bibliography\n\n\n\n\n\n\n\nChancel, Lucas/Piketty, Thomas/Saez, Emmanuel/Zucman, Gabriel (2022). World inequality report 2022. World Inequality Lab.\n\n\nGrünberger, Klaus/Derndorfer, Judith/Schnetzer, Matthias (2024). Erbschaften in Österreich: Eine Modellschätzung Intergenerationeller Vermögenstransfers Bis 2050. Wirtschaft Und Gesellschaft, 50(1), 21–41. DOI: 10.59288/wug501.230\n\n\nWIFO (2023). Umverteilung durch den staat in Österreich 2019 und entwicklungen von 2005 bis 2019. Österreichisches Institut für Wirtschaftsforschung."
   },
   {
+    "objectID": "slides/09_policy/index.html#neoclassical-critique-of-fiscal-policy",
+    "href": "slides/09_policy/index.html#neoclassical-critique-of-fiscal-policy",
+    "title": "    Economic Policy Visualization",
+    "section": "Neoclassical critique of fiscal policy",
+    "text": "Neoclassical critique of fiscal policy\n\nRicardian Equivalence: government spending does not change aggregate demand, as households anticipate that they will pay expenditure as future taxes.\nCrowding out: when governments borrow money, it affects interest rates through the loanable funds market, depressing investment spending and encouraging saving.\nPolitical pressure: since fiscal policy is done by the government, it needs political support, which may vary from what’s actually best for the economy"
+  },
+  {
     "objectID": "slides/09_policy/index.html#keynesian-legitimation-for-fiscal-policy",
     "href": "slides/09_policy/index.html#keynesian-legitimation-for-fiscal-policy",
     "title": "    Economic Policy Visualization",
     "section": "Keynesian legitimation for fiscal policy",
-    "text": "Keynesian legitimation for fiscal policy\n\nAggregate demand determines economic growth\nLack of aggregate demand and involuntary unemployment persists\nFiscal policy is essential to reduce economic volatility\nAnti-cyclical fiscal policy (government spending and taxation)\nNo balanced budget required in the short term\nPublic investment features multiplier effect"
+    "text": "Keynesian legitimation for fiscal policy\n\nAggregate demand determines economic growth\nLack of aggregate demand and involuntary unemployment persist\nFiscal policy is essential to reduce economic volatility\nFiscal policy should be anti-cyclical\nNo balanced budget required in the short term\nPublic investment increases aggregate demand with multiplier"
   },
   {
     "objectID": "slides/09_policy/index.html#the-fiscal-multiplier",
@@ -852,13 +859,6 @@
     "title": "    Economic Policy Visualization",
     "section": "Keynes Cross",
     "text": "Keynes Cross"
-  },
-  {
-    "objectID": "slides/09_policy/index.html#discuss-with-your-neighbour",
-    "href": "slides/09_policy/index.html#discuss-with-your-neighbour",
-    "title": "    Economic Policy Visualization",
-    "section": "Discuss with your neighbour",
-    "text": "Discuss with your neighbour\nWhat do you expect the effect of fiscal consolidation (taxes and spending) on income distribution to be?\nWhat are the potential channels for these effects?"
   },
   {
     "objectID": "slides/09_policy/index.html#sectoral-balances-net-lendingnet-borrowing",
@@ -938,6 +938,13 @@
     "text": "Effect of monetary policy shocks on inequality\n\n\n\n\n\n\n\nSource: Furceri et al. (2018)"
   },
   {
+    "objectID": "slides/09_policy/index.html#empirical-evidence-in-single-countries-is-ambiguous",
+    "href": "slides/09_policy/index.html#empirical-evidence-in-single-countries-is-ambiguous",
+    "title": "    Economic Policy Visualization",
+    "section": "Empirical evidence in single countries is ambiguous",
+    "text": "Empirical evidence in single countries is ambiguous\n\nAnderesen et al. (2023) find for Denmark (1987-2014) that expansionary monetary policy (reduction of rates) leads to more inequality.\nMumtaz/Theophilopoulou (2017) suggest for the United Kingdom (1969-2012) that contractionary monetary policy resulted in increasing income inequality.\nCoibion et al. (2017) argue that contractionary monetary policy shocks boosted inequality in the United States since 1980.\nMcKay/Wolf (2023) find that monetary policy has a relatively uniform incidence across households in the United States."
+  },
+  {
     "objectID": "slides/09_policy/index.html#themes-1",
     "href": "slides/09_policy/index.html#themes-1",
     "title": "    Economic Policy Visualization",
@@ -956,7 +963,7 @@
     "href": "slides/09_policy/index.html#bibliography",
     "title": "    Economic Policy Visualization",
     "section": "Bibliography",
-    "text": "Bibliography\n\n\n\n\n\n\n\nAgnello, Luca/Sousa, Ricardo M. (2014). How Does Fiscal Consolidation Impact on Income Inequality? Review of Income and Wealth, 60(4), 702–726. DOI: 10.1111/roiw.12004\n\n\nBall, Laurence/Furceri, Davide/Leigh, Daniel/Loungani, Prakash (2013). The distributional effects of fiscal consolidation (Working Paper No. WP/13/151). IMF.\n\n\nDevries, Pete/Guajardo, Jaime/Leigh, Daniel/Pescatori, Andrea (2011). A new action-based dataset of fiscal consolidation (Working Paper No. WP/11/128). IMF.\n\n\nFurceri, Davide/Loungani, Prakash/Zdzienicka, Aleksandra (2018). The Effects of Monetary Policy Shocks on Inequality. Journal of International Money and Finance, 85, 168–186. DOI: 10.1016/j.jimonfin.2017.11.004\n\n\nHeimberger, Philipp (2020). The Dynamic Effects of Fiscal Consolidation Episodes on Income Inequality: Evidence for 17 OECD Countries over 19782013. Empirica, 47(1), 53–81. DOI: 10.1007/s10663-018-9404-z\n\n\nJordà, Òscar (2005). Estimation and Inference of Impulse Responses by Local Projections. American Economic Review, 95(1), 161–182. DOI: 10.1257/0002828053828518\n\n\nWoo, Jaejoon/Bova, Elva/Kinda, Tidiane/Zhang, Y. Sophia (2016). Distributional Consequences of Fiscal Adjustments: What Do the Data Say? IMF Economic Review, 65(2), 273–307. DOI: 10.1057/s41308-016-0021-1"
+    "text": "Bibliography\n\n\n\n\n\n\n\nAgnello, Luca/Sousa, Ricardo M. (2014). How Does Fiscal Consolidation Impact on Income Inequality? Review of Income and Wealth, 60(4), 702–726. DOI: 10.1111/roiw.12004\n\n\nAnderesen, Asger Lau/Johannesen, Niels/Jørgensen, Mia/Peydró, José-Luis (2023). Monetary Policy and Inequality. The Journal of Finance, 78(5), 2945–2989. DOI: 10.1111/jofi.13262\n\n\nBall, Laurence/Furceri, Davide/Leigh, Daniel/Loungani, Prakash (2013). The distributional effects of fiscal consolidation (Working Paper No. WP/13/151). IMF.\n\n\nCoibion, Olivier/Gorodnichenko, Yuriy/Kueng, Lorenz/Silvia, John (2017). Innocent Bystanders? Monetary Policy and Inequality. Journal of Monetary Economics, 88, 70–89. DOI: 10.1016/j.jmoneco.2017.05.005\n\n\nDevries, Pete/Guajardo, Jaime/Leigh, Daniel/Pescatori, Andrea (2011). A new action-based dataset of fiscal consolidation (Working Paper No. WP/11/128). IMF.\n\n\nFurceri, Davide/Loungani, Prakash/Zdzienicka, Aleksandra (2018). The Effects of Monetary Policy Shocks on Inequality. Journal of International Money and Finance, 85, 168–186. DOI: 10.1016/j.jimonfin.2017.11.004\n\n\nHeimberger, Philipp (2020). The Dynamic Effects of Fiscal Consolidation Episodes on Income Inequality: Evidence for 17 OECD Countries over 19782013. Empirica, 47(1), 53–81. DOI: 10.1007/s10663-018-9404-z\n\n\nJordà, Òscar (2005). Estimation and Inference of Impulse Responses by Local Projections. American Economic Review, 95(1), 161–182. DOI: 10.1257/0002828053828518\n\n\nMcKay, Alisdair/Wolf, Christian K. (2023). Monetary Policy and Inequality. Journal of Economic Perspectives, 37(1), 121–144. DOI: 10.1257/jep.37.1.121\n\n\nMumtaz, Haroon/Theophilopoulou, Angeliki (2017). The Impact of Monetary Policy on Inequality in the UK. An Empirical Analysis. European Economic Review, 98, 410–423. DOI: 10.1016/j.euroecorev.2017.07.008\n\n\nWoo, Jaejoon/Bova, Elva/Kinda, Tidiane/Zhang, Y. Sophia (2016). Distributional Consequences of Fiscal Adjustments: What Do the Data Say? IMF Economic Review, 65(2), 273–307. DOI: 10.1057/s41308-016-0021-1"
   },
   {
     "objectID": "slides/03_visualization/index.html#william-playfair-1759-1823",
