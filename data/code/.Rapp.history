@@ -6,3 +6,4 @@ hfcs
 load("/Users/matthiasschnetzer/Daten/Lehre/wipol_advanced_BA/data/code/08_wealth.RData")
 ls()
 hfcs
+load("/Users/matthiasschnetzer/Daten/Lehre/wipol_viz_MA/data/code/09_policy.RData")

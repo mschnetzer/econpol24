@@ -247,6 +247,57 @@ $$ 0.6 \cdot (1-0.3) \cdot 0.4 \simeq 0.2 $$
 \end{tikzpicture}
 ```
 
+## Government expenditure in Austria, 2024 {.smaller}
+
+```{r budget}
+#| echo: false
+#| message: false
+#| results: 'asis'
+#| fig-width: 12
+#| fig-height: 6
+
+library(tidyverse)
+library(pdftools)
+library(treemapify)
+library(RColorBrewer)
+
+pdf_file <- pdf_text("data/Budget_2024_at_a_glance.pdf")[[2]]
+
+raw <- map(pdf_file, ~ str_split(.x, "\\n") |> unlist())
+raw <- reduce(raw, c)
+
+table <- str_replace_all(raw, c("\\s(?=\\d)" = "|", "(?<=\\d)(?=[^\\d\\s{2,}])" = "|")) |> as_tibble()
+
+fintab <- table |> separate(col = value, into = c("variable", "value"), sep = "\\|") |>  
+  mutate(value = as.numeric(str_remove_all(value, ",")),
+         variable = str_remove_all(variable, "\\s{2,}")) |> 
+  drop_na()
+
+final <- fintab |> 
+  mutate(share = value / 123488*100,
+         group = case_when(
+           str_starts(variable, "\\d") ~ str_extract(variable, "^\\d"),
+           TRUE ~ NA
+         )) |> 
+  fill(group) |> 
+  filter(!str_starts(variable, pattern = "\\d"),
+         !row_number() %in% range(row_number(fintab))) |> 
+  mutate(variable = fct_reorder(variable, group)) 
+
+
+final |> filter(share > .2) |>
+  ggplot(aes(area = share, fill = group, subgroup = group)) +
+  geom_treemap(colour = "white") +
+  geom_treemap_text(aes(label = glue::glue("{variable}\n({round(share,1)}%)")),
+                    family = "Barlow Condensed", size = 20, color = "white", reflow = T,
+					padding.x = unit(1.5, "mm"), padding.y = unit(1.5, "mm")) +
+  geom_treemap_subgroup_border(color = "white") +
+  scale_fill_manual(values = MetBrewer::met.brewer("Greek")) +
+
+  theme_void() +
+  theme(legend.position = "none")
+```
+
 
 ## Sectoral balances (net lending/net borrowing) {.smaller}
 
@@ -256,7 +307,6 @@ $$ 0.6 \cdot (1-0.3) \cdot 0.4 \simeq 0.2 $$
 #| results: 'asis'
 #| fig-width: 12
 #| fig-height: 6
-library(tidyverse)
 
 # rawdat <- get_eurostat("tipsnf10", filters = list(geo = "AT"), time = "date", type = "label")
 # gdpdat <- get_eurostat("nama_10_gdp", filters = list(geo = "AT", unit = "CP_MEUR", na_item = "B1GQ"), time = "date", type = "label")

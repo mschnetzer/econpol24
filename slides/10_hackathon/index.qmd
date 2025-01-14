@@ -1,0 +1,75 @@
+---
+metadata-files: 
+    - ../../_variables.yml
+title: |
+    <span class='fa-stack course-icon'>
+        <i class='fas {{< var course.icon-bg >}} fa-stack-2x blue'></i>
+        <i class='fas {{< var course.icon >}} fa-stack-1x fa-inverse' style='margin-top:-5pt'></i>
+      </span><br>
+    {{< var course.subtitle >}}
+author: '{{< var instructor.name >}}' 
+subtitle: EconPol Hackathon
+date: January 13, 2025
+date-format: long
+from: markdown+emoji
+bibliography: ../../data/lit/wipol_advanced.bib
+csl: ../../data/lit/wipol.csl
+execute:
+  freeze: auto
+  echo: true
+  fig-width: 6
+  fig-height: 5
+format:
+  revealjs:
+    theme: ../econpol_slides.scss
+    footer: '{{< var course.number >}} {{< var course.title >}} | {{< var course.semester >}}'
+    logo: ../../data/img/wu-logo-simple.png
+    header-includes: |
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+    slide-number: true
+    show-slide-number: all
+    transition: fade
+    progress: true
+    multiplex: false
+    scrollable: false
+    preview-links: false
+    hide-inactive-cursor: true
+    highlight-style: printing
+    pause: true
+---
+
+# 90-Minutes-Hackathon
+
+<center>
+![](../../data/img/avatar_laptop.png){width=250}
+</center>
+
+::: footer
+:::
+
+## How does it work? {.medium}
+
+<center>
+[The current state of Maastricht rules]{.secfont .marker-hl style="font-size:1.3em;"}
+</center>
+
+<br>
+
+::: columns
+
+
+::: {.column width="60%" .iconlist}
+- <i class="fa-solid fa-people-group icon"></i> Groups of 3
+- <i class="fa-solid fa-stopwatch icon"></i> 90 minutes time
+- <i class="fa-solid fa-magnifying-glass icon"></i> Find data
+- <i class="fa-solid fa-chart-simple icon"></i> Create an informative chart
+- <i class="fa-solid fa-file-arrow-up icon"></i> Upload a PNG on the learning platform
+- <i class="fa-solid fa-trophy icon"></i> Win the competition!
+:::
+
+::: {.column width="40%" .iconlist}
+- <i class="fa-solid fa-award icon"></i> 1st: R coaching
+- <i class="fa-solid fa-award icon"></i> 2nd: Economics books
+- <i class="fa-solid fa-award icon"></i> 3rd: Goodie bag
+:::
+:::

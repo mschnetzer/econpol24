@@ -89,7 +89,7 @@ $=$ Net national income **at factor cost**
 :::
 :::
 
-## Income accounts for Austria, 2021 {.medium}
+## Income accounts for Austria, 2023 {.medium}
 
 ```{r snaaut}
 #| echo: false
