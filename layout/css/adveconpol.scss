@@ -68,6 +68,10 @@ html {
   overflow-x: hidden;
 }
 
+a {
+  font-weight: 100;
+}
+
 ul {
   font-size: 1rem;
   font-weight: 100;
@@ -388,4 +392,13 @@ h4, h5, h6 {
   .poster-table td, tr, tbody {
     font-size: 1rem;
   }
+}
+
+/*-- GALLERY --*/
+
+figcaption {
+  font-size: 14px;
+  color: firebrick;
+  margin: auto;
+  text-align: center;
 }

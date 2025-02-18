@@ -1,5 +1,5 @@
 ---
-title: "Gallery"
+title: "Selected student work"
 page-layout: full
 css: layout/css/adveconpol.scss
 filter:
@@ -7,34 +7,43 @@ filter:
 lightbox: auto
 ---
 
-#### Selected charts created by students in this course
-
 <br>
 
-::: {style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));grid-gap: 1em;"}
+::: {style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));grid-gap: 2em;"}
 
-![](data/gallery/breyer.png){group="my-gallery"}
+![Victoria Bauer](data/gallery/bauer.png){group="my-gallery"}
 
-![](data/gallery/muellner.png){group="my-gallery"}
+![Koen Berben](data/gallery/berben.png){group="my-gallery"}
 
-![](data/gallery/schnettgen.png){group="my-gallery"}
+![Roopsa Chakraborty](data/gallery/chakraborty.png){group="my-gallery"}
 
-![](data/gallery/radoslavova.png){group="my-gallery"}
+![Sofia Evtushenko](data/gallery/evtushenko.png){group="my-gallery"}
 
-![](data/gallery/hrivula.png){group="my-gallery"}
+![Tobias Gerstmayr](data/gallery/gerstmayr.png){group="my-gallery"}
 
-![](data/gallery/piller.png){group="my-gallery"}
+![Antonia Hittmair](data/gallery/hittmair.png){group="my-gallery"}
 
-![](data/gallery/ritter.png){group="my-gallery"}
+![Eva-Maria Mooslechner](data/gallery/mooslechner.png){group="my-gallery"}
 
-![](data/gallery/maraguat.png){group="my-gallery"}
+![Wilhelm Hartung](data/gallery/hartung.png){group="my-gallery"}
 
-![](data/gallery/mccann.png){group="my-gallery"}
+![Zulian Marecos Amarillas](data/gallery/marecos.png){group="my-gallery"}
 
-![](data/gallery/kahler.png){group="my-gallery"}
+![Elizaveta Minaeva](data/gallery/minaeva.png){group="my-gallery"}
 
-![](data/gallery/strahlhofer.png){group="my-gallery"}
+![Teodor Nedev](data/gallery/nedev.png){group="my-gallery"}
 
-![](data/gallery/kalugin.png){group="my-gallery"}
+![Teodor Nikolov](data/gallery/nikolov.png){group="my-gallery"}
 
+![Victor Novy](data/gallery/novy.png){group="my-gallery"}
+
+![Maria Pessoa Dias da Silva](data/gallery/pessoa.png){group="my-gallery"}
+
+![Sarah Rabong](data/gallery/rabong.png){group="my-gallery"}
+
+![Nina Schöller](data/gallery/schoeller.png){group="my-gallery"}
+
+![Anastasiia Skliankina](data/gallery/skliankina.png){group="my-gallery"}
+
+![Manuel Stahl](data/gallery/stahl.png){group="my-gallery"}
 :::
